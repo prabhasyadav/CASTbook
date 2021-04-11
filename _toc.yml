@@ -1,0 +1,48 @@
+- file: intro
+
+- part: Quick online usage and offline Installation
+  chapters:
+  - file: contents/online/online_usage
+    sections:
+    - file: contents/online/login
+    - file: contents/online/quick_example
+  - file: contents/offline/offline_installation
+    sections:
+    - file: contents/offline/quick_example
+    - file: contents/offline/updating
+
+- part: Using CAST Toolboxes
+  chapters:
+  - file: contents/toolbox/database
+  - file: contents/toolbox/an_model/an_model
+    sections:
+    - file: contents/toolbox/an_model/liedl2005
+    - file: contents/toolbox/an_model/chu2005
+    - file: contents/toolbox/an_model/ham2004
+    - file: contents/toolbox/an_model/liedl2011
+    - file: contents/toolbox/an_model/bioscreen
+  - file: contents/toolbox/em_model/em_model
+    sections:
+    - file: contents/toolbox/em_model/birla2020
+    - file: contents/toolbox/em_model/mg2005
+
+  - file: contents/toolbox/num_model
+  - file: contents/toolbox/mod_sel
+
+
+
+- part: Development
+  chapters:
+  - file: contents/develop/code_structure
+  - file: contents/develop/code_libraries
+  - file: contents/develop/code_develop
+
+- part: Reference
+  chapters:
+  - file: contents/ref/cite
+  - file: contents/ref/version
+
+
+
+
+

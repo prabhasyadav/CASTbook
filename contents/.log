@@ -1,0 +1,491 @@
+2020-12-12 16:12:12,938 [6921] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-12-12 16:12:12,938 [6921] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-12-12 16:12:12,938 [6921] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-12-12 16:12:12,941 [6921] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-12-12 16:12:12,941 [6921] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-12-12 16:12:12,941 [6921] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-12-12 16:12:23,653 [6921] DEBUG    matplotlib.pyplot:289: [JupyterRequire] Loaded backend nbAgg version unknown.
+2020-12-12 16:12:55,560 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi
+2020-12-12 16:12:55,602 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/3/sys.pyi
+2020-12-12 16:12:55,732 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:12:55,732 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:12:55,733 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:12:55,733 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:12:55,733 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:12:56,046 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:12:56,046 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:12:56,047 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:12:56,048 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:12:56,048 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:12:56,263 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:12:56,265 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:12:56,266 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:12:56,267 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:12:56,268 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:12:57,552 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:12:57,553 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:12:57,553 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:12:57,553 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:12:57,553 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:12:58,432 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:12:58,434 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:12:58,435 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:12:58,435 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:12:58,435 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:12:58,675 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:12:58,675 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:12:58,675 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:12:58,676 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:12:58,676 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:02,351 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:13:02,352 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:13:02,353 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:13:02,353 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:13:02,353 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:02,384 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/__init__.py
+2020-12-12 16:13:02,408 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/afm.py
+2020-12-12 16:13:02,426 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/animation.py
+2020-12-12 16:13:02,451 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/artist.py
+2020-12-12 16:13:02,453 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/axes/__init__.py
+2020-12-12 16:13:02,498 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/axis.py
+2020-12-12 16:13:02,538 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/backend_bases.py
+2020-12-12 16:13:02,550 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/backend_managers.py
+2020-12-12 16:13:02,572 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/backend_tools.py
+2020-12-12 16:13:02,575 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/backends/__init__.py
+2020-12-12 16:13:02,595 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/bezier.py
+2020-12-12 16:13:02,603 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/blocking_input.py
+2020-12-12 16:13:02,607 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/category.py
+2020-12-12 16:13:02,635 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/cbook/__init__.py
+2020-12-12 16:13:02,643 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/cm.py
+2020-12-12 16:13:02,669 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/collections.py
+2020-12-12 16:13:02,692 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/colorbar.py
+2020-12-12 16:13:02,774 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/colors.py
+2020-12-12 16:13:03,011 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:13:03,011 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:13:03,011 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:13:03,012 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:13:03,025 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:03,788 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:13:03,790 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:13:03,791 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:13:03,792 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:13:03,793 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:03,827 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/pylab.py
+2020-12-12 16:13:03,874 [6921] DEBUG    parso.cache:143: [JupyterRequire] pickle loaded: /home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/pyplot.py
+2020-12-12 16:13:05,916 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:13:05,916 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:13:05,917 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:13:05,917 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:13:05,917 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:06,063 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:13:06,063 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:13:06,063 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:13:06,063 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:13:06,063 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:08,517 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:13:08,519 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:13:08,519 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:13:08,520 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:13:08,520 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:08,769 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:13:08,780 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:13:08,780 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:13:08,781 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:13:08,782 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:09,786 [6921] DEBUG    parso.python.diff:282: [JupyterRequire] diff parser start
+2020-12-12 16:13:09,789 [6921] DEBUG    parso.python.diff:293: [JupyterRequire] line_lengths old: 1; new: 1
+2020-12-12 16:13:09,790 [6921] DEBUG    parso.python.diff:296: [JupyterRequire] -> code[replace] old[1:1] new[1:1]
+2020-12-12 16:13:09,791 [6921] DEBUG    parso.python.diff:421: [JupyterRequire] parse_part from 1 to 1 (to 0 in part parser)
+2020-12-12 16:13:09,791 [6921] DEBUG    parso.python.diff:339: [JupyterRequire] diff parser end
+2020-12-12 16:13:13,671 [6921] DEBUG    matplotlib.font_manager:1334: [JupyterRequire] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+2020-12-12 16:13:13,672 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,673 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,673 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2020-12-12 16:13:13,673 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2020-12-12 16:13:13,673 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,673 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,673 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,673 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,673 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,674 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,675 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,676 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2020-12-12 16:13:13,676 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,676 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,676 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (Courier_New_Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (Verdana_Italic.ttf) italic normal 400 normal>) = 4.6863636363636365
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (courbi.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (times.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,677 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Cousine' (Cousine-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Medium.ttf) normal normal 500 condensed>) = 10.344999999999999
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Tinos' (Tinos-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (Georgia_Bold_Italic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-ThinItalic.ttf) italic normal 250 normal>) = 11.1925
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (cour.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Medium.ttf) normal normal 500 normal>) = 10.145
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,678 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arimo' (Arimo-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (Courier_New_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Comic Sans MS' (comic.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerif.otf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Tinos' (Tinos-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (arial.ttf) normal normal 400 normal>) = 6.413636363636363
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Comic Sans MS' (Comic_Sans_MS_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,679 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-LightItalic.ttf) italic normal 300 condensed>) = 11.344999999999999
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (Times_New_Roman.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (Trebuchet_MS_Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifItalic.otf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Comic Sans MS' (Comic_Sans_MS.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansOblique.otf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Tinos' (Tinos-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arimo' (Arimo-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,680 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansBold.otf) normal normal 600 normal>) = 10.24
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (georgiaz.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal 700 normal>) = 4.971363636363637
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (Verdana_Bold.ttf) normal normal 700 normal>) = 3.9713636363636367
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (timesbi.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial Black' (Arial_Black.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Thin.ttf) normal normal 250 normal>) = 10.1925
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (Times_New_Roman_Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Regular.ttf) normal normal 400 condensed>) = 10.25
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Cousine' (Cousine-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,681 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoBold.otf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (Arial_Bold_Italic.ttf) italic normal 700 normal>) = 7.698636363636363
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (ariali.ttf) italic normal 400 normal>) = 7.413636363636363
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (Times_New_Roman_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (timesi.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (verdanai.ttf) italic normal 400 normal>) = 4.6863636363636365
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (georgia.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (courbd.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,682 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (georgiai.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,683 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+2020-12-12 16:13:13,683 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-MediumItalic.ttf) italic normal 500 condensed>) = 11.344999999999999
+2020-12-12 16:13:13,683 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2020-12-12 16:13:13,683 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (Courier_New_Bold_Italic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-LightItalic.ttf) italic normal 300 normal>) = 11.145
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arimo' (Arimo-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Impact' (Impact.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (Arial_Bold.ttf) normal normal 700 normal>) = 6.698636363636363
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Tinos' (Tinos-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,684 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Andale Mono' (andalemo.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Black.ttf) normal normal 900 normal>) = 10.525
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (Arial.ttf) normal normal 400 normal>) = 6.413636363636363
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifBold.otf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Webdings' (webdings.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (Trebuchet_MS_Bold_Italic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoOblique.otf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (Verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Cousine' (Cousine-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2020-12-12 16:13:13,685 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.otf) oblique normal 700 normal>) = 11.335
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (Georgia_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (timesbd.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-BlackItalic.ttf) italic normal 900 normal>) = 11.525
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Impact' (impact.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arimo' (Arimo-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Cousine' (Cousine-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (Arial_Italic.ttf) italic normal 400 normal>) = 7.413636363636363
+2020-12-12 16:13:13,686 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Webdings' (Webdings.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial Black' (ariblk.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (Georgia.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-MediumItalic.ttf) italic normal 500 normal>) = 11.145
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (Trebuchet_MS_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.otf) oblique normal 600 normal>) = 11.24
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (Georgia_Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+2020-12-12 16:13:13,687 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal 200 normal>) = 0.24
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Light.ttf) normal normal 300 condensed>) = 10.344999999999999
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (Courier_New.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Light.ttf) normal normal 300 normal>) = 10.145
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (trebuc.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,688 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (trebucbi.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (Verdana_Bold_Italic.ttf) italic normal 700 normal>) = 4.971363636363637
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (trebucbd.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (trebucit.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (georgiab.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (arialbd.ttf) normal normal 700 normal>) = 6.698636363636363
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (couri.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (verdanab.ttf) normal normal 700 normal>) = 3.9713636363636367
+2020-12-12 16:13:13,689 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (Trebuchet_MS.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (arialbi.ttf) italic normal 700 normal>) = 7.698636363636363
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.otf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Comic Sans MS' (comicbd.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (Times_New_Roman_Bold_Italic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+2020-12-12 16:13:13,690 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,691 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,691 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+2020-12-12 16:13:13,691 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,691 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMono.otf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,692 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSans.otf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,692 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,692 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,692 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Andale Mono' (Andale_Mono.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,692 [6921] DEBUG    matplotlib.font_manager:1366: [JupyterRequire] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2020-12-12 16:13:13,733 [6921] DEBUG    matplotlib.font_manager:1334: [JupyterRequire] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2020-12-12 16:13:13,733 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,733 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,733 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2020-12-12 16:13:13,733 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2020-12-12 16:13:13,733 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,734 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,735 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,736 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,736 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,736 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,736 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,736 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2020-12-12 16:13:13,736 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,736 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (Courier_New_Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (Verdana_Italic.ttf) italic normal 400 normal>) = 4.6863636363636365
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,737 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (courbi.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (times.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Cousine' (Cousine-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Medium.ttf) normal normal 500 condensed>) = 10.344999999999999
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Tinos' (Tinos-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (Georgia_Bold_Italic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-ThinItalic.ttf) italic normal 250 normal>) = 11.1925
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (cour.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Medium.ttf) normal normal 500 normal>) = 10.145
+2020-12-12 16:13:13,738 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arimo' (Arimo-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (Courier_New_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Comic Sans MS' (comic.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerif.otf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Tinos' (Tinos-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,739 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (arial.ttf) normal normal 400 normal>) = 6.413636363636363
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Comic Sans MS' (Comic_Sans_MS_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-LightItalic.ttf) italic normal 300 condensed>) = 11.344999999999999
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (Times_New_Roman.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (Trebuchet_MS_Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifItalic.otf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Comic Sans MS' (Comic_Sans_MS.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansOblique.otf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,740 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Tinos' (Tinos-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arimo' (Arimo-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansBold.otf) normal normal 600 normal>) = 10.24
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (georgiaz.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal 700 normal>) = 4.971363636363637
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (Verdana_Bold.ttf) normal normal 700 normal>) = 3.9713636363636367
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (timesbi.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial Black' (Arial_Black.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Thin.ttf) normal normal 250 normal>) = 10.1925
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (Times_New_Roman_Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Regular.ttf) normal normal 400 condensed>) = 10.25
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2020-12-12 16:13:13,741 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Cousine' (Cousine-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoBold.otf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (Arial_Bold_Italic.ttf) italic normal 700 normal>) = 7.698636363636363
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (ariali.ttf) italic normal 400 normal>) = 7.413636363636363
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (Times_New_Roman_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (timesi.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (verdanai.ttf) italic normal 400 normal>) = 4.6863636363636365
+2020-12-12 16:13:13,742 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (georgia.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (courbd.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (georgiai.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-MediumItalic.ttf) italic normal 500 condensed>) = 11.344999999999999
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (Courier_New_Bold_Italic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-LightItalic.ttf) italic normal 300 normal>) = 11.145
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arimo' (Arimo-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,743 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Impact' (Impact.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (Arial_Bold.ttf) normal normal 700 normal>) = 6.698636363636363
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Tinos' (Tinos-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Andale Mono' (andalemo.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Black.ttf) normal normal 900 normal>) = 10.525
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (Arial.ttf) normal normal 400 normal>) = 6.413636363636363
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifBold.otf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Webdings' (webdings.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (Trebuchet_MS_Bold_Italic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,744 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoOblique.otf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (Verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Cousine' (Cousine-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.otf) oblique normal 700 normal>) = 11.335
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (Georgia_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (timesbd.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-BlackItalic.ttf) italic normal 900 normal>) = 11.525
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Impact' (impact.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,745 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arimo' (Arimo-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Cousine' (Cousine-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (Arial_Italic.ttf) italic normal 400 normal>) = 7.413636363636363
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Webdings' (Webdings.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial Black' (ariblk.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (Georgia.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-MediumItalic.ttf) italic normal 500 normal>) = 11.145
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (Trebuchet_MS_Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.otf) oblique normal 600 normal>) = 11.24
+2020-12-12 16:13:13,746 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (Georgia_Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal 200 normal>) = 0.24
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Light.ttf) normal normal 300 condensed>) = 10.344999999999999
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (Courier_New.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Light.ttf) normal normal 300 normal>) = 10.145
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (trebuc.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,747 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (trebucbi.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (Verdana_Bold_Italic.ttf) italic normal 700 normal>) = 4.971363636363637
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (trebucbd.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (trebucit.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Georgia' (georgiab.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (arialbd.ttf) normal normal 700 normal>) = 6.698636363636363
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Courier New' (couri.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Verdana' (verdanab.ttf) normal normal 700 normal>) = 3.9713636363636367
+2020-12-12 16:13:13,748 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Trebuchet MS' (Trebuchet_MS.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Arial' (arialbi.ttf) italic normal 700 normal>) = 7.698636363636363
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.otf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Comic Sans MS' (comicbd.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Times New Roman' (Times_New_Roman_Bold_Italic.ttf) italic normal 700 normal>) = 11.335
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto' (Roboto-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,749 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,750 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Roboto Condensed' (RobotoCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+2020-12-12 16:13:13,750 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2020-12-12 16:13:13,750 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMono.otf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,750 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeSans' (FreeSans.otf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,750 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2020-12-12 16:13:13,750 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+2020-12-12 16:13:13,750 [6921] DEBUG    matplotlib.font_manager:1346: [JupyterRequire] findfont: score(<Font 'Andale Mono' (Andale_Mono.ttf) normal normal 400 normal>) = 10.05
+2020-12-12 16:13:13,750 [6921] DEBUG    matplotlib.font_manager:1366: [JupyterRequire] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/prabhasyadav/anaconda3/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
