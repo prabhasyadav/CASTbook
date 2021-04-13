@@ -56,6 +56,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CAST Toolbox - Analytical Models - Liedl et al. (2005)" href="liedl2005.html" />
@@ -335,6 +337,38 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analytical-models-in-cast">
+   Analytical models in CAST
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computing-interfaces-in-cast">
+   Computing interfaces in CAST
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-computing-interface">
+     Single computing interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-computing-interface">
+     Multiple computing interface
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -345,20 +379,82 @@
                 
   <div class="section" id="cast-toolbox-analytical-models">
 <h1>CAST Toolbox - Analytical Models<a class="headerlink" href="#cast-toolbox-analytical-models" title="Permalink to this headline">¶</a></h1>
-<p>The following steps must be taken.</p>
-<p><strong>Sandhya</strong>, <strong>Iram</strong>, <strong>Prabhas</strong> and <strong>Anton</strong> to do this.</p>
-<p><strong>Sandhya</strong> and <strong>Iram</strong> - 2D models
-<strong>Prabhas</strong> Liedl et al 3D
-<strong>Anton</strong> Bioscreen-AT</p>
-<p>OK, this is how we do:</p>
-<ol class="simple">
-<li><p>Describe each model - this we already have</p></li>
-<li><p>Provide how to use the code with screenshots</p></li>
-<li><p>Step 2 should talk a bit about input value and about functionalities - e.g., slider and how to interpret results</p></li>
-<li><p>We have to do this for both single and multiple scenario mode.</p></li>
+<p>The analytical model toolbox within the CAST provides the solution for <span class="math notranslate nohighlight">\(L_{max}\)</span>. The toolbox currently include <strong>6</strong> different models; each of them varying with the other with respect to model conditions, dimensionality, input quantities, and also orientation. Analytical model toolbox is the recommended step after the use of <em>Data Toolbox</em> in the CAST work flow.</p>
+<div class="section" id="analytical-models-in-cast">
+<h2>Analytical models in CAST<a class="headerlink" href="#analytical-models-in-cast" title="Permalink to this headline">¶</a></h2>
+<p>Included models are (<em>see individual model page for details</em>):
+(~we will hyperlink the models later~ )</p>
+<ol>
+<li><p>Ham et al. (2004)</p>
+<div class="math notranslate nohighlight">
+\[
+  L_{max} = \frac{W_r^2}{4\pi\alpha_{Th}}\bigg(\frac{\gamma C_D^\circ}{C_A^\circ}\bigg)^2 
+  \]</div>
+</li>
+<li><p>Liedl et al. (2005)</p>
+<div class="math notranslate nohighlight">
+\[
+ L_{max}\frac{4M^2}{\pi^2 \alpha_{Tv}}\ln\bigg( \frac{4}{\pi}  \frac{\gamma C_{ED}+ C_{EA}}{C_{EA}}\bigg)
+\]</div>
+</li>
+<li><p>Chu et al. (2005)</p>
+<div class="math notranslate nohighlight">
+\[
+ L_{max} = \frac{\pi}{16}\frac{W^2}{\alpha_{Th}} \Bigg(\frac{\gamma C_D^\circ }{C_A^\circ -\epsilon}\Bigg)^2 
+\]</div>
+</li>
+<li><p>Liedl et al. (2011)</p>
+<div class="math notranslate nohighlight">
+\[
+\text{erf}\Bigg(\frac{W}{\sqrt{4\alpha_{Th}L_{max}}}\Bigg)\,\text{e}^{-\alpha_{Tv}L_{max} \big(\frac{\pi}{2M}\big)^2} =\frac{\pi}{4}\frac{\gamma C_{Thres}+C_{A}^\circ}{\gamma C_{D}^\circ+C_{A}^\circ}
+\]</div>
+</li>
+<li><p>Karanovic et al. (2007) - <strong>BIOSCREEN-AT</strong></p>
+<div class="math notranslate nohighlight">
+\[
+c(x,y,z, t) = C_0 \frac{x}{8\sqrt{\pi D_x'}}\exp(-\gamma t) 
+\times \int\limits_0^t\frac{1}{\xi^{3/2}}\exp\Bigg\{(\gamma-\lambda_{EFF})-\xi \frac{(x-v'\xi)^2}{4D_x'\xi}\Bigg\}
+\times
+\]</div>
+</li>
 </ol>
-<p>We do this for all models.</p>
+<div class="math notranslate nohighlight">
+\[\times \Bigg[\text{erfc}\Bigg\{\frac{y-\frac{w}{2}}{2\sqrt{D_y'\xi}}
+\Bigg\}-\text{erfc}\Bigg\{\frac{y+\frac{w}{2}}{2\sqrt{D_y'\xi}}
+\Bigg\}\Bigg]\times\]</div>
+<div class="math notranslate nohighlight">
+\[\times \Bigg[\text{erfc}\Bigg\{\frac{z-H}{2\sqrt{D_z'\xi}}\Bigg\}
+\text{erfc}\Bigg\{\frac{z+H}{2\sqrt{D_z'\xi}} 
+\Bigg\}\Bigg]\text{d}\xi\]</div>
+</div>
+<div class="section" id="computing-interfaces-in-cast">
+<h2>Computing interfaces in CAST<a class="headerlink" href="#computing-interfaces-in-cast" title="Permalink to this headline">¶</a></h2>
+<p>CAST provide the following two computing interfaces for each analytical and empirical models:</p>
+<ol class="simple">
+<li><p>Single computing interface</p></li>
+<li><p>Multiple computing interface</p></li>
+</ol>
+<div class="section" id="single-computing-interface">
+<h3>Single computing interface<a class="headerlink" href="#single-computing-interface" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>single computing interface</strong> is a quick computing mode in which a set of model data can be inserted in data input box to obtain <span class="math notranslate nohighlight">\(L_{max}\)</span>. The interface output (see screenshot <a class="reference internal" href="#scm"><span class="std std-numref">Fig. 1</span></a> below) is actual <span class="math notranslate nohighlight">\(L_{max}\)</span> and the plot in which the user input result is compared against the field plume length. The output graph has limited interactive options- such as zooming, panning, and obtaining figure as a <em>png</em> graphics.</p>
+<div class="figure align-center" id="scm">
+<a class="reference internal image-reference" href="../../../_images/an_f1.png"><img alt="../../../_images/an_f1.png" src="../../../_images/an_f1.png" style="width: 706.4000000000001px; height: 376.40000000000003px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Single computing interface</span><a class="headerlink" href="#scm" title="Permalink to this image">¶</a></p>
+</div>
+<p>The single computing interface also provide user interactivity with computation. Interface provide <em>sliders</em> for changing parameter values, which leads to computation and visualization of <span class="math notranslate nohighlight">\(L_{max}\)</span>.</p>
+</div>
+<div class="section" id="multiple-computing-interface">
+<h3>Multiple computing interface<a class="headerlink" href="#multiple-computing-interface" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>Multiple computing interface</strong> provides a possibility to create simulation scenarios and compute <span class="math notranslate nohighlight">\(L_{max}\)</span> for all scenarios at once (see screenshot <a class="reference internal" href="#mcm"><span class="std std-numref">Fig. 2</span></a> below) . Scenarios can be directly put input in the table or can be uploaded to the interface. For uploading the sample input template (a <em>.csv</em>) file has to be downloaded. After creating data in the <em>.csv</em> file, it can be uploaded to the interface for the <span class="math notranslate nohighlight">\(L_{max}\)</span> computation.</p>
+<div class="figure align-center" id="mcm">
+<a class="reference internal image-reference" href="../../../_images/an_f2.png"><img alt="../../../_images/an_f2.png" src="../../../_images/an_f2.png" style="width: 869.2px; height: 755.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Multiple computing interface</span><a class="headerlink" href="#mcm" title="Permalink to this image">¶</a></p>
+</div>
+<p>The computed <span class="math notranslate nohighlight">\(L_{max}\)</span> is graphically displayed in the interactive figure. The obtained results can then be compared with the user selected data from the database.</p>
+<p>The workflow with the computing interfaces can be to begin with either single or multiple interface based on the user requirements.</p>
 <div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 </div>
 

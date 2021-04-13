@@ -1,0 +1,1 @@
+{"rule":"HAVE_PART_AGREEMENT","sentence":"^\\QDescribe each model - this we already have\nProvide how to use the code with screenshots\nStep 2 should talk a bit about input value and about functionalities - e.g., slider and how to interpret results\nWe have to do this for both single and multiple scenario mode.\\E$"}
