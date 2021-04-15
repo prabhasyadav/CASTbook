@@ -74,7 +74,7 @@
 
 
 \title{CAST - A site assessment tool}
-\date{Apr 12, 2021}
+\date{Apr 14, 2021}
 \release{}
 \author{P.\@{} K.\@{} Yadav, S.\@{} Birla, V.\@{} Baliga, A.\@{} Köhler, K.\@{} Aryal and others}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -207,43 +207,122 @@ We do this for all models.
 \chapter{CAST Toolbox \sphinxhyphen{} Analytical Models}
 \label{\detokenize{contents/toolbox/an_model/an_model:cast-toolbox-analytical-models}}\label{\detokenize{contents/toolbox/an_model/an_model::doc}}
 \sphinxAtStartPar
-The following steps must be taken.
+The analytical model toolbox within the CAST provides the solution for \(L_{max}\). The toolbox currently include \sphinxstylestrong{6} different models; each of them varying with the other with respect to model conditions, dimensionality, input quantities, and also orientation. Analytical model toolbox is the recommended step after the use of \sphinxstyleemphasis{Data Toolbox} in the CAST work flow.
 
-\sphinxAtStartPar
-\sphinxstylestrong{Sandhya}, \sphinxstylestrong{Iram}, \sphinxstylestrong{Prabhas} and \sphinxstylestrong{Anton} to do this.
 
+\section{Analytical models in CAST}
+\label{\detokenize{contents/toolbox/an_model/an_model:analytical-models-in-cast}}
 \sphinxAtStartPar
-\sphinxstylestrong{Sandhya} and \sphinxstylestrong{Iram} \sphinxhyphen{} 2D models
-\sphinxstylestrong{Prabhas} Liedl et al 3D
-\sphinxstylestrong{Anton} Bioscreen\sphinxhyphen{}AT
-
-\sphinxAtStartPar
-OK, this is how we do:
+Included models are (\sphinxstyleemphasis{see individual model page for details}):
+(\textasciitilde{}we will hyperlink the models later\textasciitilde{} )
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-Describe each model \sphinxhyphen{} this we already have
+Ham et al. (2004)
+\begin{equation*}
+\begin{split}
+  L_{max} = \frac{W_r^2}{4\pi\alpha_{Th}}\bigg(\frac{\gamma C_D^\circ}{C_A^\circ}\bigg)^2 
+  \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Liedl et al. (2005)
+\begin{equation*}
+\begin{split}
+ L_{max}\frac{4M^2}{\pi^2 \alpha_{Tv}}\ln\bigg( \frac{4}{\pi}  \frac{\gamma C_{ED}+ C_{EA}}{C_{EA}}\bigg)
+\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Chu et al. (2005)
+\begin{equation*}
+\begin{split}
+ L_{max} = \frac{\pi}{16}\frac{W^2}{\alpha_{Th}} \Bigg(\frac{\gamma C_D^\circ }{C_A^\circ -\epsilon}\Bigg)^2 
+\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Liedl et al. (2011)
+\begin{equation*}
+\begin{split}
+\text{erf}\Bigg(\frac{W}{\sqrt{4\alpha_{Th}L_{max}}}\Bigg)\,\text{e}^{-\alpha_{Tv}L_{max} \big(\frac{\pi}{2M}\big)^2} =\frac{\pi}{4}\frac{\gamma C_{Thres}+C_{A}^\circ}{\gamma C_{D}^\circ+C_{A}^\circ}
+\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Karanovic et al. (2007) \sphinxhyphen{} \sphinxstylestrong{BIOSCREEN\sphinxhyphen{}AT}
+\begin{equation*}
+\begin{split}
+c(x,y,z, t) = C_0 \frac{x}{8\sqrt{\pi D_x'}}\exp(-\gamma t) 
+\times \int\limits_0^t\frac{1}{\xi^{3/2}}\exp\Bigg\{(\gamma-\lambda_{EFF})-\xi \frac{(x-v'\xi)^2}{4D_x'\xi}\Bigg\}
+\times
+\end{split}
+\end{equation*}
+\end{enumerate}
+\begin{equation*}
+\begin{split}\times \Bigg[\text{erfc}\Bigg\{\frac{y-\frac{w}{2}}{2\sqrt{D_y'\xi}}
+\Bigg\}-\text{erfc}\Bigg\{\frac{y+\frac{w}{2}}{2\sqrt{D_y'\xi}}
+\Bigg\}\Bigg]\times\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\times \Bigg[\text{erfc}\Bigg\{\frac{z-H}{2\sqrt{D_z'\xi}}\Bigg\}
+\text{erfc}\Bigg\{\frac{z+H}{2\sqrt{D_z'\xi}} 
+\Bigg\}\Bigg]\text{d}\xi\end{split}
+\end{equation*}
+
+\section{Computing interfaces in CAST}
+\label{\detokenize{contents/toolbox/an_model/an_model:computing-interfaces-in-cast}}
+\sphinxAtStartPar
+CAST provide the following two computing interfaces for each analytical and empirical models:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Single computing interface
 
 \item {} 
 \sphinxAtStartPar
-Provide how to use the code with screenshots
-
-\item {} 
-\sphinxAtStartPar
-Step 2 should talk a bit about input value and about functionalities \sphinxhyphen{} e.g., slider and how to interpret results
-
-\item {} 
-\sphinxAtStartPar
-We have to do this for both single and multiple scenario mode.
+Multiple computing interface
 
 \end{enumerate}
 
+
+\subsection{Single computing interface}
+\label{\detokenize{contents/toolbox/an_model/an_model:single-computing-interface}}
 \sphinxAtStartPar
-We do this for all models.
+The \sphinxstylestrong{single computing interface} is a quick computing mode in which a set of model data can be inserted in data input box to obtain \(L_{max}\). The interface output (see screenshot \hyperref[\detokenize{contents/toolbox/an_model/an_model:scm}]{Fig.\@ \ref{\detokenize{contents/toolbox/an_model/an_model:scm}}} below) is actual \(L_{max}\) and the plot in which the user input result is compared against the field plume length. The output graph has limited interactive options\sphinxhyphen{} such as zooming, panning, and obtaining figure as a \sphinxstyleemphasis{png} graphics.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.4]{{an_f1}.png}
+\caption{Single computing interface}\label{\detokenize{contents/toolbox/an_model/an_model:scm}}\end{figure}
+
+\sphinxAtStartPar
+The single computing interface also provide user interactivity with computation. Interface provide \sphinxstyleemphasis{sliders} for changing parameter values, which leads to computation and visualization of \(L_{max}\).
 
 
-\section{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} Liedl et al. (2005)}
+\subsection{Multiple computing interface}
+\label{\detokenize{contents/toolbox/an_model/an_model:multiple-computing-interface}}
+\sphinxAtStartPar
+The \sphinxstylestrong{Multiple computing interface} provides a possibility to create simulation scenarios and compute \(L_{max}\) for all scenarios at once (see screenshot \hyperref[\detokenize{contents/toolbox/an_model/an_model:mcm}]{Fig.\@ \ref{\detokenize{contents/toolbox/an_model/an_model:mcm}}} below) . Scenarios can be directly put input in the table or can be uploaded to the interface. For uploading the sample input template (a \sphinxstyleemphasis{.csv}) file has to be downloaded. After creating data in the \sphinxstyleemphasis{.csv} file, it can be uploaded to the interface for the \(L_{max}\) computation.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.4]{{an_f2}.png}
+\caption{Multiple computing interface}\label{\detokenize{contents/toolbox/an_model/an_model:mcm}}\end{figure}
+
+\sphinxAtStartPar
+The computed \(L_{max}\) is graphically displayed in the interactive figure. The obtained results can then be compared with the user selected data from the database.
+
+\sphinxAtStartPar
+The workflow with the computing interfaces can be to begin with either single or multiple interface based on the user requirements.
+
+
+\subsubsection{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} Liedl et al. (2005)}
 \label{\detokenize{contents/toolbox/an_model/liedl2005:cast-toolbox-analytical-models-liedl-et-al-2005}}\label{\detokenize{contents/toolbox/an_model/liedl2005::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Sandhya} and \sphinxstylestrong{Iram} \sphinxhyphen{} 2D models
@@ -274,7 +353,7 @@ We have to do this for both single and multiple scenario mode.
 We do this for all models.
 
 
-\section{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} Chu et al. (2005)}
+\subsubsection{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} Chu et al. (2005)}
 \label{\detokenize{contents/toolbox/an_model/chu2005:cast-toolbox-analytical-models-chu-et-al-2005}}\label{\detokenize{contents/toolbox/an_model/chu2005::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Sandhya}, \sphinxstylestrong{Iram}, \sphinxstylestrong{Prabhas} and \sphinxstylestrong{Anton} to do this.
@@ -308,7 +387,7 @@ We have to do this for both single and multiple scenario mode.
 We do this for all models.
 
 
-\section{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} Ham et al. 2004}
+\subsubsection{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} Ham et al. 2004}
 \label{\detokenize{contents/toolbox/an_model/ham2004:cast-toolbox-analytical-models-ham-et-al-2004}}\label{\detokenize{contents/toolbox/an_model/ham2004::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Sandhya}, \sphinxstylestrong{Iram}, \sphinxstylestrong{Prabhas} and \sphinxstylestrong{Anton} to do this.
@@ -339,7 +418,7 @@ We have to do this for both single and multiple scenario mode.
 We do this for all models.
 
 
-\section{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} Liedl et al. 2011}
+\subsubsection{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} Liedl et al. 2011}
 \label{\detokenize{contents/toolbox/an_model/liedl2011:cast-toolbox-analytical-models-liedl-et-al-2011}}\label{\detokenize{contents/toolbox/an_model/liedl2011::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Prabhas} to do this.
@@ -370,7 +449,7 @@ We have to do this for both single and multiple scenario mode.
 We do this for all models.
 
 
-\section{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} BIOSCREEN\sphinxhyphen{}AT}
+\subsubsection{CAST Toolbox \sphinxhyphen{} Analytical Models \sphinxhyphen{} BIOSCREEN\sphinxhyphen{}AT}
 \label{\detokenize{contents/toolbox/an_model/bioscreen:cast-toolbox-analytical-models-bioscreen-at}}\label{\detokenize{contents/toolbox/an_model/bioscreen::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Anton} Bioscreen\sphinxhyphen{}AT
