@@ -9,14 +9,14 @@ parse:
 number_equations: false
   
 
-favicon_path: "images/logo/logo3.png"
+favicon_path: "images/logo/icon1.png"
 
 #######################################################################################
 # Book settings
 title                       : CAST - A site assessment tool  
 author                      : P. K. Yadav, S. Birla, V. Baliga, A. Köhler, K. Aryal, I. Wani, and others  # The authors of the book
 copyright                   : ""  # Copyright year to be placed in the footer
-logo                        : images/logo/logo3.png  # A path to the book logo
+logo                        : images/logo/icon1.png  # A path to the book logo
 exclude_patterns            : [_build, recycle,]  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 textbook_logo_link        : https://prabhasyadav.github.io/iGW-I/  # A link for the logo.
 collapse_inactive_chapters: False  # Whether to collapse the inactive chapters in the sidebar
@@ -34,7 +34,7 @@ execute:
 #######################################################################################
 # HTML-specific settings
 html:
-  favicon                   : images/logo/logo3.png #""  # A path to a favicon image
+  favicon                   : images/logo/icon1.png #""  # A path to a favicon image
   navbar_number_sections    : true  # Add a number to each section in your left navbar
   extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
   extra_footer              : ""  # Will be displayed underneath the footer.
