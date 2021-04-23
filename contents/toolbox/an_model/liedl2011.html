@@ -33,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -47,6 +50,9 @@
     <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/tabs.js"></script>
     <script src="../../../_static/custom.js"></script>
+    <script src="../../../_static/save_state.js"></script>
+    <script src="../../../_static/custom.js"></script>
+    <script src="../../../_static/save_state.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -56,6 +62,9 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CAST Toolbox - Analytical Models - BIOSCREEN-AT" href="bioscreen.html" />
@@ -104,12 +113,12 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../online/online_usage.html">
-   Using CAST Online (still in development)
+   Using CAST Online (in development)
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../../online/login.html">
-     User Login and Access
+     User Login and Access for Online CAST
     </a>
    </li>
    <li class="toctree-l2">
@@ -123,7 +132,7 @@
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../offline/offline_installation.html">
-   Installation of browser-based CAST
+   Installation of OFFLINE browser-based CAST
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -133,7 +142,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../offline/updating.html">
-     Updating CAST
+     Updating OFFLINE CAST
     </a>
    </li>
   </ul>
@@ -207,7 +216,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../num_model.html">
-   CAST Toolbox - Numerical Models
+   CAST Toolbox - Numerical Model
   </a>
  </li>
  <li class="toctree-l1">
@@ -335,6 +344,28 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#u-3d-u-model-liedl-et-al-2011">
+   <strong>
+    4.
+    <u>
+     3D
+    </u>
+    Model
+   </strong>
+   – Liedl et al. (2011)
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -345,15 +376,60 @@
                 
   <div class="section" id="cast-toolbox-analytical-models-liedl-et-al-2011">
 <h1>CAST Toolbox - Analytical Models - Liedl et al. 2011<a class="headerlink" href="#cast-toolbox-analytical-models-liedl-et-al-2011" title="Permalink to this headline">¶</a></h1>
-<p><strong>Prabhas</strong> to do this.</p>
-<p>OK, this is how we do:</p>
+<p><a class="reference internal" href="#ref1"><span class="std std-ref">Liedl et al. 2011</span></a>
+<a class="reference internal" href="#ref2"><span class="std std-ref">Liedl et al.</span></a>
+<strong>Prabhas</strong> to do this.</p>
+<div class="section" id="u-3d-u-model-liedl-et-al-2011">
+<h2><strong>4.  <u>3D</u> Model</strong>  – Liedl et al. (2011)<a class="headerlink" href="#u-3d-u-model-liedl-et-al-2011" title="Permalink to this headline">¶</a></h2>
+<p>This model, based on Liedl et al. (2011)<sup><a class="footnote-reference brackets" href="#liedl2011" id="id1">1</a></sup>, provides an estimate of a steady-state plume length (<span class="math notranslate nohighlight">\(L_{max}\)</span> ) from a 3D model domain (see figure). This model extends the 2D model present in Liedl et al. (2005). As is in the 2D model, in this model too the vertical orientation refers to <span class="math notranslate nohighlight">\(z\)</span>-axis being aligned to the aquifer thickness. The domain width and length is infinite in this model.</p>
+<div class="figure align-center" id="li2011">
+<a class="reference internal image-reference" href="../../../_images/an_li2011_f1.png"><img alt="../../../_images/an_li2011_f1.png" src="../../../_images/an_li2011_f1.png" style="width: 393.20000000000005px; height: 295.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Liedl et al. (2011)- Conceptual problem</span><a class="headerlink" href="#li2011" title="Permalink to this image">¶</a></p>
+</div>
+<p>Liedl et al.(2011) provides the following explicit expression for <span class="math notranslate nohighlight">\(L_{max}\)</span>:</p>
+<div class="sidebar">
+<p class="sidebar-title">Symbols:</p>
+<p><span class="math notranslate nohighlight">\(M\)</span> = Source Thickness [L], which is equal to Aquifer thickness (<span class="math notranslate nohighlight">\(A_t\)</span>) [L]<br/>
+<span class="math notranslate nohighlight">\(\alpha_{Tv}\)</span> = Vertical Transverse Dispersivity [L]<br/>
+<span class="math notranslate nohighlight">\(W\)</span> = Source Width [L]<br/>
+<span class="math notranslate nohighlight">\(\alpha_{Th}\)</span> = Horizontal Transverse Dispersivity [L]<br/>
+<span class="math notranslate nohighlight">\(\gamma\)</span> = Reaction stoichiometric ratio [ ]<br/>
+<span class="math notranslate nohighlight">\(C_{ED}^\circ\)</span> = Contaminant (Electron Donor) concentration [ML<span class="math notranslate nohighlight">\(^{-1}\)</span>]<br/>
+<span class="math notranslate nohighlight">\(C_{EA}^\circ\)</span> = Partner Reactant (Electron Acceptor) concentration [ML<span class="math notranslate nohighlight">\(^{-1}\)</span>]<br/>
+<span class="math notranslate nohighlight">\(C_{Thres}\)</span> = Threshold Contaminant Concentration [ML<span class="math notranslate nohighlight">\(^{-1}\)</span>]</p>
+</div>
+<div class="math notranslate nohighlight">
+\[
+\text{erf}\bigg(\frac{W}{\sqrt{4\alpha_{Th}L}}\bigg)\,\text{e}^{-\alpha_{Tv}L \big(\frac{\pi}{2M}\big)^2} =\frac{\pi}{4}\frac{\gamma C_{Thres}+C_{EA}^\circ}{\gamma C_{ED}^\circ+C_{EA}^\circ}
+\]</div>
+<p>The <span class="math notranslate nohighlight">\(C_{Thres}\)</span> in this model allows to set the contaminant concentration to any value greater than or equal to zero, and then <span class="math notranslate nohighlight">\(L_{max}\)</span> is length from the origin to that maximum distance of <span class="math notranslate nohighlight">\(C_{Thres}\)</span> along <span class="math notranslate nohighlight">\(x\)</span>-axis .</p>
+<p><strong>The model is based on the following assumptions:</strong></p>
 <ol class="simple">
-<li><p>Describe each model - this we already have</p></li>
-<li><p>Provide how to use the code with screenshots</p></li>
-<li><p>Step 2 should talk a bit about input value and about functionalities - e.g., slider and how to interpret results</p></li>
-<li><p>We have to do this for both single and multiple scenario mode.</p></li>
+<li><p>Steady-state condition in a homogeneous and isotropic aquifer.</p></li>
+<li><p>A single step bi-molecular instantaneous reaction between reactants taking place only at the fringe.</p></li>
+<li><p>The contaminant source (Electron Donor) penetrates entire thickness of the aquifer.</p></li>
 </ol>
-<p>We do this for all models.</p>
+<p><strong>Reference:</strong></p>
+<div class="dropdown admonition">
+<p class="admonition-title">Click the button to reveal!</p>
+<p>Some hidden toggle content!</p>
+<p><img alt="" src="../../../_images/an_li2011_f1.png" /></p>
+</div>
+<div class="toggle docutils container">
+<p>Some hidden toggle content!</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../../../_images/an_li2011_f1.png"><img alt="../../../_images/an_li2011_f1.png" src="../../../_images/an_li2011_f1.png" style="width: 393.20000000000005px; height: 295.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Liedl et al. (2011)- Conceptual problem</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<p id="ref2"><span id="ref1"></span>Liedl, R., Yadav, P.K., Dietrich, P., 2011. Length of 3-D mixing-controlled plumes for a fully penetrating contaminant source with finite width. Water Resour. Res. 47. <a class="reference external" href="https://doi.org/10.1029/2010WR009710">https://doi.org/10.1029/2010WR009710</a></p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="liedl2011"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Liedl, R., Yadav, P.K., Dietrich, P., 2011. Length of 3-D mixing-controlled plumes for a fully penetrating contaminant source with finite width. Water Resour. Res. 47. <a class="reference external" href="https://doi.org/10.1029/2010WR009710">https://doi.org/10.1029/2010WR009710</a></p>
+</dd>
+</dl>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -394,6 +470,9 @@
         
           By P. K. Yadav, S. Birla, V. Baliga, A. Köhler, K. Aryal, I. Wani, and others<br/>
         
+          <div class="extra_footer">
+            <a href="https://creativecommons.org/licenses/by/4.0/"><img style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a> All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+          </div>
       </p>
     </div>
   </footer>

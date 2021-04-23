@@ -33,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -47,6 +50,9 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/tabs.js"></script>
     <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -56,6 +62,7 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Cite CAST" href="../ref/cite.html" />
@@ -104,12 +111,12 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../online/online_usage.html">
-   Using CAST Online (still in development)
+   Using CAST Online (in development)
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../online/login.html">
-     User Login and Access
+     User Login and Access for Online CAST
     </a>
    </li>
    <li class="toctree-l2">
@@ -123,7 +130,7 @@
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../offline/offline_installation.html">
-   Installation of browser-based CAST
+   Installation of OFFLINE browser-based CAST
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -133,7 +140,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../offline/updating.html">
-     Updating CAST
+     Updating OFFLINE CAST
     </a>
    </li>
   </ul>
@@ -207,7 +214,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../toolbox/num_model.html">
-   CAST Toolbox - Numerical Models
+   CAST Toolbox - Numerical Model
   </a>
  </li>
  <li class="toctree-l1">
@@ -335,6 +342,65 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#offline">
+   Offline
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#choosing-a-framework">
+     Choosing a framework
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#virtual-environment">
+     Virtual Environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#choosing-a-database-management-system">
+     Choosing a database management system
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#online">
+   Online
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#baadal">
+     Baadal
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ssh">
+   SSH
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#firewall">
+   Firewall
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#web-servers">
+   Web Servers
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -345,10 +411,45 @@
                 
   <div class="section" id="cast-code-development">
 <h1>CAST Code Development<a class="headerlink" href="#cast-code-development" title="Permalink to this headline">¶</a></h1>
-<p><strong>Vedanti</strong> will to do this</p>
-<p>This basically talks about “code level development”</p>
-<p>No very detailed info to be added.
-Most of them are already there- or bring from your thesis.</p>
+<div class="section" id="offline">
+<h2>Offline<a class="headerlink" href="#offline" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="choosing-a-framework">
+<h3>Choosing a framework<a class="headerlink" href="#choosing-a-framework" title="Permalink to this headline">¶</a></h3>
+<p>For the development of CAST, a Python framework had to be chosen. Django and Flask are two of the most popular python frameworks suited for the project. Flask was chosen as because it is flexibile, extensible and light weighted while Django being a heavier framework would not be as much suitable.</p>
+</div>
+<div class="section" id="virtual-environment">
+<h3>Virtual Environment<a class="headerlink" href="#virtual-environment" title="Permalink to this headline">¶</a></h3>
+<p>In order to keep all projects separate from each other, a virtual environment is a must. For example, Project A requires version 2 of the python library NumPy, however, Project B requires version 3 of NumPy. It would be tedious to upgrade and downgrade the versions while switching between the projects. Hence, to organise and make projects independent of each other, it is important to have virtual environments.</p>
+<p>Pipenv can also be used for the same purpose with a virtual environment inside it. For the development of CAST, a virtual environment is used.</p>
+</div>
+<div class="section" id="choosing-a-database-management-system">
+<h3>Choosing a database management system<a class="headerlink" href="#choosing-a-database-management-system" title="Permalink to this headline">¶</a></h3>
+<p>Database options are many i.e. NoSQL, SQLite, MongoDB, MySQL. For this project, a relational mapping was needed in order to connect the user login information with the data of all models in a secure manner. Therefore, MySQL was chosen. SQLAlchemy is a python wrapper for MySQL that interacts with the database easily.</p>
+</div>
+</div>
+<div class="section" id="online">
+<h2>Online<a class="headerlink" href="#online" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="baadal">
+<h3>Baadal<a class="headerlink" href="#baadal" title="Permalink to this headline">¶</a></h3>
+<p>CAST has been deployed on <a class="reference external" href="https://baadal.iitd.ac.in/baadal">Baadal</a> cloud server of Indian Institute of Technology Delhi in an  an Ubuntu 18.04 server with 2CPU, 4GB RAM and 80GB HDD (virtual machine) of B.</p>
+</div>
+</div>
+<div class="section" id="ssh">
+<h2>SSH<a class="headerlink" href="#ssh" title="Permalink to this headline">¶</a></h2>
+<p>The secure shell protocol provides encryption to secure the connection between a client and a server. At IIT Delhi, an IP address was given that was allocated for CAST, so the given network was secured in this manner : <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">root_name&#64;given_ip_address</span></code>, which then adds the IP in the known hosts.
+After this, a public rsa key pair is generated for logging into the SSH account and saved. More commands like <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">700</span></code> and <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">600</span></code> are run to ensure that only the owner can read, write and execute on the directories.
+Further, various configuration files are setup for the SSH in this process.</p>
+</div>
+<div class="section" id="firewall">
+<h2>Firewall<a class="headerlink" href="#firewall" title="Permalink to this headline">¶</a></h2>
+<p>A firewall basically acts as a protective barrier between the incoming and outgoing traffic of network. For enabling a firewall a UFW (Uncomplicated Firewall) is installed in the server. As it’s name suggests it is one of the most easiest way of setting up a firewall. Various rules like <code class="docutils literal notranslate"><span class="pre">ufw</span> <span class="pre">allow</span> <span class="pre">ssh</span></code>, <code class="docutils literal notranslate"><span class="pre">ufw</span> <span class="pre">allow</span> <span class="pre">5000</span></code> are enabled so that only the SSH connections are allowed.</p>
+<p>After more configuration file setups, the CAST project is uploaded onto this server inside a virtual environment. Upon running the project, after these steps we would still be in a development server. A development server is only useful for testing, it should not be shared with the public.</p>
+</div>
+<div class="section" id="web-servers">
+<h2>Web Servers<a class="headerlink" href="#web-servers" title="Permalink to this headline">¶</a></h2>
+<p>The final aim is to direct the HTTP requests to Flask(CAST) for which we require a web server. Nginx and Gunicorn work together for this purpose. Nginx acts as a front end web server and takes all static files like CSS, JavaScript, images etc. and then Gunicorn helps in acting as a medium by sending these requests to Flask and is basically a WSGI(Web Server Gateway Interface) HTTP Server for UNIX. There are some more final configurations done after this to ensure that the website experience is smooth and much more.
+The domain name can then be changed to anything in one of the configuration files, in this case it is : <a class="reference external" href="http://www.cast.iitd.ac.in">www.cast.iitd.ac.in</a></p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -389,6 +490,9 @@ Most of them are already there- or bring from your thesis.</p>
         
           By P. K. Yadav, S. Birla, V. Baliga, A. Köhler, K. Aryal, I. Wani, and others<br/>
         
+          <div class="extra_footer">
+            <a href="https://creativecommons.org/licenses/by/4.0/"><img style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a> All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+          </div>
       </p>
     </div>
   </footer>

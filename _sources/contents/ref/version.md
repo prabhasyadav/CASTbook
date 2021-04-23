@@ -1,9 +1,4 @@
 ## CAST Versions 
 
+The current version is **0.1**.
 
-**Vedanti** with help from **Prabhas** to do this
-
-
-Very short one.
-We have the first version - offline/online development
-a

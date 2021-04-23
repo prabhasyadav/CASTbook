@@ -1,8 +1,6 @@
-## Updating CAST
+## Updating OFFLINE CAST 
 
-The following steps must be taken.
+For updating the offline version of CAST : 
 
-**Kanishk Aryal** with help from **Vedanti** to do this
-
-
-This means how to update the CAST when the software updates. Nothing much here. E.g., update database etc.
+* `git pull` in the *CAST* folder
+* run the command `python3 create_database.py` 

@@ -33,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -47,6 +50,9 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/tabs.js"></script>
     <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -56,6 +62,7 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="CAST Code Development" href="code_develop.html" />
@@ -104,12 +111,12 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../online/online_usage.html">
-   Using CAST Online (still in development)
+   Using CAST Online (in development)
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../online/login.html">
-     User Login and Access
+     User Login and Access for Online CAST
     </a>
    </li>
    <li class="toctree-l2">
@@ -123,7 +130,7 @@
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../offline/offline_installation.html">
-   Installation of browser-based CAST
+   Installation of OFFLINE browser-based CAST
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -133,7 +140,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../offline/updating.html">
-     Updating CAST
+     Updating OFFLINE CAST
     </a>
    </li>
   </ul>
@@ -207,7 +214,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../toolbox/num_model.html">
-   CAST Toolbox - Numerical Models
+   CAST Toolbox - Numerical Model
   </a>
  </li>
  <li class="toctree-l1">
@@ -335,6 +342,107 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python">
+   Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#flask-framework">
+   Flask Framework
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#front-end-libraries">
+   Front End Libraries
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#html">
+     HTML
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#css">
+     CSS
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bootstrap">
+     BootStrap
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#javascript">
+     JavaScript
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-libraries">
+   Python Libraries
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas">
+     Pandas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#numpy">
+     NumPy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scipy">
+     SciPy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flopy">
+     FloPy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#matplotlib">
+     Matplotlib
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotly">
+     Plotly
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sqlalchemy">
+     SQLAlchemy
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#backend">
+   Backend
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mysql">
+     MySQL
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -345,10 +453,96 @@
                 
   <div class="section" id="cast-code-libraries">
 <h1>CAST Code Libraries<a class="headerlink" href="#cast-code-libraries" title="Permalink to this headline">¶</a></h1>
-<p><strong>Vedanti</strong> will to do this</p>
-<p>This basically talks about “Different language and libraries”</p>
-<p>No very detailed info to be added.
-Most of them are already there- or bring from your thesis.</p>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<p><span class="xref myst">Python</span> is an OSI-approved open source license programming language. The version of Python used for CAST is <strong>3.6.8</strong>.</p>
+</div>
+<div class="section" id="flask-framework">
+<h2>Flask Framework<a class="headerlink" href="#flask-framework" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://palletsprojects.com/p/flask/">Flask</a> is a micro web framework written in Python. It is classified as a micro-framework because mostly does not require particular tools or libraries. It is open/modular, allowing developers to use their preferred packages and dependencies. It supports extensions that can add application features as if they were implemented in Flask itself. It helps the project by integrating the dataset, the visualisations, all the Python libraries and interfacing.</p>
+<ul class="simple">
+<li><p>Flask is open source, highly extensible, easily integratable and OS independent.</p></li>
+<li><p>Flask has been developed by Armin Ronacher and has been licensed under BSD.</p></li>
+</ul>
+<p>It is based on WSGI toolkit and <a class="reference external" href="https://palletsprojects.com/p/jinja/">jinja2</a> template engine. WSGI is an acronym for <strong>W</strong>eb <strong>S</strong>erver <strong>G</strong>ateway <strong>I</strong>nterface which is a standard for python web application development. Jinja2 is a web template engine which combines a template with a certain data source to render the dynamic web pages. For CAST, the stable version <strong>1.0.2</strong> of Flask is used.</p>
+<div class="figure align-center" id="cs3">
+<a class="reference internal image-reference" href="../../_images/CS_f3.png"><img alt="../../_images/CS_f3.png" src="../../_images/CS_f3.png" style="width: 732.6px; height: 193.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">The <a class="reference external" href="https://palletsprojects.com/p/flask/">Flask</a> framework of CAST</span><a class="headerlink" href="#cs3" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference internal" href="#cs3"><span class="std std-numref">Fig. 19</span></a> above shows how the Flask framework functions</p>
+</div>
+<div class="section" id="front-end-libraries">
+<h2>Front End Libraries<a class="headerlink" href="#front-end-libraries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="html">
+<h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
+<p>According to the MDN Web Docs, <a class="reference external" href="https://html.spec.whatwg.org/">HTML</a> (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page’s appearance/presentation (<a class="reference external" href="https://www.w3.org/TR/CSS/#css">CSS</a>) or functionality/behavior (<a class="reference external" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>). CAST uses HTML5 i.e., the fifth revision of HTML.</p>
+</div>
+<div class="section" id="css">
+<h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
+<p>The World Wide Web Consortium defines <a class="reference external" href="https://www.w3.org/TR/CSS/#css">CSS</a> (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) as a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.</p>
+</div>
+<div class="section" id="bootstrap">
+<h3>BootStrap<a class="headerlink" href="#bootstrap" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://getbootstrap.com/">Bootstrap</a> is an HTML, CSS, and JavaScript framework for developing responsive websites. It is free as well as open-source.</p>
+</div>
+<div class="section" id="javascript">
+<h3>JavaScript<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, and is used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.</p>
+</div>
+</div>
+<div class="section" id="python-libraries">
+<h2>Python Libraries<a class="headerlink" href="#python-libraries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pandas">
+<h3>Pandas<a class="headerlink" href="#pandas" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://pandas.pydata.org/">Pandas</a> is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools. Pandas data frames is generally used for representing Excel<sup>TM</sup> Like Data In-Memory.</p>
+</div>
+<div class="section" id="numpy">
+<h3>NumPy<a class="headerlink" href="#numpy" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://numpy.org/">NumPy</a> adds support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.</p>
+</div>
+<div class="section" id="scipy">
+<h3>SciPy<a class="headerlink" href="#scipy" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.scipy.org/">SciPy</a> is a collection of mathematical algorithms and convenience functions built on the NumPy extension of Python. It adds significant power to the interactive Python session by providing the user with high-level commands and classes for manipulating and visualizing data. With SciPy an interactive Python session becomes a data-processing and system-prototyping environment rivalling systems such as MATLAB<sup>TM</sup>, Octave, R-Lab, SciLab.</p>
+<div class="figure align-center" id="cs4">
+<a class="reference internal image-reference" href="../../_images/CS_f4.png"><img alt="../../_images/CS_f4.png" src="../../_images/CS_f4.png" style="width: 846.0px; height: 543.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Code snapshot showing usage of Python libraries in CAST</span><a class="headerlink" href="#cs4" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference internal" href="#cs4"><span class="std std-numref">Fig. 20</span></a> above is a snapshot of a code from CAST displaying various Python libraries like <em>Numpy</em>, <em>SciPy</em>, <em>Matplotlib,</em> and <em>Plotly</em> . This code is helping to make a scatterplot visualisation with fits (linear, exponential etc)</p>
+</div>
+<div class="section" id="flopy">
+<h3>FloPy<a class="headerlink" href="#flopy" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.usgs.gov/software/flopy-python-package-creating-running-and-post-processing-modflow-based-models">FloPy</a> is a Python package to create, run, and post-process MODFLOW-based models. CAST uses <em>FloPy</em> for running the numerical model.</p>
+<div class="figure align-center" id="cs5">
+<a class="reference internal image-reference" href="../../_images/CS_f5.png"><img alt="../../_images/CS_f5.png" src="../../_images/CS_f5.png" style="width: 835.8px; height: 549.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">FloPy code used in CAST</span><a class="headerlink" href="#cs5" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference internal" href="#cs5"><span class="std std-numref">Fig. 21</span></a> above is a snapshot of a code from CAST displaying how FloPy is being used for the numerical model</p>
+</div>
+<div class="section" id="matplotlib">
+<h3>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://matplotlib.org/">Matplotlib</a> is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.</p>
+</div>
+<div class="section" id="plotly">
+<h3>Plotly<a class="headerlink" href="#plotly" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://plotly.com/">Plotly</a> provides online graphing, analytics, and statistics tools for individuals and collaboration, as well as scientific graphing libraries. It allows you to make beautiful, interactive, exportable figures in just a few lines of code. It uses D3.js behind the scenes and has API wrappers for R, Julia, and many other languages.</p>
+</div>
+<div class="section" id="sqlalchemy">
+<h3>SQLAlchemy<a class="headerlink" href="#sqlalchemy" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.sqlalchemy.org/">SQLAlchemy</a> is the Python SQL toolkit and Object Relational Mapper that gives a flexibility for SQL. It provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.</p>
+</div>
+</div>
+<div class="section" id="backend">
+<h2>Backend<a class="headerlink" href="#backend" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mysql">
+<h3>MySQL<a class="headerlink" href="#mysql" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.mysql.com/">MySQL</a> is an open sourced RDBMS (<strong>R</strong>elational <strong>D</strong>atabase <strong>M</strong>anagement <strong>S</strong>ystem). CAST uses MySQL to store the data of all models as well as login information of all users. The passwords of all users are stored in an encrypted manner in the database as well.</p>
+<div class="figure align-center" id="cs6">
+<a class="reference internal image-reference" href="../../_images/CS_f6.png"><img alt="../../_images/CS_f6.png" src="../../_images/CS_f6.png" style="width: 798.6px; height: 382.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">MySQL use in CAST</span><a class="headerlink" href="#cs6" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference internal" href="#cs6"><span class="std std-numref">Fig. 22</span></a> above is a snapshot of a code from CAST displaying the tables/relational mappings for MySQL</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -389,6 +583,9 @@ Most of them are already there- or bring from your thesis.</p>
         
           By P. K. Yadav, S. Birla, V. Baliga, A. Köhler, K. Aryal, I. Wani, and others<br/>
         
+          <div class="extra_footer">
+            <a href="https://creativecommons.org/licenses/by/4.0/"><img style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a> All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+          </div>
       </p>
     </div>
   </footer>

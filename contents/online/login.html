@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Login and Access &#8212; CAST - A site assessment tool</title>
+    <title>User Login and Access for Online CAST &#8212; CAST - A site assessment tool</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -33,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -47,6 +50,9 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/tabs.js"></script>
     <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -56,10 +62,11 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="A quick usage example of CAST" href="quick_example.html" />
-    <link rel="prev" title="Using CAST Online (still in development)" href="online_usage.html" />
+    <link rel="prev" title="Using CAST Online (in development)" href="online_usage.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -104,12 +111,12 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="online_usage.html">
-   Using CAST Online (still in development)
+   Using CAST Online (in development)
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     User Login and Access
+     User Login and Access for Online CAST
     </a>
    </li>
    <li class="toctree-l2">
@@ -123,7 +130,7 @@
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../offline/offline_installation.html">
-   Installation of browser-based CAST
+   Installation of OFFLINE browser-based CAST
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -133,7 +140,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../offline/updating.html">
-     Updating CAST
+     Updating OFFLINE CAST
     </a>
    </li>
   </ul>
@@ -207,7 +214,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../toolbox/num_model.html">
-   CAST Toolbox - Numerical Models
+   CAST Toolbox - Numerical Model
   </a>
  </li>
  <li class="toctree-l1">
@@ -343,15 +350,23 @@
         
               <div>
                 
-  <div class="section" id="user-login-and-access">
-<h1>User Login and Access<a class="headerlink" href="#user-login-and-access" title="Permalink to this headline">¶</a></h1>
-<p><strong>Vedanti</strong> will do this.</p>
-<ol class="simple">
-<li><p>Why Login is required</p></li>
-<li><p>What are accessible without login</p></li>
-<li><p>What user info are stored and if they are cross-verified.</p></li>
-<li><p>Anything more</p></li>
-</ol>
+  <div class="section" id="user-login-and-access-for-online-cast">
+<h1>User Login and Access for Online CAST<a class="headerlink" href="#user-login-and-access-for-online-cast" title="Permalink to this headline">¶</a></h1>
+<p><strong>CAST</strong> offers the option for users to store their personal site data and perform analysis with the built in database and more. Hence, a login is necessary in order for the system to know which user is accessing the website so that their respective data can be loaded, the user does not have to load their data repeatedly as it is securely saved using <span class="xref myst">MySQL</span>.</p>
+<p>Without login, a user can surf the site and read about Groundwater Contamination, the Groundwater Assessment Toolboxes provided, user guide, complete documentation and credits.</p>
+<p>For registering, a user needs to enter a username(does not have to be your name, any fictitious name can be used), an email (can be a non-functioning email also, like <a class="reference external" href="mailto:xyz&#37;&#52;&#48;gmail&#46;com">xyz<span>&#64;</span>gmail<span>&#46;</span>com</a>), password, country (this can be filled in as NA as well) and lastly organisation (can be filled with NA as well).</p>
+<p><a class="reference internal" href="#on1"><span class="std std-numref">Fig. 7</span></a> provides the <em>user</em> registration and <em>login</em> interface of the CAST.</p>
+<div class="figure align-center" id="on1">
+<a class="reference internal image-reference" href="../../_images/on1.png"><img alt="../../_images/on1.png" src="../../_images/on1.png" style="width: 683.2px; height: 465.20000000000005px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Registration and login interface of online CAST</span><a class="headerlink" href="#on1" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>No information</strong> entered in CAST is cross verified, the user login is only required to keep each user’s data separated and store it for their convenience for later usage.
+This also means that a loss of user registration or login information can not easily be retrieved.</p>
+<div class="figure align-center" id="on2">
+<a class="reference internal image-reference" href="../../_images/on2.png"><img alt="../../_images/on2.png" src="../../_images/on2.png" style="width: 667.0px; height: 386.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Online registration code used in CAST</span><a class="headerlink" href="#on2" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference internal" href="#on2"><span class="std std-numref">Fig. 8</span></a> above shows the registration code used in CAST, there are no cross verification of user information as can been seen in the code. Also, user passwords is encrypted before storing.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -379,7 +394,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="online_usage.html" title="previous page">Using CAST Online (still in development)</a>
+    <a class='left-prev' id="prev-link" href="online_usage.html" title="previous page">Using CAST Online (in development)</a>
     <a class='right-next' id="next-link" href="quick_example.html" title="next page">A quick usage example of CAST</a>
 
         </div>
@@ -392,6 +407,9 @@
         
           By P. K. Yadav, S. Birla, V. Baliga, A. Köhler, K. Aryal, I. Wani, and others<br/>
         
+          <div class="extra_footer">
+            <a href="https://creativecommons.org/licenses/by/4.0/"><img style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a> All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+          </div>
       </p>
     </div>
   </footer>
