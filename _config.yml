@@ -21,7 +21,7 @@ exclude_patterns            : [_build, recycle,]  # Patterns to skip when buildi
 textbook_logo_link        : https://prabhasyadav.github.io/iGW-I/  # A link for the logo.
 collapse_inactive_chapters: False  # Whether to collapse the inactive chapters in the sidebar
 collapse_inactive_sections: False  # Whether to collapse the sub-sections within a non-active section in the sidebar
-
+only_build_toc_files: true
 
 #######################################################################################
 # Execution settings
@@ -37,7 +37,7 @@ html:
   favicon                   : images/logo/icon1.png #""  # A path to a favicon image
   navbar_number_sections    : true  # Add a number to each section in your left navbar
   extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
-  extra_footer              : ""  # Will be displayed underneath the footer.
+  # Will be displayed underneath the footer.
 #  google_analytics_id       : ""  # A GA id that can be used to track book views.
   home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
   use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository must be filled in
@@ -67,11 +67,10 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-extra_footer : 
-     <div>
-      <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a>
+  extra_footer : 
+      <a href="https://creativecommons.org/licenses/by/4.0/"><img style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a>
           All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
-     </div>
+
 
 
 #######################################################################################
@@ -83,30 +82,27 @@ extra_footer :
 sphinx:
    extra_extensions: 
    - sphinx_inline_tabs
+   - sphinx_thebe
 
    config:
     html_show_copyright: false
-#    html_extra_path: ['assets']
-
-myst_enable_extensions:
- [
-    "amsmath",
-    "colon_fence",
-    "deflist",
-    "dollarmath",
-    "html_admonition",
-    "html_image",
-    "linkify",
-    "replacements",
-    "smartquotes",
-    "substitution"
-]
-    
+#   html_extra_path: ['assets']
+    html_static_path: ['_static']
+    html_js_files:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
 
 
+    myst_enable_extensions: 
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
 
-
-
-
+  
 
 

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAST Toolbox - Numerical Models &#8212; CAST - A site assessment tool</title>
+    <title>CAST Toolbox - Numerical Model &#8212; CAST - A site assessment tool</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -33,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -47,6 +50,9 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/tabs.js"></script>
     <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -56,6 +62,9 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="CAST Toolbox - Model Selection method" href="mod_sel.html" />
@@ -104,12 +113,12 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../online/online_usage.html">
-   Using CAST Online (still in development)
+   Using CAST Online (in development)
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../online/login.html">
-     User Login and Access
+     User Login and Access for Online CAST
     </a>
    </li>
    <li class="toctree-l2">
@@ -123,7 +132,7 @@
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../offline/offline_installation.html">
-   Installation of browser-based CAST
+   Installation of OFFLINE browser-based CAST
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -133,7 +142,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../offline/updating.html">
-     Updating CAST
+     Updating OFFLINE CAST
     </a>
    </li>
   </ul>
@@ -207,7 +216,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   CAST Toolbox - Numerical Models
+   CAST Toolbox - Numerical Model
   </a>
  </li>
  <li class="toctree-l1">
@@ -335,6 +344,51 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-description">
+   1 Model Description
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#input-parameter">
+   2 Input Parameter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#system-parameters">
+   2.1 System Parameters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hydraulic-parameters">
+   2.2 Hydraulic Parameters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chemical-parameters">
+   2.3 Chemical Parameters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-output">
+   3 Model Output
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -343,16 +397,79 @@
         
               <div>
                 
-  <div class="section" id="cast-toolbox-numerical-models">
-<h1>CAST Toolbox - Numerical Models<a class="headerlink" href="#cast-toolbox-numerical-models" title="Permalink to this headline">¶</a></h1>
-<p>The following steps must be taken.</p>
-<p><strong>Anton</strong> and <strong>Prabhas</strong>, to do this.</p>
-<p>OK, this is how we do:</p>
-<ol class="simple">
-<li><p>Describe the model - this we already have</p></li>
-<li><p>Provide how to use the code with screenshots</p></li>
-<li><p>Step 2 should talk a bit about input value and about functionalities - e.g., slider and how to interpret results</p></li>
-</ol>
+  <div class="section" id="cast-toolbox-numerical-model">
+<h1>CAST Toolbox - Numerical Model<a class="headerlink" href="#cast-toolbox-numerical-model" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="model-description">
+<h2>1 Model Description<a class="headerlink" href="#model-description" title="Permalink to this headline">¶</a></h2>
+<p>The numerical model in the CAST is based on the conceptual work presented in Yadav et al. (2014)<sup><a class="footnote-reference brackets" href="#ref1" id="id1">1</a></sup>. The 2D numerical domain is vertically orineted and follows the assumptions similar to that provided in Liedl et al., (2005,)<sup><a class="footnote-reference brackets" href="#ref2" id="id2">2</a></sup>, e.g., homogeneous, isotropic, steady-state and bi-component (Electron Donor or contaminant concentation <em>C<sub>ED</sub></em> and Electron Acceptor or the partner reactant concentration <em>C<sub>EA</sub></em>) instantaneous reaction (see Liedl et al., 2005 Analytical Model of the CAST- <strong>to be linked</strong>).</p>
+<div class="figure align-center" id="num1">
+<a class="reference internal image-reference" href="../../_images/num_f1.png"><img alt="../../_images/num_f1.png" src="../../_images/num_f1.png" style="width: 568.8px; height: 339.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Numerical model conceptual set-up</span><a class="headerlink" href="#num1" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>MODFLOW</strong> and <strong>MT3DMS</strong> are used in the simulation, which provides contour of a transformed concentration, <em>C(x,z)</em>. The transformed concentration, based on Yadav et al. (2014), enables simulation of reactive system (<em>C<sub>ED</sub></em> and <em>C<sub>EA</sub></em>) as a conservative system. The maximum plume length (<em>L<sub>max</sub></em>) is then the distance between the source (the left edge of the domain) and the largest distance of the chosen threshold concentration (e.g., <em>C=0</em>) along <em>x</em>−axis.</p>
+<p>Complete details of <strong>MODFLOW</strong> used for flow simulations from <a class="reference external" href="https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model">here</a>, and that of the <strong>MT3DMS</strong> required for transport simulations can be obtained from <a class="reference external" href="https://hydro.geo.ua.edu/">here</a>. Furthermore, FloPy (see <a class="reference external" href="https://www.usgs.gov/software/flopy-python-package-creating-running-and-post-processing-modflow-based-models">here</a>) is used for implementing numerical model in CAST interface.</p>
+<p>The numerical approch for solving transport related groundwater problems comes with the advantages of being adaptable to many different cases regarding their individual case features aswell as high accuracy. However this also comes with an increased computing effort, mainly dependent of the number of cells used for the model. Very fine meshes result in high computing times, which may not be suitable for the online version of the tool. It is recommended to start simulating with rather coarse meshes and then refining them after. Also an offline version can be downloaded which can be used if very fine meshes for very high accuracy are wanted. The offline version also does not restrict parameter ranges in any way. <em><strong>(I am not sure what the up to date ranges are we are using - This is to done once Vedanti is active)</strong></em></p>
+</div>
+<div class="section" id="input-parameter">
+<h2>2 Input Parameter<a class="headerlink" href="#input-parameter" title="Permalink to this headline">¶</a></h2>
+<p>The following section provides an overview over all required parameters for the numerical model and their specific functions. The cases provided in the database of this tool are characterized by most of those parameters. However due to the requirement of many paramters in the numerical model, some of them (e.g. Dispersivities) may not be found. Due to those parameters being difficult to aquire in many cases, default values are provided to use in the model.</p>
+</div>
+<div class="section" id="system-parameters">
+<h2>2.1 System Parameters<a class="headerlink" href="#system-parameters" title="Permalink to this headline">¶</a></h2>
+<p><em><strong>Length</strong></em> - defines the extend (in m) of the model domain in <em>x</em>-dircetion i.e. the direction of groundwater flow. For large domains an adequat number of columns must be assigned which may result in slightly longer calculation times.<br />
+<em><strong>Height</strong></em> - refers to the thickness (in m) of the aquifer, which is also assumed to be the vertical extend of the contamination within the aquifer.<br />
+<em><strong>Number of Rows</strong></em> - specifies the amount of cells which the domain is divided into, along the vertical axis. Since the model result is strongly influenced by the vertical discretization, a cell width of 0.1 m is recommended to obtain accurate results.<br />
+<em><strong>Number of Colums</strong></em> - specifies the amount of cells which the domain is divided into, along the x-axis. A cell length of 10 m was found to be optimal for the purposes of both accuracy and efficiency.</p>
+<p><a class="reference internal" href="#num2"><span class="std std-numref">Fig. 14</span></a> provides the screenshot of system parameters input interface of the CAST.</p>
+<div class="figure align-center" id="num2">
+<a class="reference internal image-reference" href="../../_images/num_f2.png"><img alt="../../_images/num_f2.png" src="../../_images/num_f2.png" style="width: 762.0px; height: 332.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Numerical model system parameters</span><a class="headerlink" href="#num2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="hydraulic-parameters">
+<h2>2.2 Hydraulic Parameters<a class="headerlink" href="#hydraulic-parameters" title="Permalink to this headline">¶</a></h2>
+<p><em><strong>Head inlet</strong></em> - represents a first order boundary condition needed to satisfy the model requirements for calculating groundwater flow. It is given as a constant hydraulic head (in m) at the domain extned of <em>x=0</em>.<br />
+<em><strong>Head outlet</strong></em> - represents the second required first order boundary condition, located at <em>x = domain end</em>. The value of <em>head outlet</em> must be less than <em>head inlet</em> to ensure a groundwater flow in positive x-direction. The hydraulic gradient of the model domain is hence given as a combination of the paramters <em>Length</em>, <em>Head inlet</em> and <em>Head outlet</em>.</p>
+<div class="math notranslate nohighlight">
+\[i=\frac{Head\ outlet - Head\ inlet}{Length}\]</div>
+<p><em><strong>Porosity</strong></em> - is the value of the effective porosity of the ground matrix.<br />
+<em><strong>Conductivity</strong></em> - defines the hydraulic conductivity of the aquifer in m/s.<br />
+<em><strong>Longitudinal Dispersivity</strong></em> - is an aquifer parameter which effects the intensity of mixing in the liquid phase along the x-axis. The default value is 10 m.<br />
+<em><strong>Transverse Vertical Dispersivity</strong></em> - effects the mixing intensity of the liquid phase along the vertical axis. This is a highly sensitive parameter, with strong impact on the maximum plume length. The default value is 0.01 m.</p>
+</div>
+<div class="section" id="chemical-parameters">
+<h2>2.3 Chemical Parameters<a class="headerlink" href="#chemical-parameters" title="Permalink to this headline">¶</a></h2>
+<p><em><strong>Contaminant Concentration</strong></em> - refers to the source concentration of the contamination. It is given in mg/L</p>
+<p><em><strong>Partner Reactant Concentration</strong></em> - refers to the concentration of the dominating reactant e.g. Oxygen.</p>
+<p><em><strong>Stoichiometric Ratio</strong></em> - is dependent on the contaminant chemical form, e.g., Benzene, and its reaction partner, e.g., Oxygen. It defines the ratio of consumption of each compound when reacting. This value, a constant, can be found tabulated in standard chemistry book.</p>
+<p><a class="reference internal" href="#num3"><span class="std std-numref">Fig. 15</span></a> provides the screenshot of hydraulic and chemical parameters input interface of the CAST.</p>
+<div class="figure align-center" id="num3">
+<a class="reference internal image-reference" href="../../_images/num_f2.png"><img alt="../../_images/num_f2.png" src="../../_images/num_f2.png" style="width: 762.0px; height: 332.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Numerical model hydraulic and chemical parameters</span><a class="headerlink" href="#num3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="model-output">
+<h2>3 Model Output<a class="headerlink" href="#model-output" title="Permalink to this headline">¶</a></h2>
+<p>The model output is given as the maximum plume length as well as a plot of the plume fringe within the two dimensional vertical domain. The area under the curce represents the contaminant plume, where the concentration of the <span class="math notranslate nohighlight">\(C_{ED}\)</span> dominates. The area above the curve is dominated by the <span class="math notranslate nohighlight">\(C_{EA}\)</span>, where no contamination is found. <span class="math notranslate nohighlight">\(L_{max}\)</span> is the maximum extent of <span class="math notranslate nohighlight">\(C_{ED}= C_{EA}\)</span> curve.</p>
+<p><a class="reference internal" href="#num4"><span class="std std-numref">Fig. 16</span></a> provides the screenshot of the model output from CAST.</p>
+<p>The obtained output can be saved as a <em>.png</em> file.</p>
+<div class="figure align-center" id="num4">
+<a class="reference internal image-reference" href="../../_images/num_f2.png"><img alt="../../_images/num_f2.png" src="../../_images/num_f2.png" style="width: 762.0px; height: 332.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">Numerical model output</span><a class="headerlink" href="#num4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="ref1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Yadav, P. K., Liedl, R., and Dietrich, P. (2014). Influence of source thickness on steady-state plume length. Environ. Earth Sci., 71(2), 959-964. <a class="reference external" href="https://doi.org/10/f5qfwm28">https://doi.org/10/f5qfwm28</a></p>
+</dd>
+<dt class="label" id="ref2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Liedl, R., Valocchi, A. J., Dietrich, P., and Grathwohl, P. (2005), Finiteness of steady state plumes, Water Resour. Res., 41, W12501, doi:10.1029/2005WR004000.</p>
+</dd>
+</dl>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -393,6 +510,9 @@
         
           By P. K. Yadav, S. Birla, V. Baliga, A. Köhler, K. Aryal, I. Wani, and others<br/>
         
+          <div class="extra_footer">
+            <a href="https://creativecommons.org/licenses/by/4.0/"><img style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a> All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+          </div>
       </p>
     </div>
   </footer>

@@ -1,4 +1,4 @@
-## Installation of browser-based CAST
+## Installation of OFFLINE browser-based CAST
 
 **Kanishk** will do this with help from **Vedanti** and **Prabhas**
 

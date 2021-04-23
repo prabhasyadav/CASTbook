@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Using CAST Online (still in development) &#8212; CAST - A site assessment tool</title>
+    <title>Using CAST Online (in development) &#8212; CAST - A site assessment tool</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -33,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -47,6 +50,9 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/tabs.js"></script>
     <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <script src="../../_static/save_state.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -56,9 +62,10 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="User Login and Access" href="login.html" />
+    <link rel="next" title="User Login and Access for Online CAST" href="login.html" />
     <link rel="prev" title="Contamination Assessment and Site management Tool or CAST" href="../../intro.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -104,12 +111,12 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
   <a class="current reference internal" href="#">
-   Using CAST Online (still in development)
+   Using CAST Online (in development)
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="login.html">
-     User Login and Access
+     User Login and Access for Online CAST
     </a>
    </li>
    <li class="toctree-l2">
@@ -123,7 +130,7 @@
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../offline/offline_installation.html">
-   Installation of browser-based CAST
+   Installation of OFFLINE browser-based CAST
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -133,7 +140,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../offline/updating.html">
-     Updating CAST
+     Updating OFFLINE CAST
     </a>
    </li>
   </ul>
@@ -207,7 +214,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../toolbox/num_model.html">
-   CAST Toolbox - Numerical Models
+   CAST Toolbox - Numerical Model
   </a>
  </li>
  <li class="toctree-l1">
@@ -335,6 +342,28 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-cast-server">
+   The CAST server
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gunicorn-and-nginx">
+     Gunicorn and Nginx
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -343,11 +372,20 @@
         
               <div>
                 
-  <div class="section" id="using-cast-online-still-in-development">
-<h1>Using CAST Online (still in development)<a class="headerlink" href="#using-cast-online-still-in-development" title="Permalink to this headline">¶</a></h1>
-<p>This is introduction to CAST online interface.</p>
-<p><strong>Anton</strong> and <strong>Vedanti</strong> can do this.</p>
+  <div class="section" id="using-cast-online-in-development">
+<h1>Using CAST Online (in development)<a class="headerlink" href="#using-cast-online-in-development" title="Permalink to this headline">¶</a></h1>
+<p>The current online version (v0.1) of CAST can be accessed from <a class="reference external" href="http://www.cast.iitd.ac.in">www.cast.iitd.ac.in</a>.</p>
+<div class="section" id="the-cast-server">
+<h2>The CAST server<a class="headerlink" href="#the-cast-server" title="Permalink to this headline">¶</a></h2>
+<p>CAST is deployed on <a class="reference external" href="https://baadal.iitd.ac.in/baadal">Baadal</a>, which is a cloud orchestration and virtualization management software developed and mantained at Indian Institute of Technology Delhi (<a class="reference external" href="https://home.iitd.ac.in/">IITD</a>). <a class="reference external" href="https://gunicorn.org/">Gunicorn</a> and <a class="reference external" href="https://www.nginx.com/">Nginx</a> have been used for deployment of CAST to the server.</p>
+<div class="section" id="gunicorn-and-nginx">
+<h3>Gunicorn and Nginx<a class="headerlink" href="#gunicorn-and-nginx" title="Permalink to this headline">¶</a></h3>
+<p>Gunicorn also known as Green Unicorn is a Python WSGI HTTP server for UNIX. It is highly compatible with various frameworks and is light and easy to implement.</p>
+<p>Nginx is an open sourced web server that can be used for reverse proxying, load balancing and caching etc.</p>
+<p><strong>Nginx</strong> is the web server and it handles the request such as static files(CSS, HTML, JavaScript and images). Python code, which makes almost 90% of the CAST code, is handled by <strong>Gunicorn</strong>.</p>
 <div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 </div>
 
@@ -377,7 +415,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="../../intro.html" title="previous page"><strong>C</strong>ontamination <strong>A</strong>ssessment and <strong>S</strong>ite management <strong>T</strong>ool or <strong>CAST</strong></a>
-    <a class='right-next' id="next-link" href="login.html" title="next page">User Login and Access</a>
+    <a class='right-next' id="next-link" href="login.html" title="next page">User Login and Access for Online CAST</a>
 
         </div>
         
@@ -389,6 +427,9 @@
         
           By P. K. Yadav, S. Birla, V. Baliga, A. Köhler, K. Aryal, I. Wani, and others<br/>
         
+          <div class="extra_footer">
+            <a href="https://creativecommons.org/licenses/by/4.0/"><img style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a> All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+          </div>
       </p>
     </div>
   </footer>
