@@ -401,10 +401,10 @@
 <h1>CAST Toolbox - Numerical Model<a class="headerlink" href="#cast-toolbox-numerical-model" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="model-description">
 <h2>1 Model Description<a class="headerlink" href="#model-description" title="Permalink to this headline">¶</a></h2>
-<p>The numerical model in the CAST is based on the conceptual work presented in Yadav et al. (2014)<sup><a class="footnote-reference brackets" href="#ref1" id="id1">1</a></sup>. The 2D numerical domain is vertically orineted and follows the assumptions similar to that provided in Liedl et al., (2005,)<sup><a class="footnote-reference brackets" href="#ref2" id="id2">2</a></sup>, e.g., homogeneous, isotropic, steady-state and bi-component (Electron Donor or contaminant concentation <em>C<sub>ED</sub></em> and Electron Acceptor or the partner reactant concentration <em>C<sub>EA</sub></em>) instantaneous reaction (see Liedl et al., 2005 Analytical Model of the CAST- <strong>to be linked</strong>).</p>
+<p>The numerical model in the CAST is based on the conceptual work presented in <a class="reference internal" href="#des-num"><span class="std std-ref">Yadav et al. (2014)</span></a>. The 2D numerical domain is vertically orineted and follows the assumptions similar to that provided in <a class="reference internal" href="#des-num"><span class="std std-ref">Liedl et al., (2005,)</span></a>, e.g., homogeneous, isotropic, steady-state and bi-component (Electron Donor or contaminant concentation <em>C<sub>ED</sub></em> and Electron Acceptor or the partner reactant concentration <em>C<sub>EA</sub></em>) instantaneous reaction (see <a class="reference internal" href="#des-num"><span class="std std-ref">Liedl et al., 2005</span></a> Analytical Model of the CAST- <strong>to be linked</strong>).</p>
 <div class="figure align-center" id="num1">
 <a class="reference internal image-reference" href="../../_images/num_f1.png"><img alt="../../_images/num_f1.png" src="../../_images/num_f1.png" style="width: 568.8px; height: 339.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Numerical model conceptual set-up</span><a class="headerlink" href="#num1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 43 </span><span class="caption-text">Numerical model conceptual set-up</span><a class="headerlink" href="#num1" title="Permalink to this image">¶</a></p>
 </div>
 <p><strong>MODFLOW</strong> and <strong>MT3DMS</strong> are used in the simulation, which provides contour of a transformed concentration, <em>C(x,z)</em>. The transformed concentration, based on Yadav et al. (2014), enables simulation of reactive system (<em>C<sub>ED</sub></em> and <em>C<sub>EA</sub></em>) as a conservative system. The maximum plume length (<em>L<sub>max</sub></em>) is then the distance between the source (the left edge of the domain) and the largest distance of the chosen threshold concentration (e.g., <em>C=0</em>) along <em>x</em>−axis.</p>
 <p>Complete details of <strong>MODFLOW</strong> used for flow simulations from <a class="reference external" href="https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model">here</a>, and that of the <strong>MT3DMS</strong> required for transport simulations can be obtained from <a class="reference external" href="https://hydro.geo.ua.edu/">here</a>. Furthermore, FloPy (see <a class="reference external" href="https://www.usgs.gov/software/flopy-python-package-creating-running-and-post-processing-modflow-based-models">here</a>) is used for implementing numerical model in CAST interface.</p>
@@ -420,10 +420,10 @@
 <em><strong>Height</strong></em> - refers to the thickness (in m) of the aquifer, which is also assumed to be the vertical extend of the contamination within the aquifer.<br />
 <em><strong>Number of Rows</strong></em> - specifies the amount of cells which the domain is divided into, along the vertical axis. Since the model result is strongly influenced by the vertical discretization, a cell width of 0.1 m is recommended to obtain accurate results.<br />
 <em><strong>Number of Colums</strong></em> - specifies the amount of cells which the domain is divided into, along the x-axis. A cell length of 10 m was found to be optimal for the purposes of both accuracy and efficiency.</p>
-<p><a class="reference internal" href="#num2"><span class="std std-numref">Fig. 14</span></a> provides the screenshot of system parameters input interface of the CAST.</p>
+<p><a class="reference internal" href="#num2"><span class="std std-numref">Fig. 44</span></a> provides the screenshot of system parameters input interface of the CAST.</p>
 <div class="figure align-center" id="num2">
 <a class="reference internal image-reference" href="../../_images/num_f2.png"><img alt="../../_images/num_f2.png" src="../../_images/num_f2.png" style="width: 762.0px; height: 332.8px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Numerical model system parameters</span><a class="headerlink" href="#num2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 44 </span><span class="caption-text">Numerical model system parameters</span><a class="headerlink" href="#num2" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="hydraulic-parameters">
@@ -442,33 +442,26 @@
 <p><em><strong>Contaminant Concentration</strong></em> - refers to the source concentration of the contamination. It is given in mg/L</p>
 <p><em><strong>Partner Reactant Concentration</strong></em> - refers to the concentration of the dominating reactant e.g. Oxygen.</p>
 <p><em><strong>Stoichiometric Ratio</strong></em> - is dependent on the contaminant chemical form, e.g., Benzene, and its reaction partner, e.g., Oxygen. It defines the ratio of consumption of each compound when reacting. This value, a constant, can be found tabulated in standard chemistry book.</p>
-<p><a class="reference internal" href="#num3"><span class="std std-numref">Fig. 15</span></a> provides the screenshot of hydraulic and chemical parameters input interface of the CAST.</p>
+<p><a class="reference internal" href="#num3"><span class="std std-numref">Fig. 45</span></a> provides the screenshot of hydraulic and chemical parameters input interface of the CAST.</p>
 <div class="figure align-center" id="num3">
-<a class="reference internal image-reference" href="../../_images/num_f2.png"><img alt="../../_images/num_f2.png" src="../../_images/num_f2.png" style="width: 762.0px; height: 332.8px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Numerical model hydraulic and chemical parameters</span><a class="headerlink" href="#num3" title="Permalink to this image">¶</a></p>
+<a class="reference internal image-reference" href="../../_images/num_f3.png"><img alt="../../_images/num_f3.png" src="../../_images/num_f3.png" style="width: 763.2px; height: 339.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 45 </span><span class="caption-text">Numerical model hydraulic and chemical parameters</span><a class="headerlink" href="#num3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="model-output">
 <h2>3 Model Output<a class="headerlink" href="#model-output" title="Permalink to this headline">¶</a></h2>
 <p>The model output is given as the maximum plume length as well as a plot of the plume fringe within the two dimensional vertical domain. The area under the curce represents the contaminant plume, where the concentration of the <span class="math notranslate nohighlight">\(C_{ED}\)</span> dominates. The area above the curve is dominated by the <span class="math notranslate nohighlight">\(C_{EA}\)</span>, where no contamination is found. <span class="math notranslate nohighlight">\(L_{max}\)</span> is the maximum extent of <span class="math notranslate nohighlight">\(C_{ED}= C_{EA}\)</span> curve.</p>
-<p><a class="reference internal" href="#num4"><span class="std std-numref">Fig. 16</span></a> provides the screenshot of the model output from CAST.</p>
+<p><a class="reference internal" href="#num4"><span class="std std-numref">Fig. 46</span></a> provides the screenshot of the model output from CAST.</p>
 <p>The obtained output can be saved as a <em>.png</em> file.</p>
 <div class="figure align-center" id="num4">
-<a class="reference internal image-reference" href="../../_images/num_f2.png"><img alt="../../_images/num_f2.png" src="../../_images/num_f2.png" style="width: 762.0px; height: 332.8px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">Numerical model output</span><a class="headerlink" href="#num4" title="Permalink to this image">¶</a></p>
+<a class="reference internal image-reference" href="../../_images/num_f4.png"><img alt="../../_images/num_f4.png" src="../../_images/num_f4.png" style="width: 356.0px; height: 209.60000000000002px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 46 </span><span class="caption-text">Numerical model output</span><a class="headerlink" href="#num4" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<hr class="footnotes docutils" />
-<dl class="footnote brackets">
-<dt class="label" id="ref1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Yadav, P. K., Liedl, R., and Dietrich, P. (2014). Influence of source thickness on steady-state plume length. Environ. Earth Sci., 71(2), 959-964. <a class="reference external" href="https://doi.org/10/f5qfwm28">https://doi.org/10/f5qfwm28</a></p>
-</dd>
-<dt class="label" id="ref2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>Liedl, R., Valocchi, A. J., Dietrich, P., and Grathwohl, P. (2005), Finiteness of steady state plumes, Water Resour. Res., 41, W12501, doi:10.1029/2005WR004000.</p>
-</dd>
-</dl>
+<span id="des-num"></span><h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>Yadav, P. K., Liedl, R., and Dietrich, P. (2014). Influence of source thickness on steady-state plume length. Environ. Earth Sci., 71(2), 959-964. <a class="reference external" href="https://doi.org/10/f5qfwm28">https://doi.org/10/f5qfwm28</a></p>
+<p>Liedl, R., Valocchi, A. J., Dietrich, P., and Grathwohl, P. (2005), Finiteness of steady state plumes, Water Resour. Res., 41, W12501, doi:10.1029/2005WR004000.</p>
 </div>
 </div>
 
