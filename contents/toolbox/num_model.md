@@ -1,6 +1,6 @@
 ## CAST Toolbox - Numerical Model
 ### 1 Model Description
-The numerical model in the CAST is based on the conceptual work presented in Yadav et al. (2014)<sup>[^Ref1]</sup>. The 2D numerical domain is vertically orineted and follows the assumptions similar to that provided in Liedl et al., (2005,)<sup>[^Ref2]</sup>, e.g., homogeneous, isotropic, steady-state and bi-component (Electron Donor or contaminant concentation *C<sub>ED</sub>* and Electron Acceptor or the partner reactant concentration *C<sub>EA</sub>*) instantaneous reaction (see Liedl et al., 2005 Analytical Model of the CAST- **to be linked**).  
+The numerical model in the CAST is based on the conceptual work presented in [Yadav et al. (2014)](des_num). The 2D numerical domain is vertically orineted and follows the assumptions similar to that provided in [Liedl et al., (2005,)](des_num), e.g., homogeneous, isotropic, steady-state and bi-component (Electron Donor or contaminant concentation *C<sub>ED</sub>* and Electron Acceptor or the partner reactant concentration *C<sub>EA</sub>*) instantaneous reaction (see [Liedl et al., 2005](des_num) Analytical Model of the CAST- **to be linked**).  
 
 ```{figure} images/num_f1.png
 ---
@@ -59,7 +59,7 @@ $$i=\frac{Head\ outlet - Head\ inlet}{Length}$$
 
 {numref}`num3` provides the screenshot of hydraulic and chemical parameters input interface of the CAST.
 
-```{figure} images/num_f2.png
+```{figure} images/num_f3.png
 ---
 scale: 40%
 align: center
@@ -76,7 +76,7 @@ The model output is given as the maximum plume length as well as a plot of the p
 The obtained output can be saved as a *.png* file.
 
 
-```{figure} images/num_f2.png
+```{figure} images/num_f4.png
 ---
 scale: 40%
 align: center
@@ -85,9 +85,9 @@ name: num4
 Numerical model output
 ```
 
+(des_num)=
 ### References
 
+Yadav, P. K., Liedl, R., and Dietrich, P. (2014). Influence of source thickness on steady-state plume length. Environ. Earth Sci., 71(2), 959-964. https://doi.org/10/f5qfwm28 
 
-[^Ref1]: Yadav, P. K., Liedl, R., and Dietrich, P. (2014). Influence of source thickness on steady-state plume length. Environ. Earth Sci., 71(2), 959-964. https://doi.org/10/f5qfwm28 
-
-[^Ref2]: Liedl, R., Valocchi, A. J., Dietrich, P., and Grathwohl, P. (2005), Finiteness of steady state plumes, Water Resour. Res., 41, W12501, doi:10.1029/2005WR004000.
+Liedl, R., Valocchi, A. J., Dietrich, P., and Grathwohl, P. (2005), Finiteness of steady state plumes, Water Resour. Res., 41, W12501, doi:10.1029/2005WR004000.
