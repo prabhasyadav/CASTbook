@@ -5,7 +5,7 @@
 
 This model, based on [Liedl et al. (2005)](refli2005), provides an estimate of a steady-state plume length ($L_{max}$ ) from a vertically oriented 2D model domain (see {numref}`li2005_1`). The vertical orientation refers to $z$-axis being aligned to the aquifer thickness. 
 
-```{figure} images/liedl2005fig.png
+```{figure} images/li2005/liedl2005fig.png
 ---
 scale: 40%
 align: center
@@ -42,47 +42,37 @@ Liedl, R., Valocchi, A., Dietrich, P., Grathwohl, P., 2005. Finiteness of steady
 ### Using Liedl et al. (2005) model in CAST
 
 
-Clicking the **Analytical Toolbox** box in the homepage will lead to the interface that lists ({numref}`li2005_2`) all the analytical models available in the CAST. To use the Liedl et al. (2005) model.
+Clicking the **Analytical Toolbox** box in the homepage will lead to the interface that lists ({numref}`li2005_2`) all the analytical models available in the CAST. To use the Liedl et al. (2005) model. From the interface, please click on the option **`Click here to see the model`** below the Liedl et al. (2005) as shown on the  screenshot ({numref}`li2005_2`).
 
 
-```{figure} images/Liedl1.png
+```{figure} images/li2005/li2005_0.png
 ---
-scale: 90%
+scale: 50%
 align: center
 name: li2005_2
 ---
-The listing of Analytical models of CAST
+The listing of Analytical models of CAST and selection of Liedl et al. (2005) model.
 ```
 
-From the interface shown in the screenshot above, please click on the option **Click here to see the model** below the Liedl et al. (2005) as shown on the  screenshot below.
-
-```{figure} images/Liedl2.png
----
-scale: 90%
-align: center
-name: li2005_2a
----
-Seclecting to use Liedl et al. (2005) model.
-```
 
 By doing so, you will be directed to this page, which contains a brief description of this model - as is provided [here](des_li2005). The screenshot below ({numref}`li2005_3`) shows the interface 
 
-```{figure} images/Liedl3.png
+```{figure} images/li2005/li2005_1.png
 ---
-scale: 90%
+scale: 40%
 align: center
 name: li2005_3
 ---
 Interface describing Liedl et al. (2005) model.
 ```
 
-Please click on option **Liedl et al. (2005)**, located in the _top_ bar, to open the dropdown menu containing the **two** options for computation (see . 
-In case a user wishes to model a single site or a number of sites but one at a time **Single computing simulation** option can be used. And if the number of sites is more than one or a user wishes to model the several sites at once, then **Multiple computing simulation** option can be used. 
+Please click on option **Liedl et al. (2005)**, located in the _top_ bar, to open the dropdown menu containing the **two** options for computation (see {numref}`li2005_4`. 
+In case a user wishes to model a single site or a number of sites but one at a time **`Single computing simulation`** option can be used. And if the number of sites is more than one or a user wishes to model the several sites or scenarios at once, then **`Multiple computing simulation`** option can be used. 
 
 
-```{figure} images/Liedl4.png
+```{figure} images/li2005/li2005_2.png
 ---
-scale: 90%
+scale: 40%
 align: center
 name: li2005_4
 ---
@@ -91,212 +81,188 @@ Computation options in CAST
 
 ### Using Single Computing Model of Liedl et al. (2005) in CAST ###
 
-Now, in the former case, please click on the **single computing simulation** as in the screenshot {numref}`li2005_5`. 
+The **single computing simulation** interface is activated when it is clicked. as in the screenshot {numref}`li2005_5`. 
 
-```{figure} images/Liedl5.png
+
+After clicking on **`single computing simulation`**, you will be directed towards the below attached window ({numref}`li2005_4`). The area highlighted in red square in {numref}`li2005_4`  contains the _input_ parameters for the model which are briefly defined below:
+
+
+**`Thickness` ($M$):** refers to the aquifer thickness (in m). In [Liedl et al. (2005)](refli2005) $M$ is the most sensitive quantity affecting $L_{max}$  
+
+
+**`Dispersivity`** ($\alpha_{TV}$): refers to the transverse vertical dispersivity (in m). It affects the mixing intensity of the liquid phase along the vertical axis. This is a highly sensitive parameter, with strong impact on the $L_{max}$.
+
+
+**`Stoichiometric Ratio`** ($\gamma$): is unitless parameter dependent on the contaminant compound and its reaction partner. 
+
+
+**`Electron Donor`** ($C_{ED}$):refers to the contaminant source concentration (in mg/l).
+
+
+**`Electron Acceptor`** ($C_{EA}$): refers to the concentration of the dominating reactant e.g., Oxygen (mg/l).
+
+
+```{figure} images/li2005/li2005_3.png
 ---
-scale: 90%
+scale: 40%
 align: center
-name: li2005_5
----
-Selecting the Single Compution Interface of CAST.
-```
-
-After clicking on **single computing simulation**, you will be directed towards the below attached window ({numref}`li2005_6`). The area highlighted in red square in {numref}`li2005_6`  contains the _input_ parameters for the model which are briefly defined below:
-
-
-**Thickness ($M$):** refers to the aquifer thickness (in m). In [Liedl et al. (2005)](refli2005) $M$ is the most sensitive quantity affecting $L_{max}$  
-
-
-**Dispersivity** ($\alpha_{TV}$): refers to the transverse vertical dispersivity (in m). It affects the mixing intensity of the liquid phase along the vertical axis. This is a highly sensitive parameter, with strong impact on the $L_{max}$.
-
-
-**Stoichiometric Ratio** ($\gamma$): is unitless parameter dependent on the contaminant compound and its reaction partner. 
-
-
-**Electron Donor** ($C_{ED}$):refers to the contaminant source concentration (in mg/l).
-
-
-**Electron Acceptor** ($C_{EA}$): refers to the concentration of the dominating reactant e.g., Oxygen (mg/l).
-
-
-```{figure} images/Liedl6.png
----
-scale: 90%
-align: center
-name: li2005_6
+name: li2005_4
 ---
 The single computing interface of CAST.
 ```
 
-In order to change the values of any of the input parameters, please move your cursor next to the data entry fields and use navigator arrows to increase or decrease the value (see {numref}`li2005_7`. You can also directly enter the required value in the field.
+In order to change the values of any of the input parameters, please move your cursor next to the data entry fields and use navigator arrows to increase or decrease the value (see {numref}`li2005_4`. You can also directly enter the required value in the field.
+Finally, when you have defined the input parameters as per your requirement, please click on the **`Generate Graph`** option.
+By doing so, the system will generate a new graph that includes the new $L_{max}$ based on the newly defined parameters. Also, the system provides the value of $L_{max}$  at the bottom as shown in the screenshot {numref}`li2005_4` . 
 
+After the firs computation and graph generated, an interactive _sliders_ appears in the interface (see {numref}`li2005_5`). These slider can be used for changing the values of  **`Thickness`** and **`Dispersivity`** that appear below the **`Maximum Plume Length`**,as shown in the above screenshot {numref}`li2005_4`, to see how the $L_{max}$ changes upon changing these parameters. 
 
-```{figure} images/Liedl7.png
+```{figure} images/li2005/li2005_4.png
 ---
-scale: 90%
+scale: 40%
 align: center
-name: li2005_7
+name: li2005_5
 ---
-Changing input parameter value in model interface
+Interactive option in the single computing interface of CAST
 ```
 
+```{attention}
+The sliders will only appear after the first computation is made, i.e., {numref}`li2005_4` is complete.
+```
+In case you wish to see the graph on _Fullscreen_ mode, please click on the button **`view full screen graph`**.
 
-Finally, when you have defined the input parameters as per your requirement, please click on the **Generate Graph** option.
 
-```{figure} images/Liedl9.png
+Moving your cursor to the top right corner of the generated **graph** will reveal the advanced options bar (see {numref}`li2005_6`). These options enable you to download/export and interact with the graph.
+
+```{figure} images/li2005/li2005_5.png
 ---
-scale: 90%
+scale: 40%
 align: center
-name: li2005_9
+name: li2005_6
 ---
-Generating result and graph in single computing interface
+Interactive option in the single computing interface of CAST
 ```
 
-By doing so, the system will generate a new graph that includes the new $L_{max}$ based on the newly defined parameters. Also, the system provides the value of $L_{max}$  at the bottom as shown in the screenshot {numref}`li2005_10` . 
-
-```{figure} images/Liedl10.png
----
-scale: 90%
-align: center
-name: li2005_10
----
-Output of single computing interface of CAST
-```
-
-User can also use _sliders_ for changing the values of  **Thickness** and **Dispersivity** that appear below the **Maximum Plume Length**,as shown in the above screenshot {numref}`li2005_10`, to see how the Plume Length changes upon changing these parameters. 
-
-The sliders will only appear after the first computation is made, i.e., {numref}`li2005_9` is complete.
-
-In case you wish to see the graph on Fullscreen mode, please click on the button **view full screen graph**.
-
-```{figure} images/Liedl11.png
----
-scale: 90%
-align: center
-name: li2005_11
----
-Observing out in full-screen 
-```
-
-![Liedl 11](images/Liedl11.png)
-
-Image Liedl 12..
-
-```{figure} images/Liedl12.png
----
-scale: 90%
-align: center
-name: li2005_12
----
-Full-screen view of CAST result 
-```
-
-Moving your cursor to the top right corner of the graph to reveal the advanced options bar. These options enable you to download/export and explore the graph more precisely. This will provide the options observed in the screenshot {numref}`li2005_11`
-
-Image Liedl 13..
-
-```{figure} images/Liedl13.png
----
-scale: 90%
-align: center
-name: li2005_13
----
-Observing out in full-screen 
-```
-
-To download the graph as a ***.png** file, please click on the option represented by the _camera_ icon.
-
-```{figure} images/Liedl14.png
----
-scale: 90%
-align: center
-name: li2005_14
----
-Downloading the output graphics
-```
-
-The output graphics of CAST is interactive and several options are available for user interactivity with results and database. The options are:
-_Zoom, _Pan,_ _Box Select,_ _Lasso Select,_ _Zoom in_ and _Zoom out,_ _Auto scale,_ _Reset Axes,_ _Toggle spike lines,_ _Show closest data on hover,_ and _Compare data on hover,_
+The interactive options available with graphs are:
+`Zoom`, `Pan`,`Box Select`, `Lasso Select`, `Zoom in_ and _Zoom out`, `Auto scale`, `Reset Axes`, `Toggle spike lines`, `Show closest data on hover`, and `Compare data on hover`.
 
 ### Using Multiple Computing Simulation for Liedl et al. (2005) model ###
 
-Now, in case a user wants to use “Multiple Computing Simulation”, please click on the option, located in ribbon, as shown on screen.
+**`Multiple computing mode`** is suitable for _scenario based modeling._ In this one can create several scenarios by changing model input parameters and obtain $L_{max}$ for all scenarios at ones. This helps comparing between different created scenarios.    
 
-Image Liedl 15..
+Now, in case a user wants to use the **`Multiple Computing Simulation`**, one need to click on the option, located in top bar, as seen in {numref}`li2005_7`.
 
-![Liedl 15](images/Liedl15.png)
+```{figure} images/li2005/li2005_6.png
+---
+scale: 40%
+align: center
+name: li2005_7
+---
+Selecting Multiple Computing Simulation option
+```
 
 By doing so, you will be directed to this screen where you can select/upload multiple sites for your analysis. 
-You can select sites from the already existing dataset for which please click on “All sites button”, as shown. Upon clicking, a dropdown will appear which contains a list of sites. To select the sites, please select the checkboxes adjacent to the site names, as shown on screen. 
+You can select sites from the already existing _dataset_ for which please click on **`All sites button`**, as seen in {numref}`li2005_8` . Upon clicking, a dropdown will appear which contains a list of sites. To select the sites, please select the **`checkboxes`** adjacent to the site names, as seen in screenshot {numref}`li2005_9`. 
 
-Image Liedl 16 and 17..
+```{figure} images/li2005/li2005_7.png
+---
+scale: 40%
+align: center
+name: li2005_8
+---
+Selecting data from CAST main dataset for comparision with user data I
+```
 
-![Liedl 16](images/Liedl16.png)
+```{figure} images/li2005/li2005_8.png
+---
+scale: 40%
+align: center
+name: li2005_9
+---
+Selecting data from CAST main dataset for comparision with user data II
+```
+#### Creating multiple scenarios - offline mode ####
 
-![Liedl 17](images/Liedl17.png)
+You can also _upload_ your own site dataset for which you have to first download _the data template_ file (a _.csv_ file). For this first you need to download the sample by clicking at **`Download Sample File`** (see {numref}`li2005_10`).  Please download the _.csv_ file and fill your data as you wish. The filling of data or creating of scenario can be done while being _offline._
 
-You can also upload your own site dataset for which you have to click on Choose file option, a search and select window will appear from where you can select your required file and finally click on open button to select it. 
+```{warning}
+Do not change the heading name used in sample file.
+```
+Once your data _.csv_ is ready, click on **`Choose File`** option, a search and select window will appear from where you can select your required file and finally click on **open** button to select it. After you have selected you file, _the file name_ will appear next to **`Choose File`** button. Next, please click on **`Upload`** button as shown on {numref}`li2005_10`, and based on the parameters defined in your file, system will generate the $L_{max}$ results on screen.
 
-Image Liedl 18 and 19..
+```{figure} images/li2005/li2005_9.png
+---
+scale: 40%
+align: center
+name: li2005_10
+---
+Providing multiple scenarios data to the CAST interface
+```
 
-![Liedl 18](images/Liedl18.png)
+The user needs to make sure that the file is in the format of the sample dataset. In such cases and in the case where the range or values of parameters don’t match the permitted, system will display an error message (see {numref}`li2005_11`). You are requested to rectify all the issues before uploading again.
 
-![Liedl 19](images/Liedl19.png)
+```{attention} 
+The online version of CAST has restricted parameter range. This is required to ensure that calculation and results are displayed with available internet requirements
 
-After you have selected you file, the file name will appear next to Choose file button. Next, please click on Upload button as shown on screen, and based on the parameters defined in your file, system will generate the Plume lengths results on screen.  
+For the offline version, the range can be set by user themselves.
+```
 
-Image Liedl 20..
+```{figure} images/li2005/li2005_10.png
+---
+scale: 40%
+align: center
+name: li2005_11
+---
+Error message due to file format or data range in user provided data.
+```
 
-![Liedl 20](images/Liedl20.png)
+#### Creating multiple scenarios - online mode ####
 
-A user needs to make sure that the file is in the format of the sample dataset. In such cases and in the case where the range or values of parameters don’t match the permitted, system will display an error message. You are requested to rectify all the issues before uploading again.
+For limited number of scenario data can be manually entered in the data table. This will require network connection for the online CAST. 
+For addign data _manually,_ please click on the **`Add Data`** button as can be seen in screenshot {numref}`li2005_12`. 
 
-Image Liedl 21..
+```{figure} images/li2005/li2005_11.png
+---
+scale: 40%
+align: center
+name: li2005_12
+---
+Manually adding scenario data to CAST
+```
 
-![liedl 21](images/liedl21.png)
+By doing so, new window will appear on screen, here you can enter you data manually into the **boxes** that appears, and after entering the data in all the fields, please click on the **`Generate Graph`** button to compute. {numref}`li2005_13`
 
-In case you want to add data manually here only, then please click on the “Add Data” button as shown on screen.
+```{figure} images/li2005/li2005_12.png
+---
+scale: 40%
+align: center
+name: li2005_13
+---
+Manually adding scenario obtaining the results
+```
 
-Image Liedl 22..
+If the entered values are in permitted range, system will display a message, **your entry has been added**. And based on the parameters defined, system will generate a new result graph (see below {numref}`li2005_14`). In case you wish to **delete** your results and start from fresh, please click on **`delete table data`** button, as shown in {numref}`li2005_11`.
 
-![Liedl 22](images/Liedl22.png)
+```{figure} images/li2005/li2005_13.png
+---
+scale: 40%
+align: center
+name: li2005_14
+---
+Output of manually added scenarios
+```
 
-By doing so, new window will appear on screen, here you can enter you data manually into the system and after entering the data in all the fields, please click on the generate graph button.
+The results obtained can be download in three different formats, `.csv`, `.xls`, and `.pdf`. In case you want to print out of your results, please click on the **`print`** button, as shown on attached screenshot {numref}`li2005_15`.
 
-Image Liedl 23..
+```{figure} images/li2005/li2005_14.png
+---
+scale: 40%
+align: center
+name: li2005_15
+---
+Downloading/saving obtained results in different formats and printing results
+```
 
-![Liedl 23](images/Liedl23.png)
-
-If the entered values are in permitted range, system will display a message, “ your entry has been added’’. And based on the parameters defined, system will generate a new graph. 
-
-Image Ieidl 24 (a) and (b)..
-
-![Liedl 24 a](images/Liedl24a.png)
-
-![Liedl 24 b](images/Liedl24b.png)
-
-In case you wish to delete your results and start from fresh, please click on delete table data button, as shown.
-
-Image Liedl 25 and 26..
-
-![Liedl 25](images/Liedl25.png)
-
-![Liedl 26](images/Liedl26.png)
-
-You can download results in three formats, CSV, Excel and Pdf.
-
-Image Liedl 27..
-
-![Liedl 27](images/Liedl27.png)
-
-To take print out of your results, please click on the print button, as shown on attached screenshot.
-
-Image Liedl 28 and 29..
-
-![Liedl 28](images/Liedl28.png)
-
-![Liedl 29](images/Liedl29.png)
 
 
 

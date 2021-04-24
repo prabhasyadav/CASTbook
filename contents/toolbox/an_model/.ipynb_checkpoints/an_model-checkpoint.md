@@ -7,29 +7,29 @@ The analytical model toolbox within the CAST provides the solution for $L_{max}$
 Included models are (_see individual model page for details_):
 (~we will hyperlink the models later~ )
 
-1. Ham et al. (2004) 
+1. [Ham et al. (2004)](./ham2004.md) 
 
     $$
   L_{max} = \frac{W_r^2}{4\pi\alpha_{Th}}\bigg(\frac{\gamma C_D^\circ}{C_A^\circ}\bigg)^2 
   $$
-2. Liedl et al. (2005) 
+2. [Liedl et al. (2005) ](./liedl2005.md)
 
     $$
  L_{max}\frac{4M^2}{\pi^2 \alpha_{Tv}}\ln\bigg( \frac{4}{\pi}  \frac{\gamma C_{ED}+ C_{EA}}{C_{EA}}\bigg)
 $$
 
-3. Chu et al. (2005) 
+3. [Chu et al. (2005)](./chu2005.md)
 
     $$
  L_{max} = \frac{\pi}{16}\frac{W^2}{\alpha_{Th}} \Bigg(\frac{\gamma C_D^\circ }{C_A^\circ -\epsilon}\Bigg)^2 
 $$
 
-4. Liedl et al. (2011)
+4. [Liedl et al. (2011)](./liedl2011.md)
 
     $$
 \text{erf}\Bigg(\frac{W}{\sqrt{4\alpha_{Th}L_{max}}}\Bigg)\,\text{e}^{-\alpha_{Tv}L_{max} \big(\frac{\pi}{2M}\big)^2} =\frac{\pi}{4}\frac{\gamma C_{Thres}+C_{A}^\circ}{\gamma C_{D}^\circ+C_{A}^\circ}
 $$
-5. Karanovic et al. (2007) - **BIOSCREEN-AT**
+5. [Karanovic et al. (2007) - **BIOSCREEN-AT**](./bioscreen.md)
 
     $$
 c(x,y,z, t) = C_0 \frac{x}{8\sqrt{\pi D_x'}}\exp(-\gamma t) 
