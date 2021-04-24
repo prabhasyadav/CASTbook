@@ -416,10 +416,10 @@
 </div>
 <div class="section" id="system-parameters">
 <h2>2.1 System Parameters<a class="headerlink" href="#system-parameters" title="Permalink to this headline">¶</a></h2>
-<p><em><strong>Length</strong></em> - defines the extend (in m) of the model domain in <em>x</em>-dircetion i.e. the direction of groundwater flow. For large domains an adequat number of columns must be assigned which may result in slightly longer calculation times.<br />
-<em><strong>Height</strong></em> - refers to the thickness (in m) of the aquifer, which is also assumed to be the vertical extend of the contamination within the aquifer.<br />
-<em><strong>Number of Rows</strong></em> - specifies the amount of cells which the domain is divided into, along the vertical axis. Since the model result is strongly influenced by the vertical discretization, a cell width of 0.1 m is recommended to obtain accurate results.<br />
-<em><strong>Number of Colums</strong></em> - specifies the amount of cells which the domain is divided into, along the x-axis. A cell length of 10 m was found to be optimal for the purposes of both accuracy and efficiency.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">Length</span></code></strong> - defines the extend (in m) of the model domain in <em>x</em>-dircetion i.e. the direction of groundwater flow. For large domains an adequat number of columns must be assigned which may result in slightly longer calculation times.<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Height</span></code></strong> - refers to the thickness (in m) of the aquifer, which is also assumed to be the vertical extend of the contamination within the aquifer.<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Number</span> <span class="pre">of</span> <span class="pre">Rows</span></code></strong> - specifies the amount of cells which the domain is divided into, along the vertical axis. Since the model result is strongly influenced by the vertical discretization, a cell width of 0.1 m is recommended to obtain accurate results.<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Number</span> <span class="pre">of</span> <span class="pre">Colums</span></code></strong> - specifies the amount of cells which the domain is divided into, along the x-axis. A cell length of 10 m was found to be optimal for the purposes of both accuracy and efficiency.</p>
 <p><a class="reference internal" href="#num2"><span class="std std-numref">Fig. 44</span></a> provides the screenshot of system parameters input interface of the CAST.</p>
 <div class="figure align-center" id="num2">
 <a class="reference internal image-reference" href="../../_images/num_f2.png"><img alt="../../_images/num_f2.png" src="../../_images/num_f2.png" style="width: 762.0px; height: 332.8px;" /></a>
@@ -428,20 +428,20 @@
 </div>
 <div class="section" id="hydraulic-parameters">
 <h2>2.2 Hydraulic Parameters<a class="headerlink" href="#hydraulic-parameters" title="Permalink to this headline">¶</a></h2>
-<p><em><strong>Head inlet</strong></em> - represents a first order boundary condition needed to satisfy the model requirements for calculating groundwater flow. It is given as a constant hydraulic head (in m) at the domain extned of <em>x=0</em>.<br />
-<em><strong>Head outlet</strong></em> - represents the second required first order boundary condition, located at <em>x = domain end</em>. The value of <em>head outlet</em> must be less than <em>head inlet</em> to ensure a groundwater flow in positive x-direction. The hydraulic gradient of the model domain is hence given as a combination of the paramters <em>Length</em>, <em>Head inlet</em> and <em>Head outlet</em>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">Head</span> <span class="pre">inlet</span></code></strong> - represents a first order boundary condition needed to satisfy the model requirements for calculating groundwater flow. It is given as a constant hydraulic head (in m) at the domain extned of <em>x=0</em>.<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Head</span> <span class="pre">outlet</span></code></strong> - represents the second required first order boundary condition, located at <em>x = domain end</em>. The value of <em>head outlet</em> must be less than <em>head inlet</em> to ensure a groundwater flow in positive x-direction. The hydraulic gradient of the model domain is hence given as a combination of the paramters <em>Length</em>, <em>Head inlet</em> and <em>Head outlet</em>.</p>
 <div class="math notranslate nohighlight">
 \[i=\frac{Head\ outlet - Head\ inlet}{Length}\]</div>
-<p><em><strong>Porosity</strong></em> - is the value of the effective porosity of the ground matrix.<br />
-<em><strong>Conductivity</strong></em> - defines the hydraulic conductivity of the aquifer in m/s.<br />
-<em><strong>Longitudinal Dispersivity</strong></em> - is an aquifer parameter which effects the intensity of mixing in the liquid phase along the x-axis. The default value is 10 m.<br />
-<em><strong>Transverse Vertical Dispersivity</strong></em> - effects the mixing intensity of the liquid phase along the vertical axis. This is a highly sensitive parameter, with strong impact on the maximum plume length. The default value is 0.01 m.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">Porosity</span></code></strong> - is the value of the effective porosity of the ground matrix.<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Conductivity</span></code></strong> - defines the hydraulic conductivity of the aquifer in m/s.<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Longitudinal</span> <span class="pre">Dispersivity</span></code></strong> - is an aquifer parameter which effects the intensity of mixing in the liquid phase along the x-axis. The default value is 10 m.<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Transverse</span> <span class="pre">Vertical</span> <span class="pre">Dispersivity</span></code></strong> - effects the mixing intensity of the liquid phase along the vertical axis. This is a highly sensitive parameter, with strong impact on the maximum plume length. The default value is 0.01 m.</p>
 </div>
 <div class="section" id="chemical-parameters">
 <h2>2.3 Chemical Parameters<a class="headerlink" href="#chemical-parameters" title="Permalink to this headline">¶</a></h2>
-<p><em><strong>Contaminant Concentration</strong></em> - refers to the source concentration of the contamination. It is given in mg/L</p>
-<p><em><strong>Partner Reactant Concentration</strong></em> - refers to the concentration of the dominating reactant e.g. Oxygen.</p>
-<p><em><strong>Stoichiometric Ratio</strong></em> - is dependent on the contaminant chemical form, e.g., Benzene, and its reaction partner, e.g., Oxygen. It defines the ratio of consumption of each compound when reacting. This value, a constant, can be found tabulated in standard chemistry book.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">Contaminant</span> <span class="pre">Concentration</span></code></strong> - refers to the source concentration of the contamination. It is given in mg/L</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">Partner</span> <span class="pre">Reactant</span> <span class="pre">Concentration</span></code></strong> - refers to the concentration of the dominating reactant e.g. Oxygen.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">Stoichiometric</span> <span class="pre">Ratio</span></code></strong> - is dependent on the contaminant chemical form, e.g., Benzene, and its reaction partner, e.g., Oxygen. It defines the ratio of consumption of each compound when reacting. This value, a constant, can be found tabulated in standard chemistry book.</p>
 <p><a class="reference internal" href="#num3"><span class="std std-numref">Fig. 45</span></a> provides the screenshot of hydraulic and chemical parameters input interface of the CAST.</p>
 <div class="figure align-center" id="num3">
 <a class="reference internal image-reference" href="../../_images/num_f3.png"><img alt="../../_images/num_f3.png" src="../../_images/num_f3.png" style="width: 763.2px; height: 339.6px;" /></a>
@@ -450,7 +450,7 @@
 </div>
 <div class="section" id="model-output">
 <h2>3 Model Output<a class="headerlink" href="#model-output" title="Permalink to this headline">¶</a></h2>
-<p>The model output is given as the maximum plume length as well as a plot of the plume fringe within the two dimensional vertical domain. The area under the curce represents the contaminant plume, where the concentration of the <span class="math notranslate nohighlight">\(C_{ED}\)</span> dominates. The area above the curve is dominated by the <span class="math notranslate nohighlight">\(C_{EA}\)</span>, where no contamination is found. <span class="math notranslate nohighlight">\(L_{max}\)</span> is the maximum extent of <span class="math notranslate nohighlight">\(C_{ED}= C_{EA}\)</span> curve.</p>
+<p>The model output is given as the maximum plume length as well as a plot of the plume fringe within the two-dimensional vertical domain. The area under the curve represents the contaminant plume, where the concentration of the <span class="math notranslate nohighlight">\(C_{ED}\)</span> dominates. The area above the curve is dominated by the <span class="math notranslate nohighlight">\(C_{EA}\)</span>, where no contamination is found. <span class="math notranslate nohighlight">\(L_{max}\)</span> is the maximum extent of <span class="math notranslate nohighlight">\(C_{ED}= C_{EA}\)</span> curve.</p>
 <p><a class="reference internal" href="#num4"><span class="std std-numref">Fig. 46</span></a> provides the screenshot of the model output from CAST.</p>
 <p>The obtained output can be saved as a <em>.png</em> file.</p>
 <div class="figure align-center" id="num4">
