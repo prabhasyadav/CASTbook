@@ -102,6 +102,7 @@ sphinx:
     - replacements
     - smartquotes
     - substitution
+    - amsmath
 
   
 

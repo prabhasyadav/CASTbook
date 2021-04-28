@@ -1,7 +1,7 @@
 ## CAST Toolbox - Analytical Models - Liedl et al. (2005)
 
 (des_li2005)=
-### Liedl et al. (2005) model detail ### 
+### Liedl et al. (2005) model ### 
 
 This model, based on [Liedl et al. (2005)](refli2005), provides an estimate of a steady-state plume length ($L_{max}$ ) from a vertically oriented 2D model domain (see {numref}`li2005_1`). The vertical orientation refers to $z$-axis being aligned to the aquifer thickness. 
 
@@ -24,8 +24,8 @@ $$
 $M$ = Source Thickness [L], which is equal to Aquifer thickness ($A_t$) [L]<br/>
 $\alpha_{Tv}$ = Vertical Transverse Dispersivity [L]<br/>
 $\gamma$ = Reaction stoichiometric ratio [ ]<br/>
-$C_{ED}^\circ$ = Contaminant (Electron Donor) concentration [ML$^{-1}$]<br/>
-$C_{EA}^\circ$ = Partner Reactant (Electron Acceptor) concentration [ML$^{-1}$]
+$C_{ED}^\circ$ = Contaminant (Electron Donor) concentration [ML$^{-3}$]<br/>
+$C_{EA}^\circ$ = Partner Reactant (Electron Acceptor) concentration [ML$^{-3}$]
 ``` 
 
 **The model is based on the following assumptions:**
@@ -262,8 +262,6 @@ name: li2005_15
 ---
 Downloading/saving obtained results in different formats and printing results
 ```
-
-
 
 
 
