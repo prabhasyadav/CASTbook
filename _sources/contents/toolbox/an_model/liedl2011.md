@@ -3,7 +3,7 @@
 
 ####  Liedl et al. (2011) model (a **<u>3D</u> Model**) ####
 
-This model, based on {ref}`Liedl et al. (2011)<refli2011>`, provides an estimate of a steady-state plume length ($L_{max}$ ) from a 3D model domain (see figure). This model extends the 2D model present in Liedl et al. (2005). As is in the 2D model, in this model too the vertical orientation refers to $z$-axis being aligned to the aquifer thickness. The domain width and length is infinite in this model.
+This model, based on {ref}`Liedl et al. (2011)<refli2011>`, provides an estimate of a steady-state plume length ($L_{max}$ ) from a 3D model domain (see figure). This model extends the 2D model present in Liedl et al. (2005). As is in the 2D model, in this model too, the vertical orientation refers to $z$-axis being aligned to the aquifer thickness. The domain width and length is infinite in this model.
 
 
 ```{figure} images/li2011/li2011_f1.png
@@ -155,7 +155,7 @@ Interactive options in the Single computing interface
 
 ##### Dynamically comparing model results - using sliders ######
 
-**Sliders** are activated once the `Generate Graph` button is clicked (see {ref}`li2011_f3`). **Sliders** are provided for more critical model parameters that have been suggested in {ref}`Liedl et al. (2011)<refli2011>` paper. **Sliders** changes the model input parameter; for which the output $L_{max}$ appears in the graph. This enables a dynamic computation and visualization. Delay in result output can be observed as Liedl et al. (2011) model computes $L_{max}$ iteratively.
+**Sliders** are activated once the `Generate Graph` button is clicked (see {numref}`li2011_f3`). **Sliders** are provided for more critical model parameters that have been suggested in {ref}`Liedl et al. (2011)<refli2011>` paper. **Sliders** changes the model input parameter; for which the output $L_{max}$ appears in the graph. This enables a dynamic computation and visualization. Delay in result output can be observed as Liedl et al. (2011) model computes $L_{max}$ iteratively.
 
 
 ##### Multiple computing interface ######

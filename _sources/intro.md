@@ -1,4 +1,4 @@
-## **C**ontamination **A**ssessment and **S**ite management **T**ool or **CAST** ##
+## Contamination **A**ssessment and Site management Tool or **CAST** ##
 ------------------------
 
 **CAST** is a browser based model applications for the assessment of contaminated sites, specially for BTEX-type contaminations. The most important objective of the **CAST** is to provide an easy interface for exploring sites, such that a preliminary decision on site-assessment can be made. **CAST** at the current stage targets sites that has never been assessed of risks they pose- e.g., [Potentially Contaminated Sites](https://www.eea.europa.eu/data-and-maps/indicators/progress-in-management-of-contaminated-sites-3/assessment).   

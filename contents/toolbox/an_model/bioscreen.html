@@ -62,6 +62,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -155,8 +157,8 @@
 </p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../database.html">
-   CAST Toolbox - Database Models
+  <a class="reference internal" href="../database/database.html">
+   CAST Toolbox - Site Database and Model inputs
   </a>
  </li>
  <li class="toctree-l1 current active collapsible-parent">
@@ -342,6 +344,58 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bioscreen-at-model-decription">
+   BIOSCREEN-AT model decription
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-assumptions">
+   Model Assumptions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-parameters">
+   Model Parameters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solution-approach-for-bioscreen-at-in-cast">
+   Solution Approach for BIOSCREEN-AT in CAST
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-results-using-cast">
+   Model  Results Using CAST
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-computing-simulation">
+     Single Computing Simulation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiple-computing-simulation">
+   Multiple Computing Simulation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -352,15 +406,164 @@
                 
   <div class="section" id="cast-toolbox-analytical-models-bioscreen-at">
 <h1>CAST Toolbox - Analytical Models - BIOSCREEN-AT<a class="headerlink" href="#cast-toolbox-analytical-models-bioscreen-at" title="Permalink to this headline">¶</a></h1>
-<p><strong>Anton</strong> Bioscreen-AT</p>
-<p>OK, this is how we do:</p>
+<div class="section" id="bioscreen-at-model-decription">
+<h2>BIOSCREEN-AT model decription<a class="headerlink" href="#bioscreen-at-model-decription" title="Permalink to this headline">¶</a></h2>
+<p>The BIOSCREEN-AT, provided in <a class="reference internal" href="#refbs"><span class="std std-ref">Karanovic et al. (2007)</span></a> Model provides an exact analytical Solution to the BIOSCREEN Model. The model provides a three-dimensional solution for transport of dissolved contaminants, incorporating natural attenuation processes. As shown in <a class="reference internal" href="#bscreen-f1"><span class="std std-numref">Fig. 36</span></a> , the source is given as a patch specified-concentration boundary condition.</p>
+<div class="figure align-center" id="bscreen-f1">
+<a class="reference internal image-reference" href="../../../_images/bscreen_f1.png"><img alt="../../../_images/bscreen_f1.png" src="../../../_images/bscreen_f1.png" style="width: 700.0px; height: 420.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">The BIOSCREEN-AT model concept</span><a class="headerlink" href="#bscreen-f1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Karanovic et al. (2007) Provide the following expression for an exact analytical solution:</p>
+<div class="math notranslate nohighlight" id="equation-eqbio2007">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eqbio2007" title="Permalink to this equation">¶</a></span>\[\begin{split}
+c(x,y,z, t) = C_0 \frac{x}{8\sqrt{\pi D_x'}}\exp(-\gamma t)\times\\
+\times \int\limits_0^t\frac{1}{\xi^{3/2}}\exp\Bigg\{(\gamma-\lambda_{EFF})\xi- \frac{(x-v'\xi)^2}{4D_x'\xi}\Bigg\}\times\\
+\times\Bigg[\text{erfc}\Bigg\{\frac{y-\frac{w}{2}}{2\sqrt{D_y'\xi}}
+\Bigg\}-\text{erfc}\Bigg\{\frac{y+\frac{w}{2}}{2\sqrt{D_y'\xi}}
+\Bigg\}\Bigg]\times \\
+\times \Bigg[\text{erfc}\Bigg\{\frac{z-H}{2\sqrt{D_z'\xi}}\Bigg\}-
+\text{erfc}\Bigg\{\frac{z+H}{2\sqrt{D_z'\xi}} 
+\Bigg\}\Bigg]\text{d}\xi
+\end{split}\]</div>
+<p><strong>ANTON Pls. ADD UNITS</strong></p>
+<div class="sidebar">
+<p class="sidebar-title">with symbols:</p>
+<p><span class="math notranslate nohighlight">\(c_0\)</span> = initial source concentration (mg/L)<br/>
+<span class="math notranslate nohighlight">\(D'x\)</span> = dispersion coefficient divided by retardation (<span class="math notranslate nohighlight">\(R\)</span>) factor <span class="math notranslate nohighlight">\(D_x/R\)</span><br/>
+<span class="math notranslate nohighlight">\(D'y\)</span> = dispersion coefficient divided by retardation factor <span class="math notranslate nohighlight">\(D_y/R\)</span><br/>
+<span class="math notranslate nohighlight">\(D'z\)</span> = dispersion coefficient divided by retardation factor <span class="math notranslate nohighlight">\(D_z/R\)</span><br/>
+<span class="math notranslate nohighlight">\(\gamma\)</span> = source decay coefficient <br/>
+<span class="math notranslate nohighlight">\(\lambda_{eff}\)</span> = effective first order decay coefficient<br/>
+<span class="math notranslate nohighlight">\(W\)</span> = source width (m)<br/>
+<span class="math notranslate nohighlight">\(H\)</span> = source depth (m)</p>
+</div>
+</div>
+<div class="section" id="model-assumptions">
+<h2>Model Assumptions<a class="headerlink" href="#model-assumptions" title="Permalink to this headline">¶</a></h2>
+<p>The model is based on the following assumptions:</p>
 <ol class="simple">
-<li><p>Describe each model - this we already have</p></li>
-<li><p>Provide how to use the code with screenshots</p></li>
-<li><p>Step 2 should talk a bit about input value and about functionalities - e.g., slider and how to interpret results</p></li>
-<li><p>We have to do this for both single and multiple scenario mode.</p></li>
+<li><p>Aquifer extends semi-infinite in <span class="math notranslate nohighlight">\(x\)</span>-direction, infinite in <span class="math notranslate nohighlight">\(y\)</span>-direction and extends from water table to relatively large depth.</p></li>
+<li><p>Groundwater flow is steady and one dimensional.</p></li>
+<li><p>The solute undergoes equilibrium sorption and first-order transformation reactions.</p></li>
+<li><p>The aquifer is homogeneous and <span class="math notranslate nohighlight">\(L_{max}\)</span> is always found on the center line.</p></li>
 </ol>
-<p>We do this for all models.</p>
+</div>
+<div class="section" id="model-parameters">
+<h2>Model Parameters<a class="headerlink" href="#model-parameters" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Threshold</span> <span class="pre">Concentration</span></code>- The evaluation of the analytical solution shows, that the contaminant concentration <span class="math notranslate nohighlight">\(C \to 0\)</span> for <span class="math notranslate nohighlight">\(x \to \infty\)</span>. Due to this asymptotical convergence, it is required to provide a threshold concentration, which defines the <span class="math notranslate nohighlight">\(L_{max}\)</span> concentration contour level. This threshold should be close to a concentration of 0 or one could also choose value equaling water quality standards. The default value in CAST is set at <span class="math notranslate nohighlight">\(5e-5\)</span> mg/l.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Time</span></code> - The BIOSCREEN analytical solution is a transient solution, which means that the state of the contaminant plume is dependent of time. The interaction of plume growing effects and attenuation processes will often result in a state of equilibrium in which the plume keeps a constant size. It is not possible to define a global valid period after which a steady state is reached, since this dependes heavily on the hydrogeologic conditions. However, a simple approximation can be used based on the decay within the plume <span class="math notranslate nohighlight">\(t=\frac{1}{\lambda}+5\)</span> [y]. But it is important to note that this approach does <strong>not</strong> guarantee the steady state of the plume. It is therefore recommended to use a value of at least 20 years (default value).</p>
+<p><code class="docutils literal notranslate"><span class="pre">Longitudinal</span> <span class="pre">Dispersivity</span></code> - is an aquifer parameter which effects the intensity of mixing in the liquid phase along the <span class="math notranslate nohighlight">\(x\)</span>-axis. The default value used in CAST is 10 m.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Horizontal</span> <span class="pre">Transverse</span> <span class="pre">Dispersivity</span></code> - effects the mixing intensity of the liquid phase along the <span class="math notranslate nohighlight">\(y\)</span>-axis. The default value is 1 m</p>
+<p><code class="docutils literal notranslate"><span class="pre">Vertical</span> <span class="pre">Transverse</span> <span class="pre">Dispersivity</span></code> - effects the mixing intensity of the liquid phase along the <span class="math notranslate nohighlight">\(z\)</span>-axis. The default value is 0.1 m.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Effective</span> <span class="pre">Diffusion</span> <span class="pre">Coefficient</span></code> - this parameter defines particle movement and therefore the effect of plume growth based on Brownian molecular motion. For most scenarios it has a negligible role. But for cases with very low groundwater velocities and long time periods it gains on impact on the result.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Retardation</span> <span class="pre">Factor</span></code> - the ratardation factor quantifies natural attenuation processes such as adsorption and desorption of particles over time in the soil matrix. Very high ratardation factors result in smaller plumes due to stronger attenuation of the contamination.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Decay</span> <span class="pre">Coefficient</span></code> - describes the degredation of the source and therefore the decrease of the contaminant concentration within the source. This can be the result of biological degredation of the contaminant or other forms of decay.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Decay</span> <span class="pre">Coefficient</span></code> - <span class="math notranslate nohighlight">\(\lambda\)</span> describes the decay of the contaminant within the plume. It occurs due to the same reasons as the source decay, but in addition a stronger degredation comes from oxidation and chemical reactions with other chemical compounds that are available.</p>
+</div>
+<div class="section" id="solution-approach-for-bioscreen-at-in-cast">
+<h2>Solution Approach for BIOSCREEN-AT in CAST<a class="headerlink" href="#solution-approach-for-bioscreen-at-in-cast" title="Permalink to this headline">¶</a></h2>
+<p>The concentration contour for BIOSCREEN-AT (eq. <a class="reference internal" href="#equation-eqbio2007">(2)</a>) includes an integral that has to be numerically solved for obtaining <span class="math notranslate nohighlight">\(L_{max}\)</span>. The <span class="math notranslate nohighlight">\(L_{max}\)</span> in this case is the  <em>centereline</em> maximum longitudinal extend of the selected threshold concentration contour.</p>
+<p>CAST uses <a class="reference external" href="https://en.wikipedia.org/wiki/Gauss%E2%80%93Legendre_quadrature">Gauss-Legendre Quadrature</a> to solve for <span class="math notranslate nohighlight">\(C(x,y,z)\)</span> using eq. <a class="reference internal" href="#equation-eqbio2007">(2)</a>. The Gauss-Legendre Quadrature method requires specifying the number of sample points (called Gauss points), based on which corresponding specific weights are obtained. The weights are then used to obtain the solution. Generally, higher the Gauss points, the higher the accuracy of the solution. However, higher sample points also means a large number of computations. In CAST Python codes are developed  very identical to the  FORTRAN code provided in <a class="reference internal" href="#refbs"><span class="std std-ref">Karanovic et al. (2007)</span></a> to solve <a class="reference internal" href="#equation-eqbio2007">(2)</a>) (using Gauss-Legendre Quadrature method). Python library <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/special.html">Scipy</a> provides functions for obtaining the roots and weights required by the Gauss-Legendre Quadrature method.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Python code for obtaining the Gauss-Legendre roots and weights</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">roots</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">special</span><span class="o">.</span><span class="n">roots_legendre</span><span class="p">(</span><span class="n">m</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">weights</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">special</span><span class="o">.</span><span class="n">roots_legendre</span><span class="p">(</span><span class="n">m</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<p>Following the approach provided in <a class="reference internal" href="#refbs"><span class="std std-ref">Karanovic et al. (2007)</span></a> the limits of integration of eq. <a class="reference internal" href="#equation-eqbio2007">(2)</a> is scaled. This is required for speeding up the computation. The codes used in CAST for this purpose can be seen by clicking the <em>dropdown</em> button</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Python code for scaling the limits of integration</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>        <span class="c1">#scaling of the integration limits for faster computation</span>
+    
+        <span class="n">bot</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">top</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+    
+        <span class="n">Tau</span> <span class="o">=</span> <span class="p">(</span><span class="n">roots</span><span class="o">*</span><span class="p">(</span><span class="n">top</span><span class="o">-</span><span class="n">bot</span><span class="p">)</span><span class="o">+</span><span class="n">top</span><span class="o">+</span><span class="n">bot</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+        <span class="n">Tau4</span><span class="o">=</span> <span class="n">Tau</span><span class="o">**</span><span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<p>Eq. <a class="reference internal" href="#equation-eqbio2007">(2)</a> provides the solution for <span class="math notranslate nohighlight">\(C(x,y,z)\)</span>, i.e., concentration isosurface. However, we intend to find <span class="math notranslate nohighlight">\(L_{max}\)</span>, which is a centreline maximum longitudinal distance of the specificed threshold concentration. Thus, to obtain only <span class="math notranslate nohighlight">\(L_{max}\)</span> we fix the domain (based on <a class="reference internal" href="#refbs"><span class="std std-ref">Karanovic et al. (2007)</span></a> ) as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>        <span class="c1"># Fixing domain boundary to obtain Lmax</span>
+        
+    <span class="k">if</span> <span class="n">x</span><span class="o">&lt;=</span><span class="mf">1e-6</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="n">W</span><span class="o">/</span><span class="mi">2</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;=</span> <span class="o">-</span><span class="n">W</span><span class="o">/</span><span class="mi">2</span> <span class="ow">and</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="n">z_2</span> <span class="ow">and</span> <span class="n">z</span> <span class="o">&gt;=</span> <span class="n">z_1</span><span class="p">:</span>
+            <span class="n">C</span><span class="o">=</span><span class="n">Co</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">ga</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">C</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        
+        <span class="n">a</span> <span class="o">=</span> <span class="n">Co</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">ga</span><span class="o">*</span><span class="n">t</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">Dxr</span><span class="p">))</span>
+    
+</pre></div>
+</div>
+<p>After completion the above steps, i.e., transformation of limits and scaling of the domain, inetegral in eq. <a class="reference internal" href="#equation-eqbio2007">(2)</a> is evaluated using the following Python code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+    <span class="c1"># evaluating the integrand and summing</span>
+       
+    <span class="n">xTerm</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(((</span><span class="n">la</span><span class="o">-</span><span class="n">ga</span><span class="p">)</span><span class="o">*</span><span class="n">Tau4</span><span class="p">)</span><span class="o">+</span><span class="p">((</span><span class="n">x</span><span class="o">-</span><span class="n">vr</span><span class="o">*</span><span class="n">Tau4</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">Dxr</span><span class="o">*</span><span class="n">Tau4</span><span class="p">))))</span><span class="o">/</span><span class="p">(</span><span class="n">Tau</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+    
+    <span class="n">yTerm</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">special</span><span class="o">.</span><span class="n">erfc</span><span class="p">((</span><span class="n">y</span><span class="o">-</span><span class="n">W</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">Dyr</span><span class="o">*</span><span class="n">Tau4</span><span class="p">)))</span> <span class="o">-</span> <span class="n">sp</span><span class="o">.</span><span class="n">special</span><span class="o">.</span><span class="n">erfc</span><span class="p">((</span><span class="n">y</span><span class="o">+</span><span class="n">W</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">Dyr</span><span class="o">*</span><span class="n">Tau4</span><span class="p">)))</span>
+    
+    <span class="n">zTerm</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">special</span><span class="o">.</span><span class="n">erfc</span><span class="p">((</span><span class="n">z</span><span class="o">-</span><span class="n">z_2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">Dzr</span><span class="o">*</span><span class="n">Tau4</span><span class="p">)))</span> <span class="o">-</span> <span class="n">sp</span><span class="o">.</span><span class="n">special</span><span class="o">.</span><span class="n">erfc</span><span class="p">((</span><span class="n">z</span><span class="o">-</span><span class="n">z_1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">Dzr</span><span class="o">*</span><span class="n">Tau4</span><span class="p">)))</span>
+    
+    <span class="n">Term</span> <span class="o">=</span> <span class="n">xTerm</span> <span class="o">*</span> <span class="n">yTerm</span> <span class="o">*</span> <span class="n">zTerm</span>
+    
+    <span class="n">Integrand</span> <span class="o">=</span> <span class="n">Term</span><span class="o">*</span><span class="p">(</span><span class="n">weights</span><span class="o">*</span><span class="p">(</span><span class="n">top</span><span class="o">-</span><span class="n">bot</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    
+    <span class="n">C</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="nb">sum</span><span class="p">(</span><span class="n">Integrand</span><span class="p">)</span>
+        
+</pre></div>
+</div>
+<p>The required <span class="math notranslate nohighlight">\(L_{max}\)</span> is then found by implementing a loop to identify the location at wihch the threshold concentration falls below the defined limit.</p>
+<p>After evaluating the numerical Integration, the value for Lmax is found by
+For that reason the roots and their specific weights of the Legendre polynomial up to a value of “m” are genereated as shown below, where the value of m is typically 60.</p>
+<div class="attention admonition">
+<p class="admonition-title">Number of Gauss Points</p>
+<p>Number of Gauss points required in computation can be any number. However using 60 is recommended as quite a high level of accuracy can be quickly obtained. This is particularly important for <strong>online</strong> version of CAST. For the <strong>offline</strong> version of CAST &gt;104 is recommended.</p>
+<p>Using Gauss points <span class="math notranslate nohighlight">\(&lt;15\)</span> is not recommended.</p>
+</div>
+</div>
+<div class="section" id="model-results-using-cast">
+<h2>Model  Results Using CAST<a class="headerlink" href="#model-results-using-cast" title="Permalink to this headline">¶</a></h2>
+<p>The CAST interface of BIOSCREEN-AT is identical to that for other analytical/empirical models. The details of the interface and available user options can be found at <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a>. Below a very brief outline of the CAST interface specific to BIOSCREEN-AT is provided.</p>
+<div class="section" id="single-computing-simulation">
+<h3>Single Computing Simulation<a class="headerlink" href="#single-computing-simulation" title="Permalink to this headline">¶</a></h3>
+<p>First all input data needs to be defined (screenshot <a class="reference internal" href="#bscreen-f2"><span class="std std-numref">Fig. 37</span></a>). Then a graph is genereated, that shows the result of the computation in comparison to the field data from the CAST database (screenshot <a class="reference internal" href="#bscreen-f3"><span class="std std-numref">Fig. 38</span></a>).</p>
+<div class="figure align-center" id="bscreen-f2">
+<a class="reference internal image-reference" href="../../../_images/bscreen_f2.png"><img alt="../../../_images/bscreen_f2.png" src="../../../_images/bscreen_f2.png" style="width: 558.5999999999999px; height: 581.6999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 37 </span><span class="caption-text">The CAST interface for BIOSCREEN-AT data input</span><a class="headerlink" href="#bscreen-f2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="bscreen-f3">
+<a class="reference internal image-reference" href="../../../_images/bscreen_f3.png"><img alt="../../../_images/bscreen_f3.png" src="../../../_images/bscreen_f3.png" style="width: 470.5px; height: 428.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 38 </span><span class="caption-text">The CAST interface for BIOSCREEN-AT output</span><a class="headerlink" href="#bscreen-f3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Once the first computation of <span class="math notranslate nohighlight">\(L_{max}\)</span> pressing <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">graph</span></code> button is made, the CAST interface provides interface with <strong>sliders</strong> bars (<a class="reference internal" href="#bscreen-f4"><span class="std std-numref">Fig. 39</span></a>) for the most sensible model parameters.</p>
+<div class="figure align-center" id="bscreen-f4">
+<a class="reference internal image-reference" href="contents/toolbox/an_model/images/bscreen_f4.png"><img alt="contents/toolbox/an_model/images/bscreen_f4.png" src="contents/toolbox/an_model/images/bscreen_f4.png" /></a>
+<p class="caption"><span class="caption-number">Fig. 39 </span><span class="caption-text">Interactive sliders in CAST for BIOSCREEN-AT model</span><a class="headerlink" href="#bscreen-f4" title="Permalink to this image">¶</a></p>
+</div>
+<p>The <strong>sliders</strong> can be used to change the input values while simultaneously getting a feedback of how these changes effect the model result. This has the advantage that it is not required to generate a new graph which makes the effect of the parameter change more visible and clear.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Numerical computations are used to compute <span class="math notranslate nohighlight">\(L_{max}\)</span>. As such care has to be taken while changing slider values. Long computation time may be required before the solution is obtained.</p>
+</div>
+</div>
+</div>
+<div class="section" id="multiple-computing-simulation">
+<h2>Multiple Computing Simulation<a class="headerlink" href="#multiple-computing-simulation" title="Permalink to this headline">¶</a></h2>
+<p>The multiple computing mode can be used to visualize different own case results in one graph, while still being able to compare to the CAST database. The interface for BIOSCREEN-AT is identical to other models. User can check  <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a> on details of using the <strong>multiple computing interface</strong>.</p>
+<p>Data in the interface can be inserted via the <code class="docutils literal notranslate"><span class="pre">add</span> <span class="pre">data</span></code> button or can be uploaded from a file. A sample file can be downloaded for purposes of correct formatting. It is possible to slect the desired sites to be schown in the graph.</p>
+<div class="figure align-center" id="bscreen-f5">
+<a class="reference internal image-reference" href="../../../_images/bscreen_f5.png"><img alt="../../../_images/bscreen_f5.png" src="../../../_images/bscreen_f5.png" style="width: 654.0px; height: 465.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">Multiple computing interface in CAST for BIOSCREEN-AT model</span><a class="headerlink" href="#bscreen-f5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="references">
+<span id="refbs"></span><h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>Karanovic, M., Neville, C.,  and Andrews, C., (2007), BIOSCREEN-AT: BIOSCREEN with an Exact Analytical Solution. Vol. 45(2), pp. 242-245, Groundwater.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

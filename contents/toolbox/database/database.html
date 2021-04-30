@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAST Toolbox - Analytical Models &#8212; CAST - A site assessment tool</title>
+    <title>CAST Toolbox - Site Database and Model inputs &#8212; CAST - A site assessment tool</title>
     
   <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -67,8 +67,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="CAST Toolbox - Analytical Models - Liedl et al. (2005)" href="liedl2005.html" />
-    <link rel="prev" title="CAST Toolbox - Site Database and Model inputs" href="../database/database.html" />
+    <link rel="next" title="CAST Toolbox - Analytical Models" href="../an_model/an_model.html" />
+    <link rel="prev" title="Updating OFFLINE CAST" href="../../offline/updating.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -156,38 +156,38 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../database/database.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    CAST Toolbox - Site Database and Model inputs
   </a>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../an_model/an_model.html">
    CAST Toolbox - Analytical Models
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="liedl2005.html">
+    <a class="reference internal" href="../an_model/liedl2005.html">
      CAST Toolbox - Analytical Models - Liedl et al. (2005)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="chu2005.html">
+    <a class="reference internal" href="../an_model/chu2005.html">
      CAST Toolbox - Analytical Models - Chu et al. (2005)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ham2004.html">
+    <a class="reference internal" href="../an_model/ham2004.html">
      CAST Toolbox - Analytical Models - Ham et al. 2004
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="liedl2011.html">
+    <a class="reference internal" href="../an_model/liedl2011.html">
      CAST Toolbox - Analytical Models - Liedl et al. 2011
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="bioscreen.html">
+    <a class="reference internal" href="../an_model/bioscreen.html">
      CAST Toolbox - Analytical Models - BIOSCREEN-AT
     </a>
    </li>
@@ -303,7 +303,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../../_sources/contents/toolbox/an_model/an_model.md"><button type="button"
+        <a class="dropdown-buttons" href="../../../_sources/contents/toolbox/database/database.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -323,7 +323,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/prabhasyadav/iGW-I/issues/new?title=Issue%20on%20page%20%2Fcontents/toolbox/an_model/an_model.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/prabhasyadav/iGW-I/issues/new?title=Issue%20on%20page%20%2Fcontents/toolbox/database/database.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -351,26 +351,19 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analytical-models-in-cast">
-   Analytical models in CAST
+  <a class="reference internal nav-link" href="#site-database">
+   Site Database
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#computing-interfaces-in-cast">
-   Computing interfaces in CAST
+  <a class="reference internal nav-link" href="#dispersitivity-dataset">
+   Dispersitivity dataset
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#single-computing-interface">
-     Single computing interface
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#multiple-computing-interface">
-     Multiple computing interface
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#user-data">
+   User data
+  </a>
  </li>
 </ul>
 
@@ -384,83 +377,54 @@
         
               <div>
                 
-  <div class="section" id="cast-toolbox-analytical-models">
-<h1>CAST Toolbox - Analytical Models<a class="headerlink" href="#cast-toolbox-analytical-models" title="Permalink to this headline">¶</a></h1>
-<p>The analytical model toolbox within the CAST provides the solution for <span class="math notranslate nohighlight">\(L_{max}\)</span>. The toolbox currently include <strong>6</strong> different models; each of them varying with the other with respect to model conditions, dimensionality, input quantities, and also orientation. Analytical model toolbox is the recommended step after the use of <em>Data Toolbox</em> in the CAST work flow.</p>
-<div class="section" id="analytical-models-in-cast">
-<h2>Analytical models in CAST<a class="headerlink" href="#analytical-models-in-cast" title="Permalink to this headline">¶</a></h2>
-<p>Included models are (<em>see individual model page for details</em>):
-(~we will hyperlink the models later~ )</p>
-<ol>
-<li><p><a class="reference internal" href="ham2004.html"><span class="doc std std-doc">Ham et al. (2004)</span></a></p>
-<div class="math notranslate nohighlight">
-\[
-  L_{max} = \frac{W_r^2}{4\pi\alpha_{Th}}\bigg(\frac{\gamma C_D^\circ}{C_A^\circ}\bigg)^2 
-  \]</div>
-</li>
-<li><p><a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005) </span></a></p>
-<div class="math notranslate nohighlight">
-\[
- L_{max}\frac{4M^2}{\pi^2 \alpha_{Tv}}\ln\bigg( \frac{4}{\pi}  \frac{\gamma C_{ED}+ C_{EA}}{C_{EA}}\bigg)
-\]</div>
-</li>
-<li><p><a class="reference internal" href="chu2005.html"><span class="doc std std-doc">Chu et al. (2005)</span></a></p>
-<div class="math notranslate nohighlight">
-\[
- L_{max} = \frac{\pi}{16}\frac{W^2}{\alpha_{Th}} \Bigg(\frac{\gamma C_D^\circ }{C_A^\circ -\epsilon}\Bigg)^2 
-\]</div>
-</li>
-<li><p><a class="reference internal" href="liedl2011.html"><span class="doc std std-doc">Liedl et al. (2011)</span></a></p>
-<div class="math notranslate nohighlight">
-\[
-\text{erf}\Bigg(\frac{W}{\sqrt{4\alpha_{Th}L_{max}}}\Bigg)\,\text{e}^{-\alpha_{Tv}L_{max} \big(\frac{\pi}{2M}\big)^2} =\frac{\pi}{4}\frac{\gamma C_{Thres}+C_{A}^\circ}{\gamma C_{D}^\circ+C_{A}^\circ}
-\]</div>
-</li>
-<li><p><a class="reference internal" href="bioscreen.html"><span class="doc std std-doc">Karanovic et al. (2007) - <strong>BIOSCREEN-AT</strong></span></a></p>
-<div class="math notranslate nohighlight">
-\[
-c(x,y,z, t) = C_0 \frac{x}{8\sqrt{\pi D_x'}}\exp(-\gamma t) 
-\times \int\limits_0^t\frac{1}{\xi^{3/2}}\exp\Bigg\{(\gamma-\lambda_{EFF})-\xi \frac{(x-v'\xi)^2}{4D_x'\xi}\Bigg\}
-\times
-\]</div>
-</li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\times \Bigg[\text{erfc}\Bigg\{\frac{y-\frac{w}{2}}{2\sqrt{D_y'\xi}}
-\Bigg\}-\text{erfc}\Bigg\{\frac{y+\frac{w}{2}}{2\sqrt{D_y'\xi}}
-\Bigg\}\Bigg]\times\]</div>
-<div class="math notranslate nohighlight">
-\[\times \Bigg[\text{erfc}\Bigg\{\frac{z-H}{2\sqrt{D_z'\xi}}\Bigg\}
-\text{erfc}\Bigg\{\frac{z+H}{2\sqrt{D_z'\xi}} 
-\Bigg\}\Bigg]\text{d}\xi\]</div>
-</div>
-<div class="section" id="computing-interfaces-in-cast">
-<h2>Computing interfaces in CAST<a class="headerlink" href="#computing-interfaces-in-cast" title="Permalink to this headline">¶</a></h2>
-<p>CAST provide the following two computing interfaces for each analytical and empirical models:</p>
+  <div class="section" id="cast-toolbox-site-database-and-model-inputs">
+<h1>CAST Toolbox - Site Database and Model inputs<a class="headerlink" href="#cast-toolbox-site-database-and-model-inputs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="site-database">
+<h2>Site Database<a class="headerlink" href="#site-database" title="Permalink to this headline">¶</a></h2>
+<p>Site Database  helps to view the data of the site along with various parameters of the site and those required by the models. Two types of site data are available within the CAST.</p>
 <ol class="simple">
-<li><p>Single computing interface</p></li>
-<li><p>Multiple computing interface</p></li>
+<li><p>Unmodifiable site data</p></li>
+<li><p><a class="reference internal" href="#user-data"><span class="std std-ref">Additional user data</span></a></p></li>
 </ol>
-<div class="section" id="single-computing-interface">
-<h3>Single computing interface<a class="headerlink" href="#single-computing-interface" title="Permalink to this headline">¶</a></h3>
-<p>The <strong>single computing interface</strong> is a quick computing mode in which a set of model data can be inserted in data input box to obtain <span class="math notranslate nohighlight">\(L_{max}\)</span>. The interface output (see screenshot <a class="reference internal" href="#scm"><span class="std std-numref">Fig. 13</span></a> below) is actual <span class="math notranslate nohighlight">\(L_{max}\)</span> and the plot in which the user input result is compared against the field plume length. The output graph has limited interactive options- such as zooming, panning, and obtaining figure as a <em>png</em> graphics.</p>
-<div class="figure align-center" id="scm">
-<a class="reference internal image-reference" href="../../../_images/an_f1.png"><img alt="../../../_images/an_f1.png" src="../../../_images/an_f1.png" style="width: 706.4000000000001px; height: 376.40000000000003px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Single computing interface</span><a class="headerlink" href="#scm" title="Permalink to this image">¶</a></p>
+<p><strong>Unmodifiable site data</strong> are data from the literature (see the screenshot below) and thus considered the <em>standard dataset</em>. This dataset is used for comparing model results. The user can download this dataset as a <strong>.csv</strong> file.</p>
+<div class="figure align-center" id="db1">
+<a class="reference internal image-reference" href="../../../_images/db_f1.png"><img alt="../../../_images/db_f1.png" src="../../../_images/db_f1.png" style="width: 1104.0px; height: 501.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Standard site dataset of CAST</span><a class="headerlink" href="#db1" title="Permalink to this image">¶</a></p>
 </div>
-<p>The single computing interface also provide user interactivity with computation. Interface provide <em>sliders</em> for changing parameter values, which leads to computation and visualization of <span class="math notranslate nohighlight">\(L_{max}\)</span>.</p>
+<p>The standard dataset can be <strong>searched</strong> for any specific name or data value within data. The parameters that are included in the <em>database</em> are: <code class="docutils literal notranslate"><span class="pre">Site</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">Compound</span></code>, <code class="docutils literal notranslate"><span class="pre">Aquifer</span> <span class="pre">Thickness</span></code> <code class="docutils literal notranslate"><span class="pre">Plume</span> <span class="pre">length</span></code>, <code class="docutils literal notranslate"><span class="pre">Plume</span> <span class="pre">Width</span></code>, <code class="docutils literal notranslate"><span class="pre">Hydraulic</span> <span class="pre">Conductivity</span></code>, <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Donor</span> <span class="pre">(Contaminant</span> <span class="pre">Concentration)</span></code>, <code class="docutils literal notranslate"><span class="pre">Oxygen</span></code>, <code class="docutils literal notranslate"><span class="pre">Nitrate</span></code>, <code class="docutils literal notranslate"><span class="pre">Sulphur</span> <span class="pre">Oxide</span></code>,<code class="docutils literal notranslate"><span class="pre">Ferrous</span></code>, <code class="docutils literal notranslate"><span class="pre">Plume</span> <span class="pre">State</span></code>, <code class="docutils literal notranslate"><span class="pre">Chemical</span> <span class="pre">Group</span></code>, <code class="docutils literal notranslate"><span class="pre">Country</span></code>, and <code class="docutils literal notranslate"><span class="pre">Literature</span> <span class="pre">Source</span></code></p>
+<p>Plume state in the database refers to the site condition, e.g, steady-state. This is a very important information because the maximum extents of contamination is observed at the steady-state. Models provided in CAST actually provides the maximum length of the plume, i.e., <span class="math notranslate nohighlight">\(L_{max}\)</span>.</p>
 </div>
-<div class="section" id="multiple-computing-interface">
-<h3>Multiple computing interface<a class="headerlink" href="#multiple-computing-interface" title="Permalink to this headline">¶</a></h3>
-<p>The <strong>Multiple computing interface</strong> provides a possibility to create simulation scenarios and compute <span class="math notranslate nohighlight">\(L_{max}\)</span> for all scenarios at once (see screenshot <a class="reference internal" href="#mcm"><span class="std std-numref">Fig. 14</span></a> below) . Scenarios can be directly put input in the table or can be uploaded to the interface. For uploading the sample input template (a <em>.csv</em>) file has to be downloaded. After creating data in the <em>.csv</em> file, it can be uploaded to the interface for the <span class="math notranslate nohighlight">\(L_{max}\)</span> computation.</p>
-<div class="figure align-center" id="mcm">
-<a class="reference internal image-reference" href="../../../_images/an_f2.png"><img alt="../../../_images/an_f2.png" src="../../../_images/an_f2.png" style="width: 869.2px; height: 755.6px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Multiple computing interface</span><a class="headerlink" href="#mcm" title="Permalink to this image">¶</a></p>
+<div class="section" id="dispersitivity-dataset">
+<h2>Dispersitivity dataset<a class="headerlink" href="#dispersitivity-dataset" title="Permalink to this headline">¶</a></h2>
+<p><strong>Dispersivity</strong> is among the most critical quantity required for obtaining plume extensions. However, dispersivity data are almost never available (see <a class="reference internal" href="#db1"><span class="std std-numref">Fig. 9</span></a>), and diligent estimate of it needs to be made for using in models. More critical are transverse dispersivity data, mostly because of their very low magnitude. Due to this reason, <strong>CAST</strong> includes a dataset of dispersivity (see <a class="reference internal" href="#db3"><span class="std std-numref">Fig. 10</span></a>) found in the literature.</p>
+<div class="figure align-center" id="db3">
+<a class="reference internal image-reference" href="../../../_images/db_f3.png"><img alt="../../../_images/db_f3.png" src="../../../_images/db_f3.png" style="width: 792.0px; height: 305.4px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Transverse dispersivity dataset in CAST</span><a class="headerlink" href="#db3" title="Permalink to this image">¶</a></p>
 </div>
-<p>The computed <span class="math notranslate nohighlight">\(L_{max}\)</span> is graphically displayed in the interactive figure. The obtained results can then be compared with the user selected data from the database.</p>
-<p>The workflow with the computing interfaces can be to begin with either single or multiple interface based on the user requirements.</p>
-<div class="toctree-wrapper compound">
+<p><strong>Dispersivity</strong> dataset in CAST is an isolated dataset. It is only provided for reference purpose such that user can make an appropriate estimate when using models. To facilitate further, the exploratory data analysis of  dispersivity dataset is provided (see screenshot <a class="reference internal" href="#db4"><span class="std std-numref">Fig. 11</span></a> ).</p>
+<div class="figure align-center" id="db4">
+<a class="reference internal image-reference" href="../../../_images/db_f4.png"><img alt="../../../_images/db_f4.png" src="../../../_images/db_f4.png" style="width: 1030.2px; height: 541.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Analysis of transverse dispersivity dataset</span><a class="headerlink" href="#db4" title="Permalink to this image">¶</a></p>
 </div>
+</div>
+<div class="section" id="user-data">
+<span id="id1"></span><h2>User data<a class="headerlink" href="#user-data" title="Permalink to this headline">¶</a></h2>
+<p><strong>Additional user data</strong> let users add their own data and compare them with the <em>standard dataset</em>. User can add data directly to the table by clicking <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">data</span></code> button (see screenshot <a class="reference internal" href="#db2"><span class="std std-numref">Fig. 12</span></a> ), clicking of which opens a data input windows. This option can be tedious if many site data are to be included as the <em>user data.</em></p>
+<p>User can also add their data using the <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">sample</span> <span class="pre">file</span></code> (see screenshot <a class="reference internal" href="#db2"><span class="std std-numref">Fig. 12</span></a>) button. This will download a sample data input (<strong>.csv</strong>) file to the user’s computer. The sample file can be filled with data, and then uploaded to the CAST using the <code class="docutils literal notranslate"><span class="pre">upload</span></code> button. Users are not required to be <strong>online</strong> while working of the sample file.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The <strong>heading</strong> used in the sample file should not be changed. Also, the file format for upload should be a <strong>.csv</strong> file.</p>
+<p><strong>Error</strong> message will be displayed when the sample file format or heading is changed.</p>
+</div>
+<div class="figure align-center" id="db2">
+<a class="reference internal image-reference" href="../../../_images/db_f2.png"><img alt="../../../_images/db_f2.png" src="../../../_images/db_f2.png" style="width: 1002.5999999999999px; height: 355.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">User data input interface in CAST</span><a class="headerlink" href="#db2" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>User data</strong> can be saved in different formats such as <strong>csv</strong>, <strong>xls</strong>, <strong>pdf</strong> or printed.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">delete</span> <span class="pre">table</span> <span class="pre">data</span></code> button will delete the entire user data in the table. Users should save their data before using this button.</p>
+<p>Deletion of selective data row is still not implemented in CAST.</p>
 </div>
 </div>
 </div>
@@ -478,7 +442,7 @@ c(x,y,z, t) = C_0 \frac{x}{8\sqrt{\pi D_x'}}\exp(-\gamma t)
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./contents/toolbox/an_model"
+            path: "./contents/toolbox/database"
         },
         predefinedOutput: true
     }
@@ -490,8 +454,8 @@ c(x,y,z, t) = C_0 \frac{x}{8\sqrt{\pi D_x'}}\exp(-\gamma t)
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../database/database.html" title="previous page">CAST Toolbox - Site Database and Model inputs</a>
-    <a class='right-next' id="next-link" href="liedl2005.html" title="next page">CAST Toolbox - Analytical Models - Liedl et al. (2005)</a>
+    <a class='left-prev' id="prev-link" href="../../offline/updating.html" title="previous page">Updating OFFLINE CAST</a>
+    <a class='right-next' id="next-link" href="../an_model/an_model.html" title="next page">CAST Toolbox - Analytical Models</a>
 
         </div>
         
