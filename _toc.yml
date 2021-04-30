@@ -13,7 +13,7 @@
 
 - part: Using CAST Toolboxes
   chapters:
-  - file: contents/toolbox/database
+  - file: contents/toolbox/database/database
   - file: contents/toolbox/an_model/an_model
     sections:
     - file: contents/toolbox/an_model/liedl2005
@@ -25,6 +25,8 @@
     sections:
     - file: contents/toolbox/em_model/birla2020
     - file: contents/toolbox/em_model/mg2005
+   
+  - file: contents/toolbox/bscreen/bioscreen
 
   - file: contents/toolbox/num_model
   - file: contents/toolbox/mod_sel

@@ -84,7 +84,7 @@ Computation options in CAST
 The **single computing simulation** interface is activated when it is clicked. as in the screenshot {numref}`li2005_5`. 
 
 
-After clicking on **`single computing simulation`**, you will be directed towards the below attached window ({numref}`li2005_4`). The area highlighted in red square in {numref}`li2005_4`  contains the _input_ parameters for the model which are briefly defined below:
+After clicking on **`single computing simulation`**, you will be directed towards the below attached window ({numref}`li2005_4`). The area highlighted in red square in {numref}`li2005_4` contains the _input_ parameters for the model which are briefly defined below:
 
 
 **`Thickness` ($M$):** refers to the aquifer thickness (in m). In [Liedl et al. (2005)](refli2005) $M$ is the most sensitive quantity affecting $L_{max}$  
@@ -127,7 +127,7 @@ Interactive option in the single computing interface of CAST
 ```
 
 ```{attention}
-The sliders will only appear after the first computation is made, i.e., {numref}`li2005_4` is complete.
+The sliders will only appear after the first computation is made.
 ```
 In case you wish to see the graph on _Fullscreen_ mode, please click on the button **`view full screen graph`**.
 

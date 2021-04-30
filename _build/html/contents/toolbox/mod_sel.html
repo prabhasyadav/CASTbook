@@ -62,6 +62,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -155,8 +157,8 @@
 </p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="database.html">
-   CAST Toolbox - Database Models
+  <a class="reference internal" href="database/database.html">
+   CAST Toolbox - Site Database and Model inputs
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
@@ -352,9 +354,27 @@
                 
   <div class="section" id="cast-toolbox-model-selection-method">
 <h1>CAST Toolbox - Model Selection method<a class="headerlink" href="#cast-toolbox-model-selection-method" title="Permalink to this headline">¶</a></h1>
-<p>The following steps must be taken.</p>
-<p><strong>Prabhas</strong> and <strong>Natalia</strong> , to do this.</p>
-<p>Basically we talk about decision model here</p>
+<p><strong>The Model Selection toolbox is not implemented in the CAST yet</strong>.
+The most important reason for that is the very limited information available on this subject. The text below outlines some development on the <em>Model Selection Method,</em> and the current progress.</p>
+<p>CAST provides several models of different types (analytical, numerical and empirical/hybrid).
+The key question then is, which model to start with at a particular site?</p>
+<p>Normally using a model that requires many input parameters may not be the best choice to start modeling works.
+Typically, information requirements are higher for models with higher dimension (3D) and numerical models. Also, lower dimension models (&lt;3D) but that includes several physical and (bio)chemical processes can require many input parameters.</p>
+<p>One of the work that is being completed on <em>selecting a site-specific model</em> is by using sufficiently large field dataset to rank models based on:</p>
+<ol class="simple">
+<li><p>Statistical Threshold</p></li>
+<li><p>Akaike Information Criterion (AIC)</p></li>
+<li><p>Analytical Hierarchy Process (AHP)</p></li>
+</ol>
+<p>The <strong>Statistical Threshold</strong> (<span class="math notranslate nohighlight">\(ST\)</span>) method ranks model based on model’s ability <em>overestimate,</em> <em>underestimate,</em> and <em>overly-overestimate</em> the field plume length. <em>Overly-overestimate</em> which is often provided by 2D models (Liedl et al., 2005), is considered a model failure. The <span class="math notranslate nohighlight">\(ST\)</span> method thus requires providing the <strong>threshold</strong> for the <em>overly overestimate</em></p>
+<p><strong>AIC</strong> approach in addition to model complexity requires <strong>weights</strong> for model underestimation and overly overestimation, both model failures. The <strong>weights</strong> are site-specific conditions.</p>
+<p><strong>AHP</strong> is full-scale multi-criteria model ranking approach. The <strong>weights</strong> of each selected criteria is required to provided. In the current development 4 models with 4 criteria is being tested.</p>
+<p>The current works on the <em>model selection method</em> can be visualized by the following flow-chart.</p>
+<div class="figure align-center" id="dec-model">
+<a class="reference internal image-reference" href="../../_images/dec_model_f1.png"><img alt="../../_images/dec_model_f1.png" src="../../_images/dec_model_f1.png" style="width: 552.8000000000001px; height: 416.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 45 </span><span class="caption-text">Flow-chart on approach for selecting site-specific decision model.</span><a class="headerlink" href="#dec-model" title="Permalink to this image">¶</a></p>
+</div>
+<p>The flow-chart provided above can be fully automated. Furthermore, it can be linked with data toolbox of CAST.</p>
 </div>
 
     <script type="text/x-thebe-config">

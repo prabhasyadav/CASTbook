@@ -85,5 +85,3 @@ The computed $L_{max}$ is graphically displayed in the interactive figure. The o
 
 The workflow with the computing interfaces can be to begin with either single or multiple interface based on the user requirements.
 
-
-

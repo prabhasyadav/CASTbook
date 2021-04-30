@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAST Toolbox - Site Database and Model inputs &#8212; CAST - A site assessment tool</title>
+    
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/tabs.js"></script>
+    <script src="../../../_static/custom.js"></script>
+    <script src="../../../_static/save_state.js"></script>
+    <script src="../../../_static/custom.js"></script>
+    <script src="../../../_static/save_state.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="CAST Toolbox - Analytical Models" href="../an_model/an_model.html" />
+    <link rel="prev" title="Updating OFFLINE CAST" href="../../offline/updating.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/icon1.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">CAST - A site assessment tool</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Contamination Assessment and Site management Tool or CAST
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Quick online usage and offline Installation
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../online/online_usage.html">
+   Using CAST Online (in development)
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../online/login.html">
+     User Login and Access for Online CAST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../online/quick_example.html">
+     A quick usage example of CAST
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../offline/offline_installation.html">
+   Installation of OFFLINE browser-based CAST
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../offline/quick_example.html">
+     Quick example of offline CAST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../offline/updating.html">
+     Updating OFFLINE CAST
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Using CAST Toolboxes
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   CAST Toolbox - Site Database and Model inputs
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../an_model/an_model.html">
+   CAST Toolbox - Analytical Models
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../an_model/liedl2005.html">
+     CAST Toolbox - Analytical Models - Liedl et al. (2005)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../an_model/chu2005.html">
+     CAST Toolbox - Analytical Models - Chu et al. (2005)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../an_model/ham2004.html">
+     CAST Toolbox - Analytical Models - Ham et al. 2004
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../an_model/liedl2011.html">
+     CAST Toolbox - Analytical Models - Liedl et al. 2011
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../an_model/bioscreen.html">
+     CAST Toolbox - Analytical Models - BIOSCREEN-AT
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../em_model/em_model.html">
+   CAST Toolbox - Empirical Models
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../em_model/birla2020.html">
+     CAST Toolbox - Empirical Models - Birla et al. (2020)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../em_model/mg2005.html">
+     CAST Toolbox - Emperical Models - Maier and Grathwohl (2005)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../num_model.html">
+   CAST Toolbox - Numerical Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mod_sel.html">
+   CAST Toolbox - Model Selection method
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Development
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../develop/code_structure.html">
+   CAST Code Structure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../develop/code_libraries.html">
+   CAST Code Libraries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../develop/code_develop.html">
+   CAST Code Development
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Reference
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ref/cite.html">
+   Cite CAST
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ref/version.html">
+   CAST Versions
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/contents/toolbox/database/database.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/prabhasyadav/iGW-I"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/prabhasyadav/iGW-I/issues/new?title=Issue%20on%20page%20%2Fcontents/toolbox/database/database.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#site-database">
+   Site Database
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dispersitivity-dataset">
+   Dispersitivity dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#user-data">
+   User data
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cast-toolbox-site-database-and-model-inputs">
+<h1>CAST Toolbox - Site Database and Model inputs<a class="headerlink" href="#cast-toolbox-site-database-and-model-inputs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="site-database">
+<h2>Site Database<a class="headerlink" href="#site-database" title="Permalink to this headline">¶</a></h2>
+<p>Site Database  helps to view the data of the site along with various parameters of the site and those required by the models. Two types of site data are available within the CAST.</p>
+<ol class="simple">
+<li><p>Unmodifiable site data</p></li>
+<li><p><a class="reference internal" href="#user-data"><span class="std std-ref">Additional user data</span></a></p></li>
+</ol>
+<p><strong>Unmodifiable site data</strong> are data from the literature (see the screenshot below) and thus considered the <em>standard dataset</em>. This dataset is used for comparing model results. The user can download this dataset as a <strong>.csv</strong> file.</p>
+<div class="figure align-center" id="db1">
+<a class="reference internal image-reference" href="../../../_images/db_f1.png"><img alt="../../../_images/db_f1.png" src="../../../_images/db_f1.png" style="width: 1104.0px; height: 501.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Standard site dataset of CAST</span><a class="headerlink" href="#db1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The standard dataset can be <strong>searched</strong> for any specific name or data value within data. The parameters that are included in the <em>database</em> are: <code class="docutils literal notranslate"><span class="pre">Site</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">Compound</span></code>, <code class="docutils literal notranslate"><span class="pre">Aquifer</span> <span class="pre">Thickness</span></code> <code class="docutils literal notranslate"><span class="pre">Plume</span> <span class="pre">length</span></code>, <code class="docutils literal notranslate"><span class="pre">Plume</span> <span class="pre">Width</span></code>, <code class="docutils literal notranslate"><span class="pre">Hydraulic</span> <span class="pre">Conductivity</span></code>, <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Donor</span> <span class="pre">(Contaminant</span> <span class="pre">Concentration)</span></code>, <code class="docutils literal notranslate"><span class="pre">Oxygen</span></code>, <code class="docutils literal notranslate"><span class="pre">Nitrate</span></code>, <code class="docutils literal notranslate"><span class="pre">Sulphur</span> <span class="pre">Oxide</span></code>,<code class="docutils literal notranslate"><span class="pre">Ferrous</span></code>, <code class="docutils literal notranslate"><span class="pre">Plume</span> <span class="pre">State</span></code>, <code class="docutils literal notranslate"><span class="pre">Chemical</span> <span class="pre">Group</span></code>, <code class="docutils literal notranslate"><span class="pre">Country</span></code>, and <code class="docutils literal notranslate"><span class="pre">Literature</span> <span class="pre">Source</span></code></p>
+<p>Plume state in the database refers to the site condition, e.g, steady-state. This is a very important information because the maximum extents of contamination is observed at the steady-state. Models provided in CAST actually provides the maximum length of the plume, i.e., <span class="math notranslate nohighlight">\(L_{max}\)</span>.</p>
+</div>
+<div class="section" id="dispersitivity-dataset">
+<h2>Dispersitivity dataset<a class="headerlink" href="#dispersitivity-dataset" title="Permalink to this headline">¶</a></h2>
+<p><strong>Dispersivity</strong> is among the most critical quantity required for obtaining plume extensions. However, dispersivity data are almost never available (see <a class="reference internal" href="#db1"><span class="std std-numref">Fig. 9</span></a>), and diligent estimate of it needs to be made for using in models. More critical are transverse dispersivity data, mostly because of their very low magnitude. Due to this reason, <strong>CAST</strong> includes a dataset of dispersivity (see <a class="reference internal" href="#db3"><span class="std std-numref">Fig. 10</span></a>) found in the literature.</p>
+<div class="figure align-center" id="db3">
+<a class="reference internal image-reference" href="../../../_images/db_f3.png"><img alt="../../../_images/db_f3.png" src="../../../_images/db_f3.png" style="width: 792.0px; height: 305.4px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Transverse dispersivity dataset in CAST</span><a class="headerlink" href="#db3" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Dispersivity</strong> dataset in CAST is an isolated dataset. It is only provided for reference purpose such that user can make an appropriate estimate when using models. To facilitate further, the exploratory data analysis of  dispersivity dataset is provided (see screenshot <a class="reference internal" href="#db4"><span class="std std-numref">Fig. 11</span></a> ).</p>
+<div class="figure align-center" id="db4">
+<a class="reference internal image-reference" href="../../../_images/db_f4.png"><img alt="../../../_images/db_f4.png" src="../../../_images/db_f4.png" style="width: 1030.2px; height: 541.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Analysis of transverse dispersivity dataset</span><a class="headerlink" href="#db4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="user-data">
+<span id="id1"></span><h2>User data<a class="headerlink" href="#user-data" title="Permalink to this headline">¶</a></h2>
+<p><strong>Additional user data</strong> let users add their own data and compare them with the <em>standard dataset</em>. User can add data directly to the table by clicking <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">data</span></code> button (see screenshot <a class="reference internal" href="#db2"><span class="std std-numref">Fig. 12</span></a> ), clicking of which opens a data input windows. This option can be tedious if many site data are to be included as the <em>user data.</em></p>
+<p>User can also add their data using the <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">sample</span> <span class="pre">file</span></code> (see screenshot <a class="reference internal" href="#db2"><span class="std std-numref">Fig. 12</span></a>) button. This will download a sample data input (<strong>.csv</strong>) file to the user’s computer. The sample file can be filled with data, and then uploaded to the CAST using the <code class="docutils literal notranslate"><span class="pre">upload</span></code> button. Users are not required to be <strong>online</strong> while working of the sample file.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The <strong>heading</strong> used in the sample file should not be changed. Also, the file format for upload should be a <strong>.csv</strong> file.</p>
+<p><strong>Error</strong> message will be displayed when the sample file format or heading is changed.</p>
+</div>
+<div class="figure align-center" id="db2">
+<a class="reference internal image-reference" href="../../../_images/db_f2.png"><img alt="../../../_images/db_f2.png" src="../../../_images/db_f2.png" style="width: 1002.5999999999999px; height: 355.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">User data input interface in CAST</span><a class="headerlink" href="#db2" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>User data</strong> can be saved in different formats such as <strong>csv</strong>, <strong>xls</strong>, <strong>pdf</strong> or printed.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">delete</span> <span class="pre">table</span> <span class="pre">data</span></code> button will delete the entire user data in the table. Users should save their data before using this button.</p>
+<p>Deletion of selective data row is still not implemented in CAST.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./contents/toolbox/database"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../../offline/updating.html" title="previous page">Updating OFFLINE CAST</a>
+    <a class='right-next' id="next-link" href="../an_model/an_model.html" title="next page">CAST Toolbox - Analytical Models</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By P. K. Yadav, S. Birla, V. Baliga, A. Köhler, K. Aryal, I. Wani, and others<br/>
+        
+          <div class="extra_footer">
+            <a href="https://creativecommons.org/licenses/by/4.0/"><img style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a> All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
