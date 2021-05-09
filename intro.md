@@ -60,6 +60,8 @@ The **Toolboxes** of CAST provides the applicable functionalities. Each toolbox 
 
 #### Data toolbox ####
 
+The database toolbox can be considered as the starting point of using **CAST**. The toolbox let user quantitatively understand actual contaminated sites. The important sites quantities, their ranges etc are part of this toolbox. In addition to the available (non-modifiable) data, user can also include their own data and compare and visualize them. The [database toolbox chapter](contents/toolbox/database/database.md) details extensively the Data toolbox chapter of **CAST**.
+
 + Large contaminated site database (100+ sites)
 + Statistical measures and visualizations of important site quantities
 
@@ -74,7 +76,8 @@ The plots from Database toolbox
 
 #### Analytical models toolbox ####
 
-The toolbox currently contains 5 analytical models including the widely used version of BIOSCREEN model called BIOSCREEN-AT. The included models (see model chapter **XXYY**) for more details individually) in the current version of **CAST** are:
+
+The toolbox currently contains 5 analytical models including the widely used version of BIOSCREEN model called BIOSCREEN-AT. The included models (see [analytical model chapter](contents/toolbox/an_model/an_model.md)) for more details individually) in the current version of **CAST** are:
 
 + 2D Vertical Model (Liedl et al., 2005)
 + 2D Horizontal Model (Ham et al. 2005, Chu et al., 2005)
@@ -93,7 +96,7 @@ Analytical models in analytical model toolbox
 
 #### Empirical models for toolbox ####
 
-There are only limited Empirical models available. The **CAST** empirical toolbox contains the following models (see model chapter **XXYY** for details): 
+There are only limited Empirical models available. The **CAST** empirical toolbox contains the following models (see  [empirical model chapter](contents/toolbox/em_model/em_model.md) for details):
 
 + 2D Vertical (Maier and Grathwohl, 2005)
 + 2D Vertical with richarge (Birla et al. 2020)
@@ -109,7 +112,7 @@ Empirical models in empirical model toolbox
 
 #### Numerical model toolbox ####
 
-Numerical model is widely used for site assessment. However, this model type is used for more comprehenisve site assessment works. On the other hand, **CAST** focuses on intial assessment of sites. Therefore, a very simple numerical model based on  [MODFLOW](http://tiny.cc/kon6jz) and [MT3D-MS](http://tiny.cc/6pn6jz) with very limited function is part of the CAST. More details of the numerical model is provided in Chapter **XXXXXX**.
+Numerical model is widely used for site assessment. However, this model type is used for more comprehenisve site assessment works. On the other hand, **CAST** focuses on intial assessment of sites. Therefore, a very simple numerical model based on  [MODFLOW](http://tiny.cc/kon6jz) and [MT3D-MS](http://tiny.cc/6pn6jz) with very limited function is part of the CAST. More details of the numerical model is provided in [numerical model Chapter](contents/toolbox/num_model.md).
 
 ```{figure} images/intro_images/NumericalModel.png
 ---

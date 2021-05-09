@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Installation of OFFLINE browser-based CAST &#8212; CAST - A site assessment tool</title>
+    <title>Using CAST OFFLINE &#8212; CAST - A site assessment tool</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -130,7 +130,7 @@
  </li>
  <li class="toctree-l1 current active collapsible-parent">
   <a class="current reference internal" href="#">
-   Installation of OFFLINE browser-based CAST
+   Using CAST OFFLINE
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -317,11 +317,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/prabhasyadav/iGW-I"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/prabhasyadav/CASTbook"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/prabhasyadav/iGW-I/issues/new?title=Issue%20on%20page%20%2Fcontents/offline/offline_installation.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/prabhasyadav/CASTbook/issues/new?title=Issue%20on%20page%20%2Fcontents/offline/offline_installation.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -342,6 +342,50 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation-of-softwares-required-for-successful-running-of-cast">
+   Installation of Softwares required for successful running of CAST
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-1-installation-of-the-github-desktop">
+   Step 1. Installation of the Github Desktop
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-2-installation-of-python-system-in-the-local-computer">
+   Step 2. Installation of Python system in the local computer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-3-installing-python-libraries-required-by-the-cast-project">
+   Step 3. Installing Python libraries required by the
+   <strong>
+    CAST
+   </strong>
+   project
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-4-setting-up-mysql">
+   Step 4.	Setting up MySql
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-5-executing-offline-cast">
+   Step 5. Executing OFFLINE CAST
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -350,11 +394,264 @@
         
               <div>
                 
-  <div class="section" id="installation-of-offline-browser-based-cast">
-<h1>Installation of OFFLINE browser-based CAST<a class="headerlink" href="#installation-of-offline-browser-based-cast" title="Permalink to this headline">¶</a></h1>
-<p><strong>Kanishk</strong> will do this with help from <strong>Vedanti</strong> and <strong>Prabhas</strong></p>
-<p>This is mostly already done. We need to reformat and that’s all.</p>
+  <div class="section" id="using-cast-offline">
+<h1>Using CAST OFFLINE<a class="headerlink" href="#using-cast-offline" title="Permalink to this headline">¶</a></h1>
+<p>CAST is not necessary an ONLINE tool. It is essentially a browser-based tool, which can be used in both ONLINE and OFFLINE. However, for the OFFLINE use, <strong>CAST</strong> has to be installed in the local system. The OFFLINE set-up of CAST is provided below in detail.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>**The OFFLINE use of CAST is recommended, as parameter range limits used in ONLINE mode can be avoided.</p>
+</div>
+<div class="section" id="installation-of-softwares-required-for-successful-running-of-cast">
+<h2>Installation of Softwares required for successful running of CAST<a class="headerlink" href="#installation-of-softwares-required-for-successful-running-of-cast" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>offline</strong> installation of CAST depends on <em>carefully</em> following the steps that require few (open-source) software to be installed, and various system changes at the OS level to be made. The installation process is presented in steps below with outcomes (of each step) with the help of pictures. A careful read of the steps presented below before installing CAST can be very useful for the installation and offline use of the CAST.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>The step presented below are for Windows<sup>TM</sup> OS</strong>.</p>
+</div>
+<p><strong>CAST</strong> can be installed in any OS. The intallation steps required for other OS (Linux/MacOS<sup>TM</sup>) will be documented later.</p>
+</div>
+<div class="section" id="step-1-installation-of-the-github-desktop">
+<h2>Step 1. Installation of the Github Desktop<a class="headerlink" href="#step-1-installation-of-the-github-desktop" title="Permalink to this headline">¶</a></h2>
+<p>Installation of <a class="reference external" href="https://desktop.github.com/"><strong>Github Desktop</strong></a> is <strong>recommended</strong> as it simplifies the <em>first</em> installation process, specially for new users. Besides Github Desktop also simplifies any personalized modification of <strong>CAST</strong> code and updates.</p>
+<p><a class="reference external" href="https://desktop.github.com/">Click to visit <strong>Github Desktop</strong></a> and follow the installation process. The screenshot below shows the interface of <strong>Github Desktop</strong> website.</p>
+<div class="figure align-center" id="of1">
+<a class="reference internal image-reference" href="../../_images/off_f1.png"><img alt="../../_images/off_f1.png" src="../../_images/off_f1.png" style="width: 768.0px; height: 326.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">The <a class="reference external" href="https://desktop.github.com/"><strong>Github Desktop</strong></a> set-up</span><a class="headerlink" href="#of1" title="Permalink to this image">¶</a></p>
+</div>
+<p>After the successful installation of Github Desktop, <code class="docutils literal notranslate"><span class="pre">open</span></code> the Github Desktop Application and click on <code class="docutils literal notranslate"><span class="pre">clone</span> <span class="pre">a</span> <span class="pre">repository</span></code>. Under URL, paste the URL <code class="docutils literal notranslate"><span class="pre">https://github.com/CAST-IIT.git</span></code> as seen in the screenshot below. This can also be alternately seen under CAST-IIT/CAST at Personal-CAST-development <a class="reference external" href="http://github.com">github.com</a>, under <code class="docutils literal notranslate"><span class="pre">Code</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Personal CAST</strong> is the default branch/master branch and for OFFLINE use. <strong>Professional branch</strong> is used for the ONLINE <strong>CAST</strong>.</p>
+</div>
+<div class="figure align-center" id="of2">
+<a class="reference internal image-reference" href="../../_images/off_f2.png"><img alt="../../_images/off_f2.png" src="../../_images/off_f2.png" style="width: 850.0px; height: 626.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Cloning CAST source repository from Github</span><a class="headerlink" href="#of2" title="Permalink to this image">¶</a></p>
+</div>
+<p>The <em>cloning</em> of the <strong>CAST</strong> will begin in your computer. You can store the cloned to your desired directory in your computer.</p>
+</div>
+<div class="section" id="step-2-installation-of-python-system-in-the-local-computer">
+<h2>Step 2. Installation of Python system in the local computer<a class="headerlink" href="#step-2-installation-of-python-system-in-the-local-computer" title="Permalink to this headline">¶</a></h2>
+<p><strong>Step 2A.</strong> Downloading appropriate Python version :</p>
+<p>From the website ‘ <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> ’, download version 3.6.8 of Python (see steps in the screenshot below). You should choose 64 bit version.</p>
+<div class="figure align-center" id="of3">
+<a class="reference internal image-reference" href="../../_images/off_f3.png"><img alt="../../_images/off_f3.png" src="../../_images/off_f3.png" style="width: 832.0px; height: 379.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Downloading Python version 3.6.8</span><a class="headerlink" href="#of3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Python version 3.6.8 is <strong>required</strong>.</p>
+</div>
+<p><strong>Step 2B.</strong> Installation of Python and adding its <code class="docutils literal notranslate"><span class="pre">path</span></code> to the system</p>
+<p>Open the Python executable <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file that you downloaded Do not forget to check the box that says <strong>Add Python 3.6 to Path</strong>. Then, click on <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Now</span></code> button (see the screenshot below).</p>
+<div class="figure align-center" id="of4">
+<a class="reference internal image-reference" href="../../_images/off_f4.png"><img alt="../../_images/off_f4.png" src="../../_images/off_f4.png" style="width: 954.5px; height: 397.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Installing Python and adding Python path.</span><a class="headerlink" href="#of4" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Step 2C.</strong> Installation of <code class="docutils literal notranslate"><span class="pre">pip</span></code>
+<code class="docutils literal notranslate"><span class="pre">pip</span></code> is Python package (library) management system. After completion of Python setup, it is a mandatory step to check if <code class="docutils literal notranslate"><span class="pre">pip</span></code> is also installed and for the required version of the Python, for that we go to the <code class="docutils literal notranslate"><span class="pre">Command</span> <span class="pre">Prompt</span></code> and type <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">--version</span></code>. When pip is instlled, it’s version will be the output (see screenshot)</p>
+<div class="figure align-center" id="of5">
+<a class="reference internal image-reference" href="../../_images/off_f5.png"><img alt="../../_images/off_f5.png" src="../../_images/off_f5.png" style="width: 766.5px; height: 176.39999999999998px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Checking installed pip version</span><a class="headerlink" href="#of5" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Step 2D.</strong> Installation of <code class="docutils literal notranslate"><span class="pre">pip</span></code> when not installed
+In case <strong>no</strong> pip version is found, we can install it through command prompt by entering the command- <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">get-pip.py</span></code>. Once installed it is a good idea to re-check the installed pip. Re-checking can be done using <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">--version</span></code> as above. Additionally, to verify the version of python, we can see it through the following line of command.</p>
+<div class="warning admonition">
+<p class="admonition-title">Kanishk Pls. check</p>
+<p><strong>Can you provide a screen shot covering the above two commands</strong></p>
+</div>
+<p><strong>Step 2E.</strong> Installation of Virtual Environment (VE)
+Virtual Environment
+A <a class="reference external" href="https://docs.python.org/3/library/venv.html">Virtual Environment</a> (VE) is a <em>tool</em> or a <em>folder</em> that helps to keep dependencies required by different Python projects separate. CAST is a Python project, as such we create a separate Python system (a VE) for CAST. This can be easily done using command prompt (see screenshot below) and entering the command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">virualenv</span></code>.</p>
+<div class="figure align-center" id="of6">
+<a class="reference internal image-reference" href="../../_images/off_f6.png"><img alt="../../_images/off_f6.png" src="../../_images/off_f6.png" style="width: 758.8px; height: 188.29999999999998px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Installing Python Virtual Environment</span><a class="headerlink" href="#of6" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Step 2F.</strong> Setting-up Virtual Environment (VE) for the <strong>CAST</strong> project</p>
+<div class="warning admonition">
+<p class="admonition-title">Kanishk Pls. check</p>
+<p><strong>I am in doubt here. Can you check where the Virtual Env. should be created. I think you need to add few exploratory texts. It is not clear. Also, I will suggest that we have a non-confusing screenshot</strong></p>
+</div>
+<ul class="simple">
+<li><p>Create Virtual Environment files:
+Make sure you are in the <strong>CAST</strong> directory- the directory where you stored the <em>cloned</em> CAST repo (see <strong>Step 1</strong>). The screenshot below can be useful.</p></li>
+</ul>
+<div class="figure align-center" id="of7">
+<a class="reference internal image-reference" href="../../_images/off_f7.png"><img alt="../../_images/off_f7.png" src="../../_images/off_f7.png" style="width: 764.4px; height: 455.7px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Creating VE called venv for the CAST project.</span><a class="headerlink" href="#of7" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Activation of VE venv:
+The created VE venv has to be activated before it can used. This can be done using the command <code class="docutils literal notranslate"><span class="pre">activate</span></code> in the <code class="docutils literal notranslate"><span class="pre">venv\Scripts</span></code> directory of CAST (see screenshot below). Once activated, you will see the <code class="docutils literal notranslate"><span class="pre">&lt;venv&gt;</span></code> at the start of the prompt (see screenshot)</p></li>
+</ul>
+<div class="figure align-center" id="of8">
+<a class="reference internal image-reference" href="../../_images/off_f8.png"><img alt="../../_images/off_f8.png" src="../../_images/off_f8.png" style="width: 764.4px; height: 196.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">Ativating Virtual Environment</span><a class="headerlink" href="#of8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="step-3-installing-python-libraries-required-by-the-cast-project">
+<h2>Step 3. Installing Python libraries required by the <strong>CAST</strong> project<a class="headerlink" href="#step-3-installing-python-libraries-required-by-the-cast-project" title="Permalink to this headline">¶</a></h2>
+<p>With VE created and activated, it is now time to install the Python libraries that are used in CAST. The required libraries are listed in the <strong>.txt</strong> file called <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>. There are several libraries to be installed, e.g., Numpy, Scipy, Matplotlib. Depending on your (internet) connection speed it may take up to 30 minutes (typically for High-speed connection) for installing all the required libraries.</p>
+<p>The installing is easy a single <em>pip</em> command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> will get it all done (as in the screenshot below).</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> command must be used in the <strong>CAST</strong> directory.</p></li>
+<li><p>Do <strong>not</strong> close the the command prompt after all requirements.txt operation is complete.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="step-4-setting-up-mysql">
+<h2>Step 4.	Setting up MySql<a class="headerlink" href="#step-4-setting-up-mysql" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.mysql.com/">MySql</a> is an <em>open-source</em> relational database management system (RDBMS). In <strong>CAST</strong> database is used for managing user account such that user can save their input and output data. For <strong>ONLINE</strong> CAST this means users can retrieve their input at later time. For <strong>OFFLINE</strong> CAST the same structure can be used in the environment when there are multiple people using CAST. User account creation is detailed <a class="reference internal" href="../online/login.html"><span class="doc std std-doc">here</span></a>.</p>
+<p>Below step-wise setting up of Mysql is provided.</p>
+<ul class="simple">
+<li><p>Visit the <em>webpage</em> to download the Mysql installer file <a class="reference external" href="http://dev.mysql.com/downloads/installer/">http://dev.mysql.com/downloads/installer/</a></p></li>
+<li><p>In the <em>webpage</em>, download the file that is about 400 MB (<strong>the offline version</strong>) in size and start the setup.</p></li>
+<li><p>Choosing a Setup type: Chose <strong>FULL</strong> (see screenshot)</p></li>
+</ul>
+<div class="figure align-center" id="of9">
+<a class="reference internal image-reference" href="../../_images/off_f9.png"><img alt="../../_images/off_f9.png" src="../../_images/off_f9.png" style="width: 679.6999999999999px; height: 510.99999999999994px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 17 </span><span class="caption-text">Selecting MySql set-up type</span><a class="headerlink" href="#of9" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Keep on selecting <em>default</em> set-up by clicking <strong>next</strong>  or <strong>execute</strong>. Please do not skip any steps though.  Different components of MySql will be installed during the process. The screenshot below shows the steps.</p></li>
+</ul>
+<div class="figure align-center" id="of10">
+<a class="reference internal image-reference" href="../../_images/off_f10.png"><img alt="../../_images/off_f10.png" src="../../_images/off_f10.png" style="width: 968.4000000000001px; height: 364.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">MySql components.</span><a class="headerlink" href="#of10" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Keep the <strong>default</strong> set-up option as is it and continue until the <code class="docutils literal notranslate"><span class="pre">account</span> <span class="pre">setting</span></code> screen is obtained (see screenshot below). Set your <strong>password</strong> and make sure to <strong>remember</strong> this password as in the next few steps, during application of configuration, we can check for the password if it is correct or not.  Not to worry if the password is a <em>weak</em> (although try to use a strong) one.</p></li>
+</ul>
+<div class="figure align-center" id="of11">
+<a class="reference internal image-reference" href="../../_images/off_f11.png"><img alt="../../_images/off_f11.png" src="../../_images/off_f11.png" style="width: 791.0px; height: 311.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Setting MySql root password</span><a class="headerlink" href="#of11" title="Permalink to this image">¶</a></p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Kanishk Pls. check</p>
+<p><strong>Do you remember how much time it takes here. I think in one of the step it takes 20-30 minutes. We need to mention that.</strong></p>
+</div>
+<ul class="simple">
+<li><p>A window <strong>Connect to Server</strong> (see screenshot below) will appear. In this window, <em>insert</em> the <strong>password</strong> that you created in the previous step  and <em>click</em> on the <code class="docutils literal notranslate"><span class="pre">check</span></code> button.</p></li>
+</ul>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Make sure that you do not forget the <strong>password</strong>. The entire MySql set-up have to repeated if you forget the password.</p>
+</div>
+<div class="figure align-center" id="of12">
+<a class="reference internal image-reference" href="../../_images/off_f12.png"><img alt="../../_images/off_f12.png" src="../../_images/off_f12.png" style="width: 630.6999999999999px; height: 476.7px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Connecting MySql to the local server</span><a class="headerlink" href="#of12" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>After setting  up MySql, open <strong>MySql Workbench</strong> using Windows<sup>TM</sup>  <em>start-menu</em>. Click on <code class="docutils literal notranslate"><span class="pre">Connections</span></code> and when asked, enter the root <code class="docutils literal notranslate"><span class="pre">password</span></code> created during the MySql setup. You should get the windows as shown in the screenshot below</p></li>
+</ul>
+<div class="figure align-center" id="of13">
+<a class="reference internal image-reference" href="../../_images/off_f13.png"><img alt="../../_images/off_f13.png" src="../../_images/off_f13.png" style="width: 815.5px; height: 571.1999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">MySql Workbench connection</span><a class="headerlink" href="#of13" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Create a <strong>database</strong> named <code class="docutils literal notranslate"><span class="pre">groundwater</span></code> in the new page. This can be done by writing the command <code class="docutils literal notranslate"><span class="pre">create</span> <span class="pre">database</span> <span class="pre">groundwater</span></code> in the windows space (see screeshot). Once the command is written, <strong>click</strong> on the <code class="docutils literal notranslate"><span class="pre">lightning</span> <span class="pre">button</span></code> (It is used to execute), and <em>wait</em> until action is shown (see the screenshot) in the bottom.</p></li>
+</ul>
+<div class="figure align-center" id="of14">
+<a class="reference internal image-reference" href="../../_images/off_f14.png"><img alt="../../_images/off_f14.png" src="../../_images/off_f14.png" style="width: 836.5px; height: 637.6999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">Creating the <code class="docutils literal notranslate"><span class="pre">groundwater</span></code> database</span><a class="headerlink" href="#of14" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">groundwater.db</span></code> is the database that CAST centrally uses. When codes are updated, this database has to be updated.</p>
+</div>
+</div>
+<div class="section" id="step-5-executing-offline-cast">
+<h2>Step 5. Executing OFFLINE CAST<a class="headerlink" href="#step-5-executing-offline-cast" title="Permalink to this headline">¶</a></h2>
+<p>With creation of the (groundwater) database, setting-up MySql is complete. Next, we execute the <strong>OFFLINE</strong> CAST. To do this first we need connect MySql with the <strong>CAST</strong>. The text below explains the steps.</p>
+<ul class="simple">
+<li><p>Now populate the (groundwater) database with the command  <code class="docutils literal notranslate"><span class="pre">python3create_database.py</span></code> or <code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">create_database.py</span></code> in the command prompt (<strong>STEP 2</strong>), in which virtual environment <code class="docutils literal notranslate"><span class="pre">venv</span></code> is active- as seen in the screenshot below.</p></li>
+</ul>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/off_f15.png"><img alt="../../_images/off_f15.png" src="../../_images/off_f15.png" style="width: 737.0999999999999px; height: 67.89999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Populating the <code class="docutils literal notranslate"><span class="pre">groundwater</span></code> database from MySql to CAST</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Kanishk Pls. check</p>
+<p><strong>Bit confusing here - do we need take the action below after the using this <code class="docutils literal notranslate"><span class="pre">python3create_database.py</span></code> command</strong></p>
+</div>
+<div class="error admonition">
+<p class="admonition-title">Issue with running script in Windows<sup>TM</sup></p>
+<p>The Windows<sup>TM</sup> may give the following error:</p>
+<p><strong>Files cannot be loaded because running scripts is disabled on this system. Provide a valid certificate with which to sign the files.</strong></p>
+</div>
+<p>This error can be addressed using the solution provided <a class="reference external" href="https://www.beaming.co.uk/knowledge-base/resolved-files-cannot-loaded-running-scripts-disabled-system/">here</a> (also see the screenshot). The error is due to default security block of Windows<sup>TM</sup> for running the script.</p>
+<div class="figure align-center" id="of16">
+<a class="reference internal image-reference" href="../../_images/off_f16.png"><img alt="../../_images/off_f16.png" src="../../_images/off_f16.png" style="width: 956.5px; height: 429.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Windows<sup>TM</sup> script executing error.</span><a class="headerlink" href="#of16" title="Permalink to this image">¶</a></p>
+</div>
+<p>The next steps require modification and execution of the CAST code. These steps are simplified using specialized text-editor/IDE such as <a class="reference external" href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a>, <a class="reference external" href="https://www.jetbrains.com/pycharm/"><strong>PyCharm<sup>TM</sup></strong></a>. In the description we use <strong>Visual Studio Code</strong>.</p>
+<p>In Visual Studio Code, open the <code class="docutils literal notranslate"><span class="pre">file</span></code> location; here select <strong>CAST</strong> (the cloned folder in Step 1) and click on <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Folder</span></code>.</p>
+<div class="figure align-center" id="of17">
+<a class="reference internal image-reference" href="../../_images/off_f17.png"><img alt="../../_images/off_f17.png" src="../../_images/off_f17.png" style="width: 736.4px; height: 396.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">CAST Code in Visual Studio Code</span><a class="headerlink" href="#of17" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>In the Visual Studio Code on the left-side select the file <code class="docutils literal notranslate"><span class="pre">groundwater&gt;config.py</span></code>, and change the <strong>password</strong> that was used for setting-up of MySql in <strong>STEP 4</strong> (see screenshot below).</p></li>
+</ul>
+<div class="figure align-center" id="of18">
+<a class="reference internal image-reference" href="../../_images/off_f18.png"><img alt="../../_images/off_f18.png" src="../../_images/off_f18.png" style="width: 737.0999999999999px; height: 396.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">Personalizing the OFFLINE CAST code - using root password</span><a class="headerlink" href="#of18" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">groundwater/water.py</span></code>, change the <code class="docutils literal notranslate"><span class="pre">parent_dir=</span> <span class="pre">‘your</span> <span class="pre">directory\\CAST</span></code>. Note the double-blackslash (\) used in directory address. This Python programming standard. This is explained in the screenshot below</p></li>
+</ul>
+<div class="figure align-center" id="of19">
+<a class="reference internal image-reference" href="../../_images/off_f19.png"><img alt="../../_images/off_f19.png" src="../../_images/off_f19.png" style="width: 798.6999999999999px; height: 429.79999999999995px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Setting local directory in the CAST code.</span><a class="headerlink" href="#of19" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>The numerical model of <strong>CAST</strong> uses <a class="reference external" href="https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model">MODFLOW</a> and <a class="reference external" href="https://hydro.geo.ua.edu/mt3d/index.htm">MT3DMS</a>. The MODFLOW and MT3DMS <strong>.exe</strong> files are called during the numerical model execution. Therefore, the location of <strong>.exe</strong> files in user’s computer have to specified in the CAST code system. This has to be done in the CAST file <strong>groundwater/NumericalModel/numericalModel.py</strong> as shown in the screenshot below</p></li>
+</ul>
+<div class="figure align-center" id="of20">
+<a class="reference internal image-reference" href="../../_images/off_f20.png"><img alt="../../_images/off_f20.png" src="../../_images/off_f20.png" style="width: 687.4px; height: 325.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">Setting directory of MODFLOW/MT3DMS <strong>.exe</strong> in the CAST code.</span><a class="headerlink" href="#of20" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>The next step requires that the Python executable used in the developed of CAST that is in virtual environment <code class="docutils literal notranslate"><span class="pre">venv</span></code>. In <strong>Visual Studio Code</strong> this can be done is the step-wise manner as shown in the screenshots below.</p></li>
+<li><p>Click on the interpreter below and select the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">interpreter</span> <span class="pre">-&gt;</span> <span class="pre">virtual</span> <span class="pre">environment</span></code> that you want to work in</p></li>
+</ul>
+<div class="figure align-center" id="of21">
+<a class="reference internal image-reference" href="../../_images/off_f21.png"><img alt="../../_images/off_f21.png" src="../../_images/off_f21.png" style="width: 788.9px; height: 438.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 29 </span><span class="caption-text">Setting the required Python interpreter I.</span><a class="headerlink" href="#of21" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>In case the Python interpreter is not of the <strong>CAST</strong> virtual environment <code class="docutils literal notranslate"><span class="pre">venv</span></code>, it should be changed. This can be done by clicking on the Python version seen in Visual Studio Code bottom bar. The screenshot below should appear.</p></li>
+</ul>
+<div class="figure align-center" id="of22">
+<a class="reference internal image-reference" href="../../_images/off_f22.png"><img alt="../../_images/off_f22.png" src="../../_images/off_f22.png" style="width: 788.1999999999999px; height: 422.09999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">Setting the required Python interpreter II.</span><a class="headerlink" href="#of22" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Go to the file  <code class="docutils literal notranslate"><span class="pre">run.py</span></code> that is on the left panel of the Visual Code Studio interface, and on the <em>top right corner</em> click on the <code class="docutils literal notranslate"><span class="pre">green</span> <span class="pre">play</span> <span class="pre">button</span></code> to run it. See the screenshot below.</p></li>
+</ul>
+<div class="figure align-center" id="of23">
+<a class="reference internal image-reference" href="../../_images/off_f23.png"><img alt="../../_images/off_f23.png" src="../../_images/off_f23.png" style="width: 790.3px; height: 421.4px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">Executing CAST.</span><a class="headerlink" href="#of23" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>At the bottom panel (see screenshot) of the Visual Studio Code, a hyperlink will appear when CAST is executed correctly. The hyperlink has to be copied and pasted in a browser to run CAST.</p></li>
+</ul>
+<div class="figure align-center" id="of24">
+<a class="reference internal image-reference" href="../../_images/off_f24.png"><img alt="../../_images/off_f24.png" src="../../_images/off_f24.png" style="width: 789.5999999999999px; height: 422.79999999999995px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">Opening CAST in the browser.</span><a class="headerlink" href="#of24" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>The screenshot below should appear once the hyperlink is executed in the browser.</p></li>
+</ul>
+<div class="figure align-center" id="of25">
+<a class="reference internal image-reference" href="../../_images/off_f25.png"><img alt="../../_images/off_f25.png" src="../../_images/off_f25.png" style="width: 792.4px; height: 405.29999999999995px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">OFFLINE CAST interface in the browser.</span><a class="headerlink" href="#of25" title="Permalink to this image">¶</a></p>
+</div>
+<p>You can log in with your email ID and a password. The server can be closed/stopped by clicking <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> in the Visual Studio Code.</p>
+<p>For re-running the server or using the OFFLINE CAST steps provided in <a class="reference internal" href="#of23"><span class="std std-numref">Fig. 31</span></a> and <a class="reference internal" href="#of24"><span class="std std-numref">Fig. 32</span></a> has to be executed.</p>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
