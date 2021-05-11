@@ -1,4 +1,4 @@
-## CAST Versions 
+### CAST Versions 
 
-The current version is **0.1**.
+The current version of **CAST** is **0.1**.
 

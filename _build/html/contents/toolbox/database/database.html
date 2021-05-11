@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAST Toolbox - Site Database and Model inputs &#8212; CAST - A site assessment tool</title>
+    <title>CAST Toolbox - Site Database and Data Visualization &#8212; CAST - A site assessment tool</title>
     
   <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -158,7 +158,7 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   CAST Toolbox - Site Database and Model inputs
+   CAST Toolbox - Site Database and Data Visualization
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
@@ -354,15 +354,59 @@
   <a class="reference internal nav-link" href="#site-database">
    Site Database
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unmodifiable-site-data">
+     Unmodifiable site data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dispersitivity-dataset">
+     Dispersitivity dataset
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-data">
+     User data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dispersitivity-dataset">
-   Dispersitivity dataset
+  <a class="reference internal nav-link" href="#data-analysis-and-visualization">
+   Data Analysis and Visualization
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#accessing-visualization-and-data-analysis-interface-of-cast">
+     Accessing Visualization and Data Analysis Interface of CAST
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bargraph">
+     Bargraph
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boxplots">
+     Boxplots
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#histograms-and-distributions">
+     Histograms and Distributions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scattered-plots">
+     Scattered Plots
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#user-data">
-   User data
+  <a class="reference internal nav-link" href="#statistical-description-of-data">
+   Statistical Description of Data
   </a>
  </li>
 </ul>
@@ -377,16 +421,18 @@
         
               <div>
                 
-  <div class="section" id="cast-toolbox-site-database-and-model-inputs">
-<h1>CAST Toolbox - Site Database and Model inputs<a class="headerlink" href="#cast-toolbox-site-database-and-model-inputs" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="cast-toolbox-site-database-and-data-visualization">
+<h1>CAST Toolbox - Site Database and Data Visualization<a class="headerlink" href="#cast-toolbox-site-database-and-data-visualization" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="site-database">
 <h2>Site Database<a class="headerlink" href="#site-database" title="Permalink to this headline">¶</a></h2>
-<p>Site Database  helps to view the data of the site along with various parameters of the site and those required by the models. Two types of site data are available within the CAST.</p>
+<p>Site Database helps to view the data of the site along with various parameters of the site and those required by the models. Two types of site data are available within the CAST.</p>
 <ol class="simple">
-<li><p>Unmodifiable site data</p></li>
+<li><p><a class="reference internal" href="#unmod-data"><span class="std std-ref">Unmodifiable site data</span></a></p></li>
 <li><p><a class="reference internal" href="#user-data"><span class="std std-ref">Additional user data</span></a></p></li>
 </ol>
-<p><strong>Unmodifiable site data</strong> are data from the literature (see the screenshot below) and thus considered the <em>standard dataset</em>. This dataset is used for comparing model results. The user can download this dataset as a <strong>.csv</strong> file.</p>
+<div class="section" id="unmodifiable-site-data">
+<span id="unmod-data"></span><h3>Unmodifiable site data<a class="headerlink" href="#unmodifiable-site-data" title="Permalink to this headline">¶</a></h3>
+<p>These are data from the literature (see the screenshot below) and thus considered the <em>standard dataset</em>. This dataset is used for comparing model results. The user can download this dataset as a <strong>.csv</strong> file.</p>
 <div class="figure align-center" id="db1">
 <a class="reference internal image-reference" href="../../../_images/db_f1.png"><img alt="../../../_images/db_f1.png" src="../../../_images/db_f1.png" style="width: 1104.0px; height: 501.59999999999997px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">Standard site dataset of CAST</span><a class="headerlink" href="#db1" title="Permalink to this image">¶</a></p>
@@ -395,7 +441,7 @@
 <p>Plume state in the database refers to the site condition, e.g, steady-state. This is a very important information because the maximum extents of contamination is observed at the steady-state. Models provided in CAST actually provides the maximum length of the plume, i.e., <span class="math notranslate nohighlight">\(L_{max}\)</span>.</p>
 </div>
 <div class="section" id="dispersitivity-dataset">
-<h2>Dispersitivity dataset<a class="headerlink" href="#dispersitivity-dataset" title="Permalink to this headline">¶</a></h2>
+<h3>Dispersitivity dataset<a class="headerlink" href="#dispersitivity-dataset" title="Permalink to this headline">¶</a></h3>
 <p><strong>Dispersivity</strong> is among the most critical quantity required for obtaining plume extensions. However, dispersivity data are almost never available (see <a class="reference internal" href="#db1"><span class="std std-numref">Fig. 34</span></a>), and diligent estimate of it needs to be made for using in models. More critical are transverse dispersivity data, mostly because of their very low magnitude. Due to this reason, <strong>CAST</strong> includes a dataset of dispersivity (see <a class="reference internal" href="#db3"><span class="std std-numref">Fig. 35</span></a>) found in the literature.</p>
 <div class="figure align-center" id="db3">
 <a class="reference internal image-reference" href="../../../_images/db_f3.png"><img alt="../../../_images/db_f3.png" src="../../../_images/db_f3.png" style="width: 792.0px; height: 305.4px;" /></a>
@@ -408,7 +454,7 @@
 </div>
 </div>
 <div class="section" id="user-data">
-<span id="id1"></span><h2>User data<a class="headerlink" href="#user-data" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h3>User data<a class="headerlink" href="#user-data" title="Permalink to this headline">¶</a></h3>
 <p><strong>Additional user data</strong> let users add their own data and compare them with the <em>standard dataset</em>. User can add data directly to the table by clicking <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">data</span></code> button (see screenshot <a class="reference internal" href="#db2"><span class="std std-numref">Fig. 37</span></a> ), clicking of which opens a data input windows. This option can be tedious if many site data are to be included as the <em>user data.</em></p>
 <p>User can also add their data using the <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">sample</span> <span class="pre">file</span></code> (see screenshot <a class="reference internal" href="#db2"><span class="std std-numref">Fig. 37</span></a>) button. This will download a sample data input (<strong>.csv</strong>) file to the user’s computer. The sample file can be filled with data, and then uploaded to the CAST using the <code class="docutils literal notranslate"><span class="pre">upload</span></code> button. Users are not required to be <strong>online</strong> while working of the sample file.</p>
 <div class="admonition attention">
@@ -425,6 +471,95 @@
 <p class="admonition-title">Warning</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">delete</span> <span class="pre">table</span> <span class="pre">data</span></code> button will delete the entire user data in the table. Users should save their data before using this button.</p>
 <p>Deletion of selective data row is still not implemented in CAST.</p>
+</div>
+</div>
+</div>
+<div class="section" id="data-analysis-and-visualization">
+<h2>Data Analysis and Visualization<a class="headerlink" href="#data-analysis-and-visualization" title="Permalink to this headline">¶</a></h2>
+<p><strong>CAST</strong> provides only a limited data analysis and visualization options. However, the provided options are certainly good enough to have an impression of site data including user data. Users are provided options for downloading data in <em>editable</em> format (e.g., csv) through <strong>CAST</strong> interface (see <a class="reference internal" href="#db1"><span class="std std-numref">Fig. 34</span></a> ). This simplifies users data analysis outside of <strong>CAST</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>CAST</strong> data analysis allows user to compare the <a class="reference internal" href="#unmod-data"><span class="std std-ref">Unmodifiable site data</span></a> and <a class="reference internal" href="#user-data"><span class="std std-ref">User data</span></a></p>
+</div>
+<div class="section" id="accessing-visualization-and-data-analysis-interface-of-cast">
+<h3>Accessing Visualization and Data Analysis Interface of CAST<a class="headerlink" href="#accessing-visualization-and-data-analysis-interface-of-cast" title="Permalink to this headline">¶</a></h3>
+<p>Under the heading of <strong>Analysis Visualisation</strong>, the dropdown menu provides the visualisation options of CAST (see screenshot <a class="reference internal" href="#db5"><span class="std std-numref">Fig. 38</span></a>). Data summary table is also part of the analysis. The <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">Plots</span></code> option gives the user an overview of all the plots and <em>clicking</em> them individually gives the information on the clicked plot type. Different plot-types and options available with them are discussed below. Open-source data visualization library <a class="reference external" href="https://plotly.com/python/">Plotly</a> is used for plots and visualization in <strong>CAST</strong>.</p>
+<div class="figure align-center" id="db5">
+<a class="reference internal image-reference" href="../../../_images/db_f5.png"><img alt="../../../_images/db_f5.png" src="../../../_images/db_f5.png" style="width: 944.5px; height: 469.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 38 </span><span class="caption-text">Visualization options of CAST</span><a class="headerlink" href="#db5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="bargraph">
+<h3>Bargraph<a class="headerlink" href="#bargraph" title="Permalink to this headline">¶</a></h3>
+<p>The Bargraph shows the <em>Plume Length</em>(<span class="math notranslate nohighlight">\(y\)</span>-axis) versus the <em>Site Number</em> (<span class="math notranslate nohighlight">\(x\)</span>-axis). The <em>Site Number</em> are randomized order of site found in the database table. There are several features within each of the plot-types, which can be used interactively. These options provide very useful way to understand data. These options included <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">as</span> <span class="pre">png</span></code>, <code class="docutils literal notranslate"><span class="pre">Zoom</span></code>, <code class="docutils literal notranslate"><span class="pre">Pan</span></code>, <code class="docutils literal notranslate"><span class="pre">Box</span> <span class="pre">Select</span></code>, <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">in</span></code>, <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">out</span></code>. Furthermore, there is also a option to provide the graph in a <em>fullscreen mode</em>. This let user interact with visuals more appropriately.</p>
+<div class="figure align-center" id="db6">
+<a class="reference internal image-reference" href="../../../_images/db_f6.png"><img alt="../../../_images/db_f6.png" src="../../../_images/db_f6.png" style="width: 646.1999999999999px; height: 378.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 39 </span><span class="caption-text">Bargraph of the plume length</span><a class="headerlink" href="#db6" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="boxplots">
+<h3>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">¶</a></h3>
+<p>Boxplot is the other plot-type that can be used to visualize site datasets in CAST. In this plot, users can observe the <em>mean</em>, <em>median</em>, <em>maximum</em> and <em>minimum</em> values for FOUR different site parameters: <code class="docutils literal notranslate"><span class="pre">PLume</span> <span class="pre">Length</span></code> (see screenshot <code class="xref std std-numref docutils literal notranslate"><span class="pre">db_f7</span></code>), <code class="docutils literal notranslate"><span class="pre">Aquifer</span> <span class="pre">Thickness</span></code>, <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Donor</span></code>, <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Acceptor</span></code> in the plot. Note that <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Donor</span></code> refers to <em>Contaminant Concentration</em> and <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Acceptor</span></code> the partner reactant such as Oxygen, Nitrates etc. User can interact using the  features (zoom, box select etc., <code class="xref std std-numref docutils literal notranslate"><span class="pre">db_f6</span></code>)</p>
+<div class="figure align-center" id="db7">
+<a class="reference internal image-reference" href="../../../_images/db_f7.png"><img alt="../../../_images/db_f7.png" src="../../../_images/db_f7.png" style="width: 951.5px; height: 374.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">Boxplots of several site quantities.</span><a class="headerlink" href="#db7" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="histograms-and-distributions">
+<h3>Histograms and Distributions<a class="headerlink" href="#histograms-and-distributions" title="Permalink to this headline">¶</a></h3>
+<p>Histogram plots of CAST also attempts to provide limited types of <em>continuous distributions</em> of the data. By default, the histogram shows the <em>Guassian</em> distribution for <code class="docutils literal notranslate"><span class="pre">Plume</span> <span class="pre">Length</span></code> data, which can be changed to <em>Lognormal</em> and <em>Exponential</em> distributions. Distribution and fits are provided also for other site parameters  <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Donor</span></code>, <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Acceptor</span></code> and <code class="docutils literal notranslate"><span class="pre">Aquifer</span> <span class="pre">Thickness</span></code>. The screenshot from CAST (below) provides a clearer picture of the available options of Histogram plot-type from CAST.</p>
+<div class="figure align-center" id="db8">
+<a class="reference internal image-reference" href="../../../_images/db_f8.png"><img alt="../../../_images/db_f8.png" src="../../../_images/db_f8.png" style="width: 937.3px; height: 264.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 41 </span><span class="caption-text">Histogram and underlying distribution type of site parameters.</span><a class="headerlink" href="#db8" title="Permalink to this image">¶</a></p>
+</div>
+<p>The distribution fitting of the Histogram in CAST is performed using the open-source Scipy library <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/stats.html">scipy.stats</a>. The code snippets (from CAST below) shows the implementation of Python code for the distribution fits. The complete codes are available <a class="reference external" href="https://github.com/CAST-IIT/CAST/blob/Personal-CAST-development/groundwater/databasePlots.py">here</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_histogram</span><span class="p">(</span><span class="n">histogramFeature</span><span class="p">,</span> <span class="n">table_data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">parameter</span><span class="p">):</span>
+    <span class="n">plume_data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">parameter</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">parameter</span> <span class="o">==</span> <span class="s2">&quot;Electron Donor[mg/l]&quot;</span><span class="p">:</span>
+        <span class="n">plume_data</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">plume_data</span><span class="p">]</span>
+    <span class="n">plume_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">plume_data</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+
+    <span class="n">mu</span><span class="p">,</span> <span class="n">std</span> <span class="o">=</span> <span class="n">norm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">plume_data</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">plume_data</span><span class="p">))</span>
+    <span class="c1"># Get current size</span>
+    <span class="n">fig_size</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span>
+    <span class="n">fig_size</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># width</span>
+    <span class="n">fig_size</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fig_size</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">plume_data</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#ffa600&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">histogramFeature</span> <span class="o">==</span> <span class="s1">&#39;Gaussian&#39;</span><span class="p">:</span>
+        <span class="n">y_pdf</span> <span class="o">=</span> <span class="n">ss</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pdf</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#d45087&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">histogramFeature</span> <span class="o">==</span> <span class="s1">&#39;Log Normal&#39;</span><span class="p">:</span>
+        <span class="n">y_log</span> <span class="o">=</span> <span class="n">ss</span><span class="o">.</span><span class="n">lognorm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_log</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#a05195&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="scattered-plots">
+<h3>Scattered Plots<a class="headerlink" href="#scattered-plots" title="Permalink to this headline">¶</a></h3>
+<p>Scatter Plots provide an option to compare among a pair of site parameters. This plot-type in addition to visualization also aid in quantifying correlation and underlying fit between parameters. The screenshot below shows options available within the Scatter plot interface of CAST. Plot provides interactive options such as <code class="docutils literal notranslate"><span class="pre">zoom</span></code>, <code class="docutils literal notranslate"><span class="pre">pan</span></code> etc as discussed above.</p>
+<div class="figure align-center" id="db9">
+<a class="reference internal image-reference" href="../../../_images/db_f9.png"><img alt="../../../_images/db_f9.png" src="../../../_images/db_f9.png" style="width: 885.5px; height: 263.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 42 </span><span class="caption-text">Scatter plots and fit options in CAST.</span><a class="headerlink" href="#db9" title="Permalink to this image">¶</a></p>
+</div>
+<p>Scatter plots are fundamental in developing models. Therefore, in CAST in addition to the visualization, different fit-types: <code class="docutils literal notranslate"><span class="pre">Exponential</span></code>, <code class="docutils literal notranslate"><span class="pre">Linear</span></code>, <code class="docutils literal notranslate"><span class="pre">Power</span> <span class="pre">2</span></code>, <code class="docutils literal notranslate"><span class="pre">Power</span> <span class="pre">3</span></code>) are provided between different site parameters (e.g., <code class="docutils literal notranslate"><span class="pre">Aquifer</span> <span class="pre">Thickness</span></code>, <code class="docutils literal notranslate"><span class="pre">Electron</span> <span class="pre">Donor</span></code>) with the <code class="docutils literal notranslate"><span class="pre">Plume</span> <span class="pre">Length</span></code> (see <a class="reference internal" href="#db9"><span class="std std-numref">Fig. 42</span></a>). Plume Length in CAST is the main output quantity. The main output of the Models used in CAST (see <a class="reference internal" href="../an_model/an_model.html"><span class="doc std std-doc">CAST Toolbox - Analytical Models</span></a>) is maximum plume length or <span class="math notranslate nohighlight">\(L_{max}\)</span>.</p>
+<p>Data fits in CAST is performed using the open-source Scipy library <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/optimize.html">scipy.optimize</a>. In particular the function provided by <code class="docutils literal notranslate"><span class="pre">curve_fit</span></code> in scipy.optimize is used for the fitting. Fit parameters including <span class="math notranslate nohighlight">\(R^2\)</span> value are currently not provided as intention in the current version of CAST data-analysis is to only present the first-hand information of data. Users are provided option to <em>download</em> data in editable format, which simplifies full-scale data analysis. The code snippet below shows the <strong>fit</strong> implemented in CAST. Complete code can be obtained from <a class="reference external" href="https://github.com/CAST-IIT/CAST/blob/Personal-CAST-development/groundwater/scatterplot.py">here</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">if</span> <span class="n">feature</span> <span class="o">==</span> <span class="s1">&#39;Exponential&#39;</span><span class="p">:</span>
+        <span class="c1"># for exponential fit</span>
+        <span class="n">popt</span><span class="p">,</span> <span class="n">pcov</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">exponenial_func</span><span class="p">,</span> <span class="n">merged_list</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">p0</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1e-6</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">maxfev</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+        <span class="n">xx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">merged_list</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">merged_list</span><span class="p">))</span>
+        <span class="n">yy</span> <span class="o">=</span> <span class="n">exponenial_func</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="o">*</span><span class="n">popt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="statistical-description-of-data">
+<h2>Statistical Description of Data<a class="headerlink" href="#statistical-description-of-data" title="Permalink to this headline">¶</a></h2>
+<p>This provide a statistical (numbers) overview of the data.  Statistical quantities such as <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">median</span></code>, <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code> among others provide a good insight of the data, and simplifies comparison between large site data and other usually (small) user site data. The screenshot below shows the CAST output of the site description.</p>
+<div class="figure align-center" id="db10">
+<a class="reference internal image-reference" href="../../../_images/db_f10.png"><img alt="../../../_images/db_f10.png" src="../../../_images/db_f10.png" style="width: 943.5px; height: 375.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 43 </span><span class="caption-text">Stastiscal overview of the site data</span><a class="headerlink" href="#db10" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
