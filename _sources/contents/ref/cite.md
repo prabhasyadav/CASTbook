@@ -5,9 +5,7 @@ CAST is an open-source project and therefore many have contributed with differen
 
 #### Publication ####
 
-1. Yadav, P. K., Birla, S., Baliga, V., Liedl, R. Chahar, B. R., and Werth, C., Contamination Assessment and Site-management Tool (CAST) - A browser-based tool for site assessment, Groundwater (in revision)
-
- <br>
+1. Yadav, P. K., Birla, S., Baliga, V., Liedl, R. Chahar, B. R., and Werth, C., Contamination Assessment and Site-management Tool (CAST) - A browser-based tool for site assessment, Groundwater (in revision) <br><br>
    
 2. Birla, S., Baliga, V., Yadav, P. K., Soni, V., Liedl, R., and Chahar, B. R.,  A browser-based user interface for the estimation of steady state plume lengths. FHDGG- 2020 Conference.
 
