@@ -1,11 +1,10 @@
-## CAST Toolbox - Analytical Models
+### CAST Toolbox - Analytical Models
 
 
 The analytical model toolbox within the CAST provides the solution for $L_{max}$. The toolbox currently include **6** different models; each of them varying with the other with respect to model conditions, dimensionality, input quantities, and also orientation. Analytical model toolbox is the recommended step after the use of _Data Toolbox_ in the CAST work flow.
 
-### Analytical models in CAST ###
+#### Analytical models in CAST ####
 Included models are (_see individual model page for details_):
-(~we will hyperlink the models later~ )
 
 1. [Ham et al. (2004)](./ham2004.md) 
 
@@ -46,14 +45,14 @@ $$\times \Bigg[\text{erfc}\Bigg\{\frac{z-H}{2\sqrt{D_z'\xi}}\Bigg\}
 \Bigg\}\Bigg]\text{d}\xi$$
 
 
-### Computing interfaces in CAST ### 
+#### Computing interfaces in CAST ####
 
 CAST provide the following two computing interfaces for each analytical and empirical models:
 
 1. Single computing interface
 2. Multiple computing interface
 
-#### Single computing interface ####
+##### Single computing interface #####
 
 The **single computing interface** is a quick computing mode in which a set of model data can be inserted in data input box to obtain $L_{max}$. The interface output (see screenshot {numref}`scm` below) is actual $L_{max}$ and the plot in which the user input result is compared against the field plume length. The output graph has limited interactive options- such as zooming, panning, and obtaining figure as a _png_ graphics. 
 
@@ -69,7 +68,7 @@ Single computing interface
 The single computing interface also provide user interactivity with computation. Interface provide _sliders_ for changing parameter values, which leads to computation and visualization of $L_{max}$. 
 
 
-#### Multiple computing interface ####
+##### Multiple computing interface #####
 
 The **Multiple computing interface** provides a possibility to create simulation scenarios and compute $L_{max}$ for all scenarios at once (see screenshot {numref}`mcm` below) . Scenarios can be directly put input in the table or can be uploaded to the interface. For uploading the sample input template (a *.csv*) file has to be downloaded. After creating data in the *.csv* file, it can be uploaded to the interface for the $L_{max}$ computation. 
 

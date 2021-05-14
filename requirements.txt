@@ -2,11 +2,7 @@ jupyter-book
 nbsphinx
 matplotlib
 numpy
-nbinteract
 pandas
-xlrd
-ipympl
-jupyter-contrib-nbextensions
 jupytext>=0.16 
 
 

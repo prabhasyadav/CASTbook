@@ -181,7 +181,7 @@ name: li2011_f4a
 Interface for multiple computing interface.
 ```
 
-**Reference**
+#### Reference ####
 
 (refli2011)=
 Liedl, R., Yadav, P.K., Dietrich, P., 2011. Length of 3-D mixing-controlled plumes for a fully penetrating contaminant source with finite width. Water Resour. Res. 47. https://doi.org/10.1029/2010WR009710 

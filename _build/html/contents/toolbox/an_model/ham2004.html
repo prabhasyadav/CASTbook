@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAST Toolbox - Analytical Models - Ham et al. 2004 &#8212; CAST - A site assessment tool</title>
+    <title>CAST Toolbox - Analytical Models - Ham et al. (2004) &#8212; CAST - A site assessment tool</title>
     
   <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -62,6 +62,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -176,7 +178,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     CAST Toolbox - Analytical Models - Ham et al. 2004
+     CAST Toolbox - Analytical Models - Ham et al. (2004)
     </a>
    </li>
    <li class="toctree-l2">
@@ -204,8 +206,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../em_model/mg2005.html">
-     CAST Toolbox - Emperical Models - Maier and Grathwohl (2005)
+    <a class="reference internal" href="../em_model/mg2006.html">
+     CAST Toolbox - Empirical Models - Maier and Grathwohl (2006)
     </a>
    </li>
   </ul>
@@ -342,6 +344,43 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-ham-et-al-2004-model-in-cast">
+   Using Ham et al. (2004) model in CAST
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-computing-interface">
+     Single computing interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dynamically-comparing-model-results-using-sliders">
+     Dynamically comparing model results - using sliders
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-computing-interface">
+     Multiple computing interface
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference">
+   Reference
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -351,16 +390,61 @@
               <div>
                 
   <div class="section" id="cast-toolbox-analytical-models-ham-et-al-2004">
-<h1>CAST Toolbox - Analytical Models - Ham et al. 2004<a class="headerlink" href="#cast-toolbox-analytical-models-ham-et-al-2004" title="Permalink to this headline">¶</a></h1>
-<p><strong>Sandhya</strong>, <strong>Iram</strong>, <strong>Prabhas</strong> and <strong>Anton</strong> to do this.</p>
-<p>OK, this is how we do:</p>
+<h1>CAST Toolbox - Analytical Models - Ham et al. (2004)<a class="headerlink" href="#cast-toolbox-analytical-models-ham-et-al-2004" title="Permalink to this headline">¶</a></h1>
+<p>{ref}``Ham et al. (2004)<refham2004>` is 2D horizontal model and provides an estimate of a steady-state plume length (<span class="math notranslate nohighlight">\(L_{max}\)</span>) using a point source. Ádditionally, the model explores the effects of longitudinal and transverse dispersivity on the steady state plume length.</p>
+<div class="figure align-center" id="ham2004-f1">
+<a class="reference internal image-reference" href="../../../_images/ham2004_f1.png"><img alt="../../../_images/ham2004_f1.png" src="../../../_images/ham2004_f1.png" style="width: 369.20000000000005px; height: 146.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 67 </span><span class="caption-text">Ham et al. (2004)- conceptual set-up</span><a class="headerlink" href="#ham2004-f1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Ham et al. (2004) provides the following explicit expression for <span class="math notranslate nohighlight">\(L_{max}\)</span>:
+$<span class="math notranslate nohighlight">\(
+L_{max} = \frac{1}{4\pi}\frac{W^2}{\alpha_{TH}}\bigg(\frac{\gamma C_{ED}^\circ}{C_{EA}^\circ}\bigg)^2
+\)</span>$</p>
+<div class="sidebar">
+<p class="sidebar-title">Symbols</p>
+<p><span class="math notranslate nohighlight">\(W\)</span> = Effective flow Width [L]<br>
+<span class="math notranslate nohighlight">\(\alpha_{TH}\)</span> = Horizontal transverse Dispersivity [L]<br>
+<span class="math notranslate nohighlight">\(\gamma\)</span> = Reaction stoichiometric ratio [ ]<br>
+<span class="math notranslate nohighlight">\(C_{ED}^\circ\)</span> = Contaminant (Electron Donor) concentration [ML<span class="math notranslate nohighlight">\(^{-3}\)</span>]<br>
+<span class="math notranslate nohighlight">\(C_{EA}^\circ\)</span> = Partner Reactant (Electron Acceptor) concentration [ML<span class="math notranslate nohighlight">\(^{-3}\)</span>]<br></p>
+</div>
+<p><strong>The model is based on the following assumptions:</strong></p>
 <ol class="simple">
-<li><p>Describe each model - this we already have</p></li>
-<li><p>Provide how to use the code with screenshots</p></li>
-<li><p>Step 2 should talk a bit about input value and about functionalities - e.g., slider and how to interpret results</p></li>
-<li><p>We have to do this for both single and multiple scenario mode.</p></li>
+<li><p>A point source with constant mass flow injection.</p></li>
+<li><p>An instantaneous reaction between an injected compound and a reactant in the ambient groundwater at the plume fringe.</p></li>
+<li><p>The domain in homogeneous, isotropic and fully saturated.</p></li>
 </ol>
-<p>We do this for all models.</p>
+<div class="section" id="using-ham-et-al-2004-model-in-cast">
+<h2>Using Ham et al. (2004) model in CAST<a class="headerlink" href="#using-ham-et-al-2004-model-in-cast" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="single-computing-interface">
+<h3>Single computing interface<a class="headerlink" href="#single-computing-interface" title="Permalink to this headline">¶</a></h3>
+<p>The CAST user-interface for all the analytical models are identical. This is true for both single computing interface and multiple simulation interface. The identical interface simplifies the use of models in the CAST. Therefore, the extensive details on using the Liedl et al. (2005) model in CAST provided <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">here</span></a> can be used also for the Ham et al. (2004).</p>
+<p>The difference in each model interface is the model specific parameters. This can be observed in the CAST screenshot below:</p>
+<div class="figure align-center" id="ham2004-f2">
+<a class="reference internal image-reference" href="../../../_images/ham2004_f2.png"><img alt="../../../_images/ham2004_f2.png" src="../../../_images/ham2004_f2.png" style="width: 768.0px; height: 346.40000000000003px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 68 </span><span class="caption-text">Ham et al. (2004)- input parameters</span><a class="headerlink" href="#ham2004-f2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Once the input data is placed in the box, user needs to click on the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code> to get the result. Results are obtained as an absolute number below the Generate Graph button and also graphically, which provides the field plume length data from the database. This allows a visual comparison of the model <span class="math notranslate nohighlight">\(L_{max}\)</span> with the field data.</p>
+<p>As explained in detail in <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a> model , the resulting graph provides several interactive options to evaluate results.</p>
+</div>
+<div class="section" id="dynamically-comparing-model-results-using-sliders">
+<h3>Dynamically comparing model results - using sliders<a class="headerlink" href="#dynamically-comparing-model-results-using-sliders" title="Permalink to this headline">¶</a></h3>
+<p>Sliders are activated once the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code> is clicked (see Interactive options in the Single computing interface). Sliders are provided for critical model parameters only. Sliders changes the model input parameters; for which the output <span class="math notranslate nohighlight">\(L_{max}\)</span> appears in the graph. This enables a dynamic computation and visualization.</p>
+</div>
+<div class="section" id="multiple-computing-interface">
+<h3>Multiple computing interface<a class="headerlink" href="#multiple-computing-interface" title="Permalink to this headline">¶</a></h3>
+<p>The multiple computing interface of the Ham et al. (2004) model is identical to <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a> model interface. The goal of the multiple computing interface  is to develop several scenarios and compare the output of these scenarios with that of the field data. As can be observed in the screenshot below, users have an option to select the site(s) they would like to compare their scenarios with.</p>
+<p>For clarification, the interface of multiple computing interface is provided in the screenshot below.</p>
+<div class="figure align-center" id="ham2004-f3">
+<a class="reference internal image-reference" href="../../../_images/ham2004_f3.png"><img alt="../../../_images/ham2004_f3.png" src="../../../_images/ham2004_f3.png" style="width: 546.4px; height: 262.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 69 </span><span class="caption-text">Options available with data input and result downloading in the multiple computing interface of CAST</span><a class="headerlink" href="#ham2004-f3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="reference">
+<span id="refham2004"></span><h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<p>Ham, P.A.S., Schotting, R.J., Prommer, H., Davis, G.B., (2004), Effects of hydrodynamic dispersion on plume lengths for instantaneous bimolecular reactions. Adv. Water Resour. 27, 803–813. <a class="reference external" href="https://doi.org/10.1016/j.advwatres.2004.05.008">https://doi.org/10.1016/j.advwatres.2004.05.008</a></p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

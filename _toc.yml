@@ -24,7 +24,7 @@
   - file: contents/toolbox/em_model/em_model
     sections:
     - file: contents/toolbox/em_model/birla2020
-    - file: contents/toolbox/em_model/mg2005
+    - file: contents/toolbox/em_model/mg2006
    
   - file: contents/toolbox/bscreen/bioscreen
 
