@@ -34,9 +34,7 @@ $C_{EA}^\circ$ = Partner Reactant (Electron Acceptor) concentration [ML$^{-3}$]
 2. A single step bi-molecular instantaneous reaction between reactants taking place only at the fringe.
 3. The contaminant source (Electron Donor) penetrates entire thickness of the aquifer.
  
-(refli2005)= 
-#### Reference: #####
-Liedl, R., Valocchi, A., Dietrich, P., Grathwohl, P., 2005. Finiteness of steady state plumes. Water Resour. Res. 41, W12501. https://doi.org/10.1029/2005WR004000
+
 
 
 ### Using Liedl et al. (2005) model in CAST
@@ -263,7 +261,9 @@ name: li2005_15
 Downloading/saving obtained results in different formats and printing results
 ```
 
-
+(refli2005)= 
+#### Reference: #####
+Liedl, R., Valocchi, A., Dietrich, P., Grathwohl, P., 2005. Finiteness of steady state plumes. Water Resour. Res. 41, W12501. https://doi.org/10.1029/2005WR004000
 
 
 

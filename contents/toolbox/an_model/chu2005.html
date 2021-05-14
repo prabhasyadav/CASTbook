@@ -62,10 +62,12 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="CAST Toolbox - Analytical Models - Ham et al. 2004" href="ham2004.html" />
+    <link rel="next" title="CAST Toolbox - Analytical Models - Ham et al. (2004)" href="ham2004.html" />
     <link rel="prev" title="CAST Toolbox - Analytical Models - Liedl et al. (2005)" href="liedl2005.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -176,7 +178,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="ham2004.html">
-     CAST Toolbox - Analytical Models - Ham et al. 2004
+     CAST Toolbox - Analytical Models - Ham et al. (2004)
     </a>
    </li>
    <li class="toctree-l2">
@@ -204,8 +206,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../em_model/mg2005.html">
-     CAST Toolbox - Emperical Models - Maier and Grathwohl (2005)
+    <a class="reference internal" href="../em_model/mg2006.html">
+     CAST Toolbox - Empirical Models - Maier and Grathwohl (2006)
     </a>
    </li>
   </ul>
@@ -342,6 +344,43 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-chu-et-al-2005-model-in-cast">
+   Using Chu et al. (2005) model in CAST
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-computing-interface">
+     Single computing interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dynamically-comparing-model-results-using-sliders">
+     Dynamically comparing model results - using sliders
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-computing-interface">
+     Multiple computing interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reference">
+     Reference:
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -352,16 +391,70 @@
                 
   <div class="section" id="cast-toolbox-analytical-models-chu-et-al-2005">
 <h1>CAST Toolbox - Analytical Models - Chu et al. (2005)<a class="headerlink" href="#cast-toolbox-analytical-models-chu-et-al-2005" title="Permalink to this headline">¶</a></h1>
-<p><strong>Sandhya</strong>, <strong>Iram</strong>, <strong>Prabhas</strong> and <strong>Anton</strong> to do this.</p>
-<p><strong>Sandhya</strong> and <strong>Iram</strong> - 2D models</p>
-<p>OK, this is how we do:</p>
+<p><a class="reference internal" href="#refchu2005"><span class="std std-ref">Chu et al. (2005)</span></a> is 2D horizontal model and provides an estimate of a steady-state plume length (<span class="math notranslate nohighlight">\(L_{max}\)</span>) and investigates the large-time solution behavior of a representative bio-reactive transport model under the conditions that the mixing of two required substrate occurs only in the directions transverse to groundwater flow.</p>
+<div class="figure align-center" id="chu2005-f1">
+<a class="reference internal image-reference" href="../../../_images/chu2005_f1.png"><img alt="../../../_images/chu2005_f1.png" src="../../../_images/chu2005_f1.png" style="width: 512.4px; height: 223.60000000000002px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 62 </span><span class="caption-text">Chu et al. (2005)- conceptual set-up</span><a class="headerlink" href="#chu2005-f1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Chu et al. (2004) provides the following explicit expression for <span class="math notranslate nohighlight">\(L_{max}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+L_{max} = \frac{\pi}{16}\frac{W^2}{\alpha_{TH}}\bigg(\frac{\gamma C_{ED}^\circ}{C_{EA}^\circ+\epsilon}\bigg)^2
+\]</div>
+<div class="sidebar">
+<p class="sidebar-title">Symbols:</p>
+<p><span class="math notranslate nohighlight">\(W\)</span> = Source Width [L]<br>
+<span class="math notranslate nohighlight">\(\alpha_{TH}\)</span> = Horizontal Transverse Dispersivity [L]<br>
+<span class="math notranslate nohighlight">\(\gamma\)</span> = Reaction stoichiometric ratio [ ]<br>
+<span class="math notranslate nohighlight">\(C_{ED}^\circ\)</span> = Contaminant (Electron Donor) concentration [ML<span class="math notranslate nohighlight">\(^{-3}\)</span>]<br>
+<span class="math notranslate nohighlight">\(C_{EA}^\circ\)</span> = Partner Reactant (Electron Acceptor) concentration [ML<span class="math notranslate nohighlight">\(^{-3}\)</span>]<br>
+<span class="math notranslate nohighlight">\(\epsilon\)</span> = Biological concentration factor [ML<span class="math notranslate nohighlight">\(^{-3}\)</span>]</p>
+</div>
+<p><strong>The model is based on the following assumptions:</strong></p>
 <ol class="simple">
-<li><p>Describe each model - this we already have</p></li>
-<li><p>Provide how to use the code with screenshots</p></li>
-<li><p>Step 2 should talk a bit about input value and about functionalities - e.g., slider and how to interpret results</p></li>
-<li><p>We have to do this for both single and multiple scenario mode.</p></li>
+<li><p>There is a continuous line source of contamination and instantaneous reaction active in the domain.</p></li>
+<li><p>A dissolved contaminant is assumed to be biodegraded only at its plume fringe because of transverse mixing but not inside the plume.</p></li>
+<li><p>The domain in homogeneous, isotropic and fully saturated.</p></li>
 </ol>
-<p>We do this for all models.</p>
+<div class="section" id="using-chu-et-al-2005-model-in-cast">
+<h2>Using Chu et al. (2005) model in CAST<a class="headerlink" href="#using-chu-et-al-2005-model-in-cast" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="single-computing-interface">
+<h3>Single computing interface<a class="headerlink" href="#single-computing-interface" title="Permalink to this headline">¶</a></h3>
+<p>The CAST user-interface for all the analytical models are identical. This is true for both single computing interface and multiple simulation interface. The identical interface simplifies the use of models in the CAST. Therefore, the extensive details on using the Liedl et al. (2005) model in CAST provided <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">here</span></a> can be used also for the Chu et al. (2005).</p>
+<p>The difference in each model interface is the model specific parameters. This can be observed in the CAST screenshot below:</p>
+<div class="figure align-center" id="chu2005-f2">
+<a class="reference internal image-reference" href="../../../_images/chu2005_f2.png"><img alt="../../../_images/chu2005_f2.png" src="../../../_images/chu2005_f2.png" style="width: 768.0px; height: 346.40000000000003px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 63 </span><span class="caption-text">Chu et al. (2005)- input parameters</span><a class="headerlink" href="#chu2005-f2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Once the input data is placed in the box, user needs to click on the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code> to get the result. Results are obtained as an <em>absolute number</em> below the Generate Graph button and also graphically, which provides the field plume length data from the database. This allows a visual comparison of the model <span class="math notranslate nohighlight">\(L_{max}\)</span> with the field data.</p>
+<p>As explained in detail in the use of <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a> model , the resulting graph provides several interactive options to evaluate results. The screenshot below provides the output of the single computing mode of CAST.</p>
+<div class="figure align-center" id="chu2005-f3">
+<a class="reference internal image-reference" href="../../../_images/chu2005_f3.png"><img alt="../../../_images/chu2005_f3.png" src="../../../_images/chu2005_f3.png" style="width: 768.0px; height: 346.40000000000003px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 64 </span><span class="caption-text">Interactive options to evaluate results</span><a class="headerlink" href="#chu2005-f3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="dynamically-comparing-model-results-using-sliders">
+<h3>Dynamically comparing model results - using sliders<a class="headerlink" href="#dynamically-comparing-model-results-using-sliders" title="Permalink to this headline">¶</a></h3>
+<p>Sliders are activated once the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code> is clicked (see {ref}``chu2005_f2`). Sliders are provided for only those parameters that are more critical on <span class="math notranslate nohighlight">\(L_{max}\)</span>. Sliders changes the model input parameters; for which the output <span class="math notranslate nohighlight">\(L_{max}\)</span> appears in the graph. This enables a dynamic computation and visualization.</p>
+</div>
+<div class="section" id="multiple-computing-interface">
+<h3>Multiple computing interface<a class="headerlink" href="#multiple-computing-interface" title="Permalink to this headline">¶</a></h3>
+<p>The multiple computing interface of the Chu et al. (2004) model is identical to <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a> model interface. The goal of the multiple computing interface  is to develop several scenarios and compare the output of these scenarios with that of the field data. As can be observed in the screenshot below, users have an option to select the site(s) they would like to compare their with.</p>
+<div class="figure align-center" id="chu2005-f4">
+<a class="reference internal image-reference" href="../../../_images/chu2005_f4.png"><img alt="../../../_images/chu2005_f4.png" src="../../../_images/chu2005_f4.png" style="width: 546.4px; height: 262.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 65 </span><span class="caption-text">Site selection options provided in the multiple computing interface of CAST</span><a class="headerlink" href="#chu2005-f4" title="Permalink to this image">¶</a></p>
+</div>
+<p>The interface of multiple computing interface is provided in the screenshot below. Details on the options are identical to that provided for<a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a>. The screenshot clarifies the available options.</p>
+<div class="figure align-center" id="chu2005-f5">
+<a class="reference internal image-reference" href="../../../_images/chu2005_f5.png"><img alt="../../../_images/chu2005_f5.png" src="../../../_images/chu2005_f5.png" style="width: 551.2px; height: 262.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 66 </span><span class="caption-text">Options available with data input and result downloading in the multiple computing interface of CAST</span><a class="headerlink" href="#chu2005-f5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="reference">
+<span id="refchu2005"></span><h3>Reference:<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h3>
+<p>M. Chu P. K. Kitanidis P. L. McCarty (2005), Modeling microbial reactions at the plume fringe subject to transverse mixing in porous media: When can the rates of microbial reaction be assumed to be instantaneous? <a class="reference external" href="https://doi.org/10.1029/2004WR003495">https://doi.org/10.1029/2004WR003495</a></p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -390,7 +483,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="liedl2005.html" title="previous page">CAST Toolbox - Analytical Models - Liedl et al. (2005)</a>
-    <a class='right-next' id="next-link" href="ham2004.html" title="next page">CAST Toolbox - Analytical Models - Ham et al. 2004</a>
+    <a class='right-next' id="next-link" href="ham2004.html" title="next page">CAST Toolbox - Analytical Models - Ham et al. (2004)</a>
 
         </div>
         

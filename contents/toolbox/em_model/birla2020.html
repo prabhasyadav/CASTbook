@@ -62,10 +62,12 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="CAST Toolbox - Emperical Models - Maier and Grathwohl (2005)" href="mg2005.html" />
+    <link rel="next" title="CAST Toolbox - Empirical Models - Maier and Grathwohl (2006)" href="mg2006.html" />
     <link rel="prev" title="CAST Toolbox - Empirical Models" href="em_model.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -176,7 +178,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../an_model/ham2004.html">
-     CAST Toolbox - Analytical Models - Ham et al. 2004
+     CAST Toolbox - Analytical Models - Ham et al. (2004)
     </a>
    </li>
    <li class="toctree-l2">
@@ -204,8 +206,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="mg2005.html">
-     CAST Toolbox - Emperical Models - Maier and Grathwohl (2005)
+    <a class="reference internal" href="mg2006.html">
+     CAST Toolbox - Empirical Models - Maier and Grathwohl (2006)
     </a>
    </li>
   </ul>
@@ -342,6 +344,43 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#birla-et-al-2020-model-description">
+   Birla et al. (2020) model description
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-birla-et-al-2020-model-in-cast">
+   Using Birla et al. (2020) model in CAST
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-computing-interface">
+     Single computing interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-computing-interface">
+     Multiple computing interface
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference">
+   Reference
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -352,15 +391,73 @@
                 
   <div class="section" id="cast-toolbox-empirical-models-birla-et-al-2020">
 <h1>CAST Toolbox - Empirical Models - Birla et al. (2020)<a class="headerlink" href="#cast-toolbox-empirical-models-birla-et-al-2020" title="Permalink to this headline">¶</a></h1>
-<p><strong>Sandhya</strong> and <strong>Iram</strong> to do this. to do this.</p>
-<p>OK, this is how we do:</p>
+<div class="section" id="birla-et-al-2020-model-description">
+<h2>Birla et al. (2020) model description<a class="headerlink" href="#birla-et-al-2020-model-description" title="Permalink to this headline">¶</a></h2>
+<p>This is a 2D empirical model, based on <a class="reference internal" href="#refbirla2020"><span class="std std-ref">Birla et al. (2020)</span></a>. The empirical model is based on the hybrid concept of combining an analytical model with an empirical function. The analytical model used is <a class="reference internal" href="../an_model/liedl2005.html"><span class="doc std std-doc">Liedl et al. 2005</span></a> model and empirical function is developed using MODFLOW/MT3DMS based numerical experimentation. The experimentation part uses the effect of recharge on the plume extension. The figure below provides the conceptual set-up of Birla et al. (2020).</p>
+<div class="figure align-center" id="birla2020-f1">
+<a class="reference internal image-reference" href="../../../_images/birla2020_f1.png"><img alt="../../../_images/birla2020_f1.png" src="../../../_images/birla2020_f1.png" style="width: 536.4px; height: 246.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 82 </span><span class="caption-text">Birla et al. (2020)- conceptual set-up</span><a class="headerlink" href="#birla2020-f1" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference internal" href="#refbirla2020"><span class="std std-ref">Birla et al. (2020)</span></a> provides the following explicit expression for <span class="math notranslate nohighlight">\(L_{max}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+L_{max} = ({1-0.047{M^.404}{R^{1.833}}})\frac{4}{\pi^2}\frac{M^2}{\alpha_{Tv}}\ln\bigg(\frac{4}{\pi}\frac{\gamma C_{ED}^\circ + C_{EA}^\circ }{C_{EA}^\circ}\bigg)
+\]</div>
+<div class="sidebar">
+<p class="sidebar-title">Symbols:</p>
+<p><span class="math notranslate nohighlight">\(M\)</span> = Source Thickness [L], which is equal to Aquifer thickness (<span class="math notranslate nohighlight">\(A_t\)</span>) [L]<br>
+<span class="math notranslate nohighlight">\(\alpha_{Tv}\)</span> = Vertical Transverse Dispersivity [L]<br>
+<span class="math notranslate nohighlight">\(\gamma\)</span> = Reaction stoichiometric ratio [ ]<br>
+<span class="math notranslate nohighlight">\(C_{ED}^\circ\)</span> = Contaminant (Electron Donor) concentration [ML<span class="math notranslate nohighlight">\(^{-3}\)</span>]<br>
+<span class="math notranslate nohighlight">\(C_{EA}^\circ\)</span> = Partner Reactant (Electron Acceptor) concentration [ML<span class="math notranslate nohighlight">\(^{-3}\)</span>]<br></p>
+<p><span class="math notranslate nohighlight">\(R\)</span>= Recharge rate [L<span class="math notranslate nohighlight">\(^{3}\)</span>T<span class="math notranslate nohighlight">\(^{-1}\)</span>]</p>
+</div>
+<p><strong>The model is based on the following assumptions:</strong></p>
 <ol class="simple">
-<li><p>Describe each model - this we already have</p></li>
-<li><p>Provide how to use the code with screenshots</p></li>
-<li><p>Step 2 should talk a bit about input value and about functionalities - e.g., slider and how to interpret results</p></li>
-<li><p>We have to do this for both single and multiple scenario mode.</p></li>
+<li><p>Steady-state condition in a homogeneous and isotropic aquifer.</p></li>
+<li><p>A single step bi-molecular instantaneous reaction between reactants taking place only at the fringe.</p></li>
+<li><p>The contaminant source (Electron Donor) penetrates entire thickness of the aquifer.</p></li>
+<li><p>Recharge is uniform thorughout the domian and is continuous.</p></li>
 </ol>
-<p>We do this for all models.</p>
+</div>
+<div class="section" id="using-birla-et-al-2020-model-in-cast">
+<h2>Using Birla et al. (2020) model in CAST<a class="headerlink" href="#using-birla-et-al-2020-model-in-cast" title="Permalink to this headline">¶</a></h2>
+<p>Clicking the <strong>Empirical Toolbox</strong> box in the homepage (<a class="reference internal" href="#birla-f1a"><span class="std std-numref">Fig. 83</span></a>) will lead to the interface that lists all the empirical models available in the CAST. To use the Birla et al. (2020) model from the interface shown in the screenshot below, please click on the option <code class="docutils literal notranslate"><span class="pre">Click</span> <span class="pre">here</span> <span class="pre">to</span> <span class="pre">see</span> <span class="pre">the</span> <span class="pre">model</span></code> below the Birla et al. (2020) as shown on the screenshot below.</p>
+<div class="figure align-center" id="birla-f1a">
+<a class="reference internal image-reference" href="../../../_images/birla2020_f1a.png"><img alt="../../../_images/birla2020_f1a.png" src="../../../_images/birla2020_f1a.png" style="width: 931.8px; height: 636.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 83 </span><span class="caption-text">Selecting an empirical model</span><a class="headerlink" href="#birla-f1a" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="single-computing-interface">
+<h3>Single computing interface<a class="headerlink" href="#single-computing-interface" title="Permalink to this headline">¶</a></h3>
+<p>The CAST user-interface is identical for both the analytical as well as empirical models which makes it more user-friendly. This is true for both single computing interface and multiple simulation interface. Therefore, the extensive details on using the <a class="reference internal" href="../an_model/liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a> model in CAST can also be used for the Birla et al. (2020).</p>
+<p>The only difference in each model interface lies in the model specific parameters. This can be observed in the CAST screenshot below:</p>
+<div class="figure align-center" id="birla-f2">
+<a class="reference internal image-reference" href="../../../_images/birla2020_f2.png"><img alt="../../../_images/birla2020_f2.png" src="../../../_images/birla2020_f2.png" style="width: 960.0px; height: 433.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 84 </span><span class="caption-text">Parameters required in Birla et al. (2020) model</span><a class="headerlink" href="#birla-f2" title="Permalink to this image">¶</a></p>
+</div>
+<p>After all the required fields are filled up, a user needs to click on the  <strong><code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code></strong> to get the result. Results are obtained as an absolute number below the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code> button and also graphically, which provides the field plume length data from the database. This allows a visual comparison of the model <span class="math notranslate nohighlight">\(L_{max}\)</span>with the field data.</p>
+<p>As explained in detail in the analytical model <a class="reference internal" href="../an_model/liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a>, the resulting graph provides several interactive options to evaluate results. The screenshot below provides the output of the single computing mode of CAST.</p>
+<p><strong>Dynamically comparing model results - using sliders</strong></p>
+<p>Sliders (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">birla2020_f2</span></code>) become activate only after the <strong><code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code></strong> is clicked (see Interactive options in the Single computing interface). Sliders are provided for more critical model parameters that have been suggested in Birla et al. (2020) paper. Sliders changes the model input parameters; for which the output <span class="math notranslate nohighlight">\(L_{max}\)</span> appears in the graph. This enables a dynamic computation and visualization.</p>
+</div>
+<div class="section" id="multiple-computing-interface">
+<h3>Multiple computing interface<a class="headerlink" href="#multiple-computing-interface" title="Permalink to this headline">¶</a></h3>
+<p>The multiple computing interface of the Birla et al. (2020) model is identical to the  interface of analytical model <a class="reference internal" href="../an_model/liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a>. The goal of the multiple computing interface is to develop several scenarios and compare the output of these scenarios with that of the field data. As can be observed in the screenshot below, users have an option to select the site(s) they would like to compare their scenarios with.</p>
+<div class="figure align-center" id="birla-f3">
+<a class="reference internal image-reference" href="../../../_images/birla2020_f3.png"><img alt="../../../_images/birla2020_f3.png" src="../../../_images/birla2020_f3.png" style="width: 819.6px; height: 394.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 85 </span><span class="caption-text">Selecting site to compare using multiple computing interface of CAST</span><a class="headerlink" href="#birla-f3" title="Permalink to this image">¶</a></p>
+</div>
+<p>The interface of multiple computing interface is provided in the screenshot below. Details on the options are identical to that provided for <a class="reference internal" href="../an_model/liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a>. The screenshot below is for clarification.</p>
+<div class="figure align-center" id="birla-f4">
+<a class="reference internal image-reference" href="../../../_images/birla2020_f4.png"><img alt="../../../_images/birla2020_f4.png" src="../../../_images/birla2020_f4.png" style="width: 819.6px; height: 394.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 86 </span><span class="caption-text">Available options for extracting model results from CAST interface.</span><a class="headerlink" href="#birla-f4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="reference">
+<span id="refbirla2020"></span><h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<p>Birla, s., Yadav, P.K., Mahalawat, P., Haendel, F., Liedl, R., Chahar, B. 2020. Influence of recharge rates on steady-state plume lengths. Jour. Contam. Hydrol. <a class="reference external" href="https://doi.org/10.1016/j.jconhyd.2020.103709">https://doi.org/10.1016/j.jconhyd.2020.103709</a></p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -389,7 +486,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="em_model.html" title="previous page">CAST Toolbox - Empirical Models</a>
-    <a class='right-next' id="next-link" href="mg2005.html" title="next page">CAST Toolbox - Emperical Models - Maier and Grathwohl (2005)</a>
+    <a class='right-next' id="next-link" href="mg2006.html" title="next page">CAST Toolbox - Empirical Models - Maier and Grathwohl (2006)</a>
 
         </div>
         
