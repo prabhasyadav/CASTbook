@@ -149,6 +149,16 @@ With VE created and activated, it is now time to install the Python libraries th
 
 The installing is easy a single _pip_ command ``pip install -r requirements.txt`` will get it all done (as in the screenshot below). 
 
+```{figure} images/off_f8a.png
+---
+scale: 70%
+align: center
+name: of8a
+---
+Installing required Python librarires.
+```
+
+
 ```{attention} 
 - The ``pip install -r requirements.txt`` command must be used in the **CAST** directory.
 - Do **not** close the the command prompt after all requirements.txt operation is complete.

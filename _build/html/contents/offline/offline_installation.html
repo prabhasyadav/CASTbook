@@ -503,6 +503,10 @@ Make sure you are in the <strong>CAST</strong> directory- the directory where yo
 <h2>Step 3. Installing Python libraries required by the <strong>CAST</strong> project<a class="headerlink" href="#step-3-installing-python-libraries-required-by-the-cast-project" title="Permalink to this headline">¶</a></h2>
 <p>With VE created and activated, it is now time to install the Python libraries that are used in CAST. The required libraries are listed in the <strong>.txt</strong> file called <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>. There are several libraries to be installed, e.g., Numpy, Scipy, Matplotlib. Depending on your (internet) connection speed it may take up to 30 minutes (typically for High-speed connection) for installing all the required libraries.</p>
 <p>The installing is easy a single <em>pip</em> command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> will get it all done (as in the screenshot below).</p>
+<div class="figure align-center" id="of8a">
+<a class="reference internal image-reference" href="../../_images/off_f8a.png"><img alt="../../_images/off_f8a.png" src="../../_images/off_f8a.png" style="width: 930.9999999999999px; height: 88.19999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Installing required Python librarires.</span><a class="headerlink" href="#of8a" title="Permalink to this image">¶</a></p>
+</div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <ul class="simple">
@@ -522,21 +526,21 @@ Make sure you are in the <strong>CAST</strong> directory- the directory where yo
 </ul>
 <div class="figure align-center" id="of9">
 <a class="reference internal image-reference" href="../../_images/off_f9.png"><img alt="../../_images/off_f9.png" src="../../_images/off_f9.png" style="width: 679.6999999999999px; height: 510.99999999999994px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Selecting MySql set-up type</span><a class="headerlink" href="#of9" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">Selecting MySql set-up type</span><a class="headerlink" href="#of9" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>Keep on selecting <em>default</em> set-up by clicking <strong>next</strong>  or <strong>execute</strong>. Please do not skip any steps though.  Different components of MySql will be installed during the process. The screenshot below shows the steps.</p></li>
 </ul>
 <div class="figure align-center" id="of10">
 <a class="reference internal image-reference" href="../../_images/off_f10.png"><img alt="../../_images/off_f10.png" src="../../_images/off_f10.png" style="width: 968.4000000000001px; height: 364.8px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">MySql components.</span><a class="headerlink" href="#of10" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">MySql components.</span><a class="headerlink" href="#of10" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>Keep the <strong>default</strong> set-up option as is it and continue until the <code class="docutils literal notranslate"><span class="pre">account</span> <span class="pre">setting</span></code> screen is obtained (see screenshot below). Set your <strong>password</strong> and make sure to <strong>remember</strong> this password as in the next few steps, during application of configuration, we can check for the password if it is correct or not.  Not to worry if the password is a <em>weak</em> (although try to use a strong) one.</p></li>
 </ul>
 <div class="figure align-center" id="of11">
 <a class="reference internal image-reference" href="../../_images/off_f11.png"><img alt="../../_images/off_f11.png" src="../../_images/off_f11.png" style="width: 791.0px; height: 311.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">Setting MySql root password</span><a class="headerlink" href="#of11" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Setting MySql root password</span><a class="headerlink" href="#of11" title="Permalink to this image">¶</a></p>
 </div>
 <div class="warning admonition">
 <p class="admonition-title">Kanishk Pls. check</p>
@@ -551,21 +555,21 @@ Make sure you are in the <strong>CAST</strong> directory- the directory where yo
 </div>
 <div class="figure align-center" id="of12">
 <a class="reference internal image-reference" href="../../_images/off_f12.png"><img alt="../../_images/off_f12.png" src="../../_images/off_f12.png" style="width: 630.6999999999999px; height: 476.7px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Connecting MySql to the local server</span><a class="headerlink" href="#of12" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Connecting MySql to the local server</span><a class="headerlink" href="#of12" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>After setting  up MySql, open <strong>MySql Workbench</strong> using Windows<sup>TM</sup>  <em>start-menu</em>. Click on <code class="docutils literal notranslate"><span class="pre">Connections</span></code> and when asked, enter the root <code class="docutils literal notranslate"><span class="pre">password</span></code> created during the MySql setup. You should get the windows as shown in the screenshot below</p></li>
 </ul>
 <div class="figure align-center" id="of13">
 <a class="reference internal image-reference" href="../../_images/off_f13.png"><img alt="../../_images/off_f13.png" src="../../_images/off_f13.png" style="width: 815.5px; height: 571.1999999999999px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">MySql Workbench connection</span><a class="headerlink" href="#of13" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">MySql Workbench connection</span><a class="headerlink" href="#of13" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>Create a <strong>database</strong> named <code class="docutils literal notranslate"><span class="pre">groundwater</span></code> in the new page. This can be done by writing the command <code class="docutils literal notranslate"><span class="pre">create</span> <span class="pre">database</span> <span class="pre">groundwater</span></code> in the windows space (see screeshot). Once the command is written, <strong>click</strong> on the <code class="docutils literal notranslate"><span class="pre">lightning</span> <span class="pre">button</span></code> (It is used to execute), and <em>wait</em> until action is shown (see the screenshot) in the bottom.</p></li>
 </ul>
 <div class="figure align-center" id="of14">
 <a class="reference internal image-reference" href="../../_images/off_f14a.png"><img alt="../../_images/off_f14a.png" src="../../_images/off_f14a.png" style="width: 865.9px; height: 639.0999999999999px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">Creating the <code class="docutils literal notranslate"><span class="pre">groundwater</span></code> database</span><a class="headerlink" href="#of14" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">Creating the <code class="docutils literal notranslate"><span class="pre">groundwater</span></code> database</span><a class="headerlink" href="#of14" title="Permalink to this image">¶</a></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -580,14 +584,14 @@ Make sure you are in the <strong>CAST</strong> directory- the directory where yo
 </ul>
 <div class="figure align-center" id="of17">
 <a class="reference internal image-reference" href="../../_images/off_f17.png"><img alt="../../_images/off_f17.png" src="../../_images/off_f17.png" style="width: 736.4px; height: 396.2px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">CAST Code in Visual Studio Code</span><a class="headerlink" href="#of17" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">CAST Code in Visual Studio Code</span><a class="headerlink" href="#of17" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>In the Visual Studio Code on the left-side select the file <code class="docutils literal notranslate"><span class="pre">groundwater&gt;config.py</span></code>, and change the <strong>password</strong> that was used for setting-up of MySql in <strong>STEP 4</strong> (see screenshot below).</p></li>
 </ul>
 <div class="figure align-center" id="of18">
 <a class="reference internal image-reference" href="../../_images/off_f18.png"><img alt="../../_images/off_f18.png" src="../../_images/off_f18.png" style="width: 737.0999999999999px; height: 396.2px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Personalizing the OFFLINE CAST code - using root password</span><a class="headerlink" href="#of18" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">Personalizing the OFFLINE CAST code - using root password</span><a class="headerlink" href="#of18" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>Now populate the (groundwater) database with the command  <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">create_database.py</span></code> or <code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">create_database.py</span></code> in the <strong>command prompt</strong> (<strong>STEP 2</strong>), in which virtual environment <code class="docutils literal notranslate"><span class="pre">venv</span></code> is active- as seen in the screenshot below.</p></li>
@@ -598,21 +602,21 @@ Make sure you are in the <strong>CAST</strong> directory- the directory where yo
 </div>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/off_f15a.png"><img alt="../../_images/off_f15a.png" src="../../_images/off_f15a.png" style="width: 774.4000000000001px; height: 112.4px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">Populating the <code class="docutils literal notranslate"><span class="pre">groundwater</span></code> database from MySql to CAST</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 29 </span><span class="caption-text">Populating the <code class="docutils literal notranslate"><span class="pre">groundwater</span></code> database from MySql to CAST</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">groundwater/water.py</span></code>, change the <code class="docutils literal notranslate"><span class="pre">parent_dir=</span> <span class="pre">‘your</span> <span class="pre">directory\\CAST</span></code>. Note the double-blackslash (\) used in directory address. This Python programming standard. This is explained in the screenshot below</p></li>
 </ul>
 <div class="figure align-center" id="of19">
 <a class="reference internal image-reference" href="../../_images/off_f19.png"><img alt="../../_images/off_f19.png" src="../../_images/off_f19.png" style="width: 798.6999999999999px; height: 429.79999999999995px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 29 </span><span class="caption-text">Setting local directory in the CAST code.</span><a class="headerlink" href="#of19" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">Setting local directory in the CAST code.</span><a class="headerlink" href="#of19" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>The numerical model of <strong>CAST</strong> uses <a class="reference external" href="https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model">MODFLOW</a> and <a class="reference external" href="https://hydro.geo.ua.edu/mt3d/index.htm">MT3DMS</a>. The MODFLOW and MT3DMS <strong>.exe</strong> files are called during the numerical model execution. Therefore, the location of <strong>.exe</strong> files in user’s computer have to specified in the CAST code system. This has to be done in the CAST file <strong>groundwater/NumericalModel/numericalModel.py</strong> as shown in the screenshot below</p></li>
 </ul>
 <div class="figure align-center" id="of20">
 <a class="reference internal image-reference" href="../../_images/off_f20.png"><img alt="../../_images/off_f20.png" src="../../_images/off_f20.png" style="width: 687.4px; height: 325.5px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">Setting directory of MODFLOW/MT3DMS <strong>.exe</strong> in the CAST code.</span><a class="headerlink" href="#of20" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">Setting directory of MODFLOW/MT3DMS <strong>.exe</strong> in the CAST code.</span><a class="headerlink" href="#of20" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>The next step requires that the Python executable used in the developed of CAST that is in virtual environment <code class="docutils literal notranslate"><span class="pre">venv</span></code>. In <strong>Visual Studio Code</strong> this can be done is the step-wise manner as shown in the screenshots below.</p></li>
@@ -620,35 +624,35 @@ Make sure you are in the <strong>CAST</strong> directory- the directory where yo
 </ul>
 <div class="figure align-center" id="of21">
 <a class="reference internal image-reference" href="../../_images/off_f21.png"><img alt="../../_images/off_f21.png" src="../../_images/off_f21.png" style="width: 788.9px; height: 438.2px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">Setting the required Python interpreter I.</span><a class="headerlink" href="#of21" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">Setting the required Python interpreter I.</span><a class="headerlink" href="#of21" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>In case the Python interpreter is not of the <strong>CAST</strong> virtual environment <code class="docutils literal notranslate"><span class="pre">venv</span></code>, it should be changed. This can be done by clicking on the Python version seen in Visual Studio Code bottom bar. The screenshot below should appear.</p></li>
 </ul>
 <div class="figure align-center" id="of22">
 <a class="reference internal image-reference" href="../../_images/off_f22.png"><img alt="../../_images/off_f22.png" src="../../_images/off_f22.png" style="width: 788.1999999999999px; height: 422.09999999999997px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">Setting the required Python interpreter II.</span><a class="headerlink" href="#of22" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">Setting the required Python interpreter II.</span><a class="headerlink" href="#of22" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>Go to the file  <code class="docutils literal notranslate"><span class="pre">run.py</span></code> that is on the left panel of the Visual Code Studio interface, and on the <em>top right corner</em> click on the <code class="docutils literal notranslate"><span class="pre">green</span> <span class="pre">play</span> <span class="pre">button</span></code> to run it. See the screenshot below.</p></li>
 </ul>
 <div class="figure align-center" id="of23">
 <a class="reference internal image-reference" href="../../_images/off_f23.png"><img alt="../../_images/off_f23.png" src="../../_images/off_f23.png" style="width: 790.3px; height: 421.4px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">Executing CAST.</span><a class="headerlink" href="#of23" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">Executing CAST.</span><a class="headerlink" href="#of23" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>At the bottom panel (see screenshot) of the Visual Studio Code, a hyperlink will appear when CAST is executed correctly. The hyperlink has to be copied and pasted in a browser to run CAST.</p></li>
 </ul>
 <div class="figure align-center" id="of24">
 <a class="reference internal image-reference" href="../../_images/off_f24.png"><img alt="../../_images/off_f24.png" src="../../_images/off_f24.png" style="width: 789.5999999999999px; height: 422.79999999999995px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">Opening CAST in the browser.</span><a class="headerlink" href="#of24" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 35 </span><span class="caption-text">Opening CAST in the browser.</span><a class="headerlink" href="#of24" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p>The screenshot below should appear once the hyperlink is executed in the browser.</p></li>
 </ul>
 <div class="figure align-center" id="of25">
 <a class="reference internal image-reference" href="../../_images/off_f25.png"><img alt="../../_images/off_f25.png" src="../../_images/off_f25.png" style="width: 792.4px; height: 405.29999999999995px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 35 </span><span class="caption-text">OFFLINE CAST interface in the browser.</span><a class="headerlink" href="#of25" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">OFFLINE CAST interface in the browser.</span><a class="headerlink" href="#of25" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
 <li><p><strong>Optional step</strong></p></li>
@@ -661,10 +665,10 @@ Make sure you are in the <strong>CAST</strong> directory- the directory where yo
 <p>This error can be addressed using the solution provided <a class="reference external" href="https://www.beaming.co.uk/knowledge-base/resolved-files-cannot-loaded-running-scripts-disabled-system/">here</a> (also see the screenshot). The error is due to default security block of Windows<sup>TM</sup> for running the script.</p>
 <div class="figure align-center" id="of16">
 <a class="reference internal image-reference" href="../../_images/off_f16.png"><img alt="../../_images/off_f16.png" src="../../_images/off_f16.png" style="width: 956.5px; height: 429.5px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">Windows<sup>TM</sup> script executing error.</span><a class="headerlink" href="#of16" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 37 </span><span class="caption-text">Windows<sup>TM</sup> script executing error.</span><a class="headerlink" href="#of16" title="Permalink to this image">¶</a></p>
 </div>
 <p>You can log in with your email ID and a password. The server can be closed/stopped by clicking <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> in the Visual Studio Code.</p>
-<p>For re-running the server or using the OFFLINE CAST steps provided in <a class="reference internal" href="#of23"><span class="std std-numref">Fig. 33</span></a> and <a class="reference internal" href="#of24"><span class="std std-numref">Fig. 34</span></a> has to be executed.</p>
+<p>For re-running the server or using the OFFLINE CAST steps provided in <a class="reference internal" href="#of23"><span class="std std-numref">Fig. 34</span></a> and <a class="reference internal" href="#of24"><span class="std std-numref">Fig. 35</span></a> has to be executed.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
