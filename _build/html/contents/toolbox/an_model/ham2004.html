@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAST Toolbox - Analytical Models - Ham et al. (2004) &#8212; CAST - A site assessment tool</title>
     
-  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,27 +20,23 @@
 
     
       
-  <link rel="stylesheet"
-    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -54,7 +51,7 @@
     <script src="../../../_static/custom.js"></script>
     <script src="../../../_static/save_state.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -69,14 +66,14 @@
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CAST Toolbox - Analytical Models - Liedl et al. 2011" href="liedl2011.html" />
     <link rel="prev" title="CAST Toolbox - Analytical Models - Chu et al. (2005)" href="chu2005.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -85,37 +82,42 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../../../index.html">
-  
-  <img src="../../../_static/icon1.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">CAST - A site assessment tool</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      <img src="../../../_static/icon1.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CAST - A site assessment tool</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../intro.html">
    Contamination Assessment and Site management Tool or CAST
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Quick online usage and offline Installation
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../online/online_usage.html">
    Using CAST Online (in development)
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../online/login.html">
      User Login and Access for Online CAST
@@ -123,18 +125,21 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../online/quick_example.html">
-     A quick usage example of CAST
+     Quick usage example of CAST
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../offline/offline_installation.html">
    Using CAST OFFLINE
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../offline/quick_example.html">
      Quick example of offline CAST
@@ -146,26 +151,29 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Using CAST Toolboxes
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../database/database.html">
    CAST Toolbox - Site Database and Data Visualization
   </a>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="an_model.html">
    CAST Toolbox - Analytical Models
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="liedl2005.html">
      CAST Toolbox - Analytical Models - Liedl et al. (2005)
@@ -192,14 +200,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../em_model/em_model.html">
    CAST Toolbox - Empirical Models
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../em_model/birla2020.html">
      CAST Toolbox - Empirical Models - Birla et al. (2020)
@@ -211,8 +222,6 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../num_model.html">
@@ -225,12 +234,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Development
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../develop/code_structure.html">
    CAST Code Structure
@@ -247,12 +256,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Reference
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../ref/cite.html">
    Cite CAST
@@ -265,6 +274,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -330,12 +340,12 @@
     </div>
 </div>
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -344,12 +354,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#using-ham-et-al-2004-model-in-cast">
    Using Ham et al. (2004) model in CAST
@@ -379,8 +388,7 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -394,7 +402,7 @@
 <p>{ref}``Ham et al. (2004)<refham2004>` is 2D horizontal model and provides an estimate of a steady-state plume length (<span class="math notranslate nohighlight">\(L_{max}\)</span>) using a point source. Ádditionally, the model explores the effects of longitudinal and transverse dispersivity on the steady state plume length.</p>
 <div class="figure align-center" id="ham2004-f1">
 <a class="reference internal image-reference" href="../../../_images/ham2004_f1.png"><img alt="../../../_images/ham2004_f1.png" src="../../../_images/ham2004_f1.png" style="width: 369.20000000000005px; height: 146.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 67 </span><span class="caption-text">Ham et al. (2004)- conceptual set-up</span><a class="headerlink" href="#ham2004-f1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 71 </span><span class="caption-text">Ham et al. (2004)- conceptual set-up</span><a class="headerlink" href="#ham2004-f1" title="Permalink to this image">¶</a></p>
 </div>
 <p>Ham et al. (2004) provides the following explicit expression for <span class="math notranslate nohighlight">\(L_{max}\)</span>:
 $<span class="math notranslate nohighlight">\(
@@ -422,7 +430,7 @@ L_{max} = \frac{1}{4\pi}\frac{W^2}{\alpha_{TH}}\bigg(\frac{\gamma C_{ED}^\circ}{
 <p>The difference in each model interface is the model specific parameters. This can be observed in the CAST screenshot below:</p>
 <div class="figure align-center" id="ham2004-f2">
 <a class="reference internal image-reference" href="../../../_images/ham2004_f2.png"><img alt="../../../_images/ham2004_f2.png" src="../../../_images/ham2004_f2.png" style="width: 768.0px; height: 346.40000000000003px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 68 </span><span class="caption-text">Ham et al. (2004)- input parameters</span><a class="headerlink" href="#ham2004-f2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 72 </span><span class="caption-text">Ham et al. (2004)- input parameters</span><a class="headerlink" href="#ham2004-f2" title="Permalink to this image">¶</a></p>
 </div>
 <p>Once the input data is placed in the box, user needs to click on the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code> to get the result. Results are obtained as an absolute number below the Generate Graph button and also graphically, which provides the field plume length data from the database. This allows a visual comparison of the model <span class="math notranslate nohighlight">\(L_{max}\)</span> with the field data.</p>
 <p>As explained in detail in <a class="reference internal" href="liedl2005.html"><span class="doc std std-doc">Liedl et al. (2005)</span></a> model , the resulting graph provides several interactive options to evaluate results.</p>
@@ -437,7 +445,7 @@ L_{max} = \frac{1}{4\pi}\frac{W^2}{\alpha_{TH}}\bigg(\frac{\gamma C_{ED}^\circ}{
 <p>For clarification, the interface of multiple computing interface is provided in the screenshot below.</p>
 <div class="figure align-center" id="ham2004-f3">
 <a class="reference internal image-reference" href="../../../_images/ham2004_f3.png"><img alt="../../../_images/ham2004_f3.png" src="../../../_images/ham2004_f3.png" style="width: 546.4px; height: 262.8px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 69 </span><span class="caption-text">Options available with data input and result downloading in the multiple computing interface of CAST</span><a class="headerlink" href="#ham2004-f3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 73 </span><span class="caption-text">Options available with data input and result downloading in the multiple computing interface of CAST</span><a class="headerlink" href="#ham2004-f3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
@@ -496,11 +504,9 @@ L_{max} = \frac{1}{4\pi}\frac{W^2}{\alpha_{TH}}\bigg(\frac{\gamma C_{ED}^\circ}{
 
       </div>
     </div>
+  
+  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>

@@ -3,7 +3,7 @@
 CAST is not necessary an ONLINE tool. It is essentially a browser-based tool, which can be used in both ONLINE and OFFLINE. However, for the OFFLINE use, **CAST** has to be installed in the local system. The OFFLINE set-up of CAST is provided below in detail.
 
 ```{tip}
-**The OFFLINE use of CAST is recommended, as parameter range limits used in ONLINE mode can be avoided.
+**The OFFLINE use of CAST is recommended, as parameter range limits used in ONLINE mode can be avoided**.
 ```
 
 
@@ -91,17 +91,17 @@ name: of5
 Checking installed pip version
 ```
 **Step 2D.** Installation of ``pip`` when not installed
-In case **no** pip version is found, we can install it through command prompt by entering the command- ``python get-pip.py``. Once installed it is a good idea to re-check the installed pip. Re-checking can be done using ``pip --version`` as above. Additionally, to verify the version of python, we can see it through the following line of command. 
+In case **no** pip version is found, we can install it through command prompt by entering the command- ``python get-pip.py``. Once installed it is a good idea to re-check the installed pip. Re-checking can be done using ``pip --version`` as above. Additionally, to verify the version of python, we can see it through the  line of command ``python --version``
 
-```{admonition} Kanishk Pls. check
-:class : warning
-**Can you provide a screen shot covering the above two commands**
-```
 
-**Step 2E.** Installation of Virtual Environment (VE)
-Virtual Environment 
+
+**Step 2E.** Installation of **Virtual Environment (VE)**: <br>
+
 A [Virtual Environment](https://docs.python.org/3/library/venv.html) (VE) is a _tool_ or a _folder_ that helps to keep dependencies required by different Python projects separate. CAST is a Python project, as such we create a separate Python system (a VE) for CAST. This can be easily done using command prompt (see screenshot below) and entering the command ``pip install virualenv``. 
 
+```{note}
+``virtualenv`` is an independent Python [library](https://virtualenv.pypa.io/en/latest/) and it can be installed out of CAST directory. 
+```
 
 ```{figure} images/off_f6.png
 ---
@@ -113,13 +113,12 @@ Installing Python Virtual Environment
 ```
 **Step 2F.** Setting-up Virtual Environment (VE) for the **CAST** project
 
-```{admonition} Kanishk Pls. check
-:class : warning
-**I am in doubt here. Can you check where the Virtual Env. should be created. I think you need to add few exploratory texts. It is not clear. Also, I will suggest that we have a non-confusing screenshot**
+```{caution}
+Make sure you are in the **CAST** directory-
 ```
 
 - Create Virtual Environment files:
-Make sure you are in the **CAST** directory- the directory where you stored the _cloned_ CAST repo (see **Step 1**). The screenshot below can be useful.
+Make sure you are in the **CAST** directory- the directory where you stored the _cloned_ CAST repository (see **Step 1**). Look at the below screenshot:
 
 ```{figure} images/off_f7.png
 ---
@@ -131,6 +130,10 @@ Creating VE called venv for the CAST project.
 ```
 
 - Activation of VE venv:
+
+```{caution}
+Make sure you are in the **CAST\venv\Scripts** directory-
+```
  The created VE venv has to be activated before it can used. This can be done using the command ``activate`` in the ``venv\Scripts`` directory of CAST (see screenshot below). Once activated, you will see the ``<venv>`` at the start of the prompt (see screenshot) 
 
 ```{figure} images/off_f8.png
@@ -228,7 +231,7 @@ MySql Workbench connection
 
 - Create a **database** named ``groundwater`` in the new page. This can be done by writing the command ``create database groundwater`` in the windows space (see screeshot). Once the command is written, **click** on the ``lightning button`` (It is used to execute), and _wait_ until action is shown (see the screenshot) in the bottom. 
 
-```{figure} images/off_f14.png
+```{figure} images/off_f14a.png
 ---
 scale: 70%
 align: center
@@ -241,44 +244,9 @@ Creating the ``groundwater`` database
 ```
 #### Step 5. Executing OFFLINE CAST ####
 
-With creation of the (groundwater) database, setting-up MySql is complete. Next, we execute the **OFFLINE** CAST. To do this first we need connect MySql with the **CAST**. The text below explains the steps. 
+With creation of the (groundwater) database, setting-up MySql is complete. Next, we move to connect the **OFFLINE CAST** with the local server, the database and the code. These steps are simplified (at least for less CS/IT experts) using specialized text-editor/IDE such as [**Visual Studio Code**](https://code.visualstudio.com/), [**PyCharm<sup>TM</sup>**](https://www.jetbrains.com/pycharm/). In the description we use **Visual Studio Code**. The steps below explains the steps.
 
-- Now populate the (groundwater) database with the command  ``python3create_database.py`` or ``py create_database.py`` in the command prompt (**STEP 2**), in which virtual environment ``venv`` is active- as seen in the screenshot below.
-
-```{figure} images/off_f15.png
----
-scale: 70%
-align: center
-name: of14
----
-Populating the ``groundwater`` database from MySql to CAST
-```
-
-```{admonition} Kanishk Pls. check
-:class : warning
-**Bit confusing here - do we need take the action below after the using this ``python3create_database.py`` command**
-```
-
-```{admonition} Issue with running script in Windows<sup>TM</sup>
-:class: error
-The Windows<sup>TM</sup> may give the following error:
-
-**Files cannot be loaded because running scripts is disabled on this system. Provide a valid certificate with which to sign the files.**
-```
-This error can be addressed using the solution provided [here](https://www.beaming.co.uk/knowledge-base/resolved-files-cannot-loaded-running-scripts-disabled-system/) (also see the screenshot). The error is due to default security block of Windows<sup>TM</sup> for running the script.
-
-```{figure} images/off_f16.png
----
-scale: 50%
-align: center
-name: of16
----
-Windows<sup>TM</sup> script executing error.
-```
-
-The next steps require modification and execution of the CAST code. These steps are simplified using specialized text-editor/IDE such as [**Visual Studio Code**](https://code.visualstudio.com/), [**PyCharm<sup>TM</sup>**](https://www.jetbrains.com/pycharm/). In the description we use **Visual Studio Code**. 
-
-In Visual Studio Code, open the ``file`` location; here select **CAST** (the cloned folder in Step 1) and click on ``Open Folder``.
+- In **Visual Studio Code**, open the ``file`` location; here select **CAST** (the cloned folder in Step 1) and click on ``Open Folder``.
 
 ```{figure} images/off_f17.png
 ---
@@ -298,6 +266,21 @@ align: center
 name: of18
 ---
 Personalizing the OFFLINE CAST code - using root password
+```
+
+- Now populate the (groundwater) database with the command  ``python3 create_database.py`` or ``py create_database.py`` in the **command prompt** (**STEP 2**), in which virtual environment ``venv`` is active- as seen in the screenshot below.
+
+```{note}
+Make sure you are in the **\CAST** directory and NOT in the **\venv\Scripts** or other directory. 
+```
+
+```{figure} images/off_f15a.png
+---
+scale: 40%
+align: center
+name: of14
+---
+Populating the ``groundwater`` database from MySql to CAST
 ```
 
 - Under ``groundwater/water.py``, change the ``parent_dir= ‘your directory\\CAST``. Note the double-blackslash (\\) used in directory address. This Python programming standard. This is explained in the screenshot below  
@@ -377,6 +360,24 @@ align: center
 name: of25
 ---
 OFFLINE CAST interface in the browser.
+```
+
+- **Optional step** 
+```{admonition} Issue with running script in Windows<sup>TM</sup>
+:class: error
+The Windows<sup>TM</sup> may give the following error:
+
+**Files cannot be loaded because running scripts is disabled on this system. Provide a valid certificate with which to sign the files.**
+```
+This error can be addressed using the solution provided [here](https://www.beaming.co.uk/knowledge-base/resolved-files-cannot-loaded-running-scripts-disabled-system/) (also see the screenshot). The error is due to default security block of Windows<sup>TM</sup> for running the script.
+
+```{figure} images/off_f16.png
+---
+scale: 50%
+align: center
+name: of16
+---
+Windows<sup>TM</sup> script executing error.
 ```
 
 You can log in with your email ID and a password. The server can be closed/stopped by clicking ``Ctrl+C`` in the Visual Studio Code.
