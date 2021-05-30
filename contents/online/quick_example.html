@@ -5,9 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A quick usage example of CAST &#8212; CAST - A site assessment tool</title>
+    <title>Quick usage example of CAST &#8212; CAST - A site assessment tool</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,27 +20,23 @@
 
     
       
-  <link rel="stylesheet"
-    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -54,7 +51,7 @@
     <script src="../../_static/custom.js"></script>
     <script src="../../_static/save_state.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -67,14 +64,14 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Using CAST OFFLINE" href="../offline/offline_installation.html" />
     <link rel="prev" title="User Login and Access for Online CAST" href="login.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -83,37 +80,42 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../../index.html">
-  
-  <img src="../../_static/icon1.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">CAST - A site assessment tool</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/icon1.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CAST - A site assessment tool</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../intro.html">
    Contamination Assessment and Site management Tool or CAST
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Quick online usage and offline Installation
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="online_usage.html">
    Using CAST Online (in development)
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="login.html">
      User Login and Access for Online CAST
@@ -121,18 +123,21 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     A quick usage example of CAST
+     Quick usage example of CAST
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../offline/offline_installation.html">
    Using CAST OFFLINE
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../offline/quick_example.html">
      Quick example of offline CAST
@@ -144,26 +149,29 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Using CAST Toolboxes
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../toolbox/database/database.html">
    CAST Toolbox - Site Database and Data Visualization
   </a>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../toolbox/an_model/an_model.html">
    CAST Toolbox - Analytical Models
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../toolbox/an_model/liedl2005.html">
      CAST Toolbox - Analytical Models - Liedl et al. (2005)
@@ -190,14 +198,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../toolbox/em_model/em_model.html">
    CAST Toolbox - Empirical Models
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../toolbox/em_model/birla2020.html">
      CAST Toolbox - Empirical Models - Birla et al. (2020)
@@ -209,8 +220,6 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../toolbox/num_model.html">
@@ -223,12 +232,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Development
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../develop/code_structure.html">
    CAST Code Structure
@@ -245,12 +254,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Reference
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../ref/cite.html">
    Cite CAST
@@ -263,6 +272,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -328,12 +338,12 @@
     </div>
 </div>
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -342,6 +352,41 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-analytical-model-in-cast">
+   1. Using Analytical model in CAST
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-single-computing-simulation">
+     Using Single Computing Simulation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-multiple-computing-simulation">
+     Using Multiple Computing Simulation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-empirical-model-in-cast">
+   2. Using Empirical model in CAST
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-numerical-model-in-cast">
+   3.Using Numerical model in CAST
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -350,10 +395,46 @@
         
               <div>
                 
-  <div class="section" id="a-quick-usage-example-of-cast">
-<h1>A quick usage example of CAST<a class="headerlink" href="#a-quick-usage-example-of-cast" title="Permalink to this headline">¶</a></h1>
-<p><strong>Sandhya</strong> and <strong>Iram</strong> to do this.</p>
-<p>This is one very simple example and linking to the model page for more detailed example.</p>
+  <div class="section" id="quick-usage-example-of-cast">
+<h1>Quick usage example of CAST<a class="headerlink" href="#quick-usage-example-of-cast" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="using-analytical-model-in-cast">
+<h2>1. Using Analytical model in CAST<a class="headerlink" href="#using-analytical-model-in-cast" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="using-single-computing-simulation">
+<h3>Using Single Computing Simulation<a class="headerlink" href="#using-single-computing-simulation" title="Permalink to this headline">¶</a></h3>
+<p>Clicking the <strong>Analytical Toolbox</strong> box in the homepage will lead to the interface that lists  all the analytical models available in the CAST. From here choose the  model that you wish to use. As an example here -  <em>Liedl et al.(2005)</em> has been used. For using Liedl et al. (2005), from the interface shown in the screenshot below, please click on the option <strong><code class="docutils literal notranslate"><span class="pre">Click</span> <span class="pre">here</span> <span class="pre">to</span> <span class="pre">see</span> <span class="pre">the</span> <span class="pre">model</span></code></strong> below the Liedl et al. (2005) as shown in the  screenshot below.</p>
+<p>Please click on option Liedl et al. (2005), located in the <em>top</em> bar, to open the dropdown menu containing the two options for computation. In case a user wishes to model a single site (as is the case in the example) or a number of sites but one at a time <strong><code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">computing</span> <span class="pre">simulation</span></code></strong> option can be used.</p>
+<p>After clicking on <strong><code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">computing</span> <span class="pre">simulation</span></code></strong>, you will be directed towards the below attached window. The area highlighted in red square contains the <em>input</em> parameters for the model where the user needs to enter the required values in the fields . Then please click on the <strong><code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Graph</span></code></strong> option as shown on screen and the user can see the value of <strong><code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">Plume</span> <span class="pre">Length</span></code></strong> as shown in the screenshot.</p>
+<div class="figure align-center" id="quickeg1">
+<a class="reference internal image-reference" href="../../_images/on3.png"><img alt="../../_images/on3.png" src="../../_images/on3.png" style="width: 1119.3px; height: 1789.8999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">The quick way to use the <strong>single computing interface</strong> in CAST</span><a class="headerlink" href="#quickeg1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The obtained results can be interacted using sliders and the options available in the graph. For details check the documentation of each models provided <a class="reference internal" href="../toolbox/an_model/an_model.html"><span class="doc std std-doc">here</span></a></p>
+</div>
+<div class="section" id="using-multiple-computing-simulation">
+<h3>Using Multiple Computing Simulation<a class="headerlink" href="#using-multiple-computing-simulation" title="Permalink to this headline">¶</a></h3>
+<p>The <strong><code class="docutils literal notranslate"><span class="pre">multiple</span> <span class="pre">computing</span> <span class="pre">simulation</span></code></strong> mode of CAST let user create multiple sceanrios and compare them with field data of their choice. Once the user is in their choice of analytical model, they slect <strong><code class="docutils literal notranslate"><span class="pre">multiple</span> <span class="pre">computing</span> <span class="pre">simulation</span></code></strong> in the dropdown menu from the <em>top</em> bar. This opens the interface for <strong><code class="docutils literal notranslate"><span class="pre">multiple</span> <span class="pre">computing</span> <span class="pre">simulation</span></code></strong>.</p>
+<p>In the interface user need to create scenario. This can be done by filling dataset one at a time or more elegantly by downloading the template csv file and then uploading it back. This way user can input several data all at once.</p>
+<p>Once data are uploaded the data table gets filled and the model results are generated in the plot. User can choose the site of their choice to compare their scenario. More details on these steps can be obtained from <a class="reference internal" href="../toolbox/an_model/an_model.html"><span class="doc std std-doc">here</span></a>. The screenshot below clarifies the steps.</p>
+<div class="figure align-center" id="quickeg2">
+<a class="reference internal image-reference" href="../../_images/on4.png"><img alt="../../_images/on4.png" src="../../_images/on4.png" style="width: 1323.0px; height: 1601.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">The quick way to use the <strong>multiple computing interface</strong> in CAST</span><a class="headerlink" href="#quickeg2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="using-empirical-model-in-cast">
+<h2>2. Using Empirical model in CAST<a class="headerlink" href="#using-empirical-model-in-cast" title="Permalink to this headline">¶</a></h2>
+<p>Clicking the <strong>Empirical Toolbox</strong> box in the homepage will lead to the interface that lists  all the analytical models available in the CAST. From here choose the  model that you wish to use. As an example, Maier And Grathwohl (2006)has been used. For using Maier And Grathwohl (2006), from the interface shown in the screenshot below, please click on the option <strong><code class="docutils literal notranslate"><span class="pre">Click</span> <span class="pre">here</span> <span class="pre">to</span> <span class="pre">see</span> <span class="pre">the</span> <span class="pre">model</span></code></strong> below.</p>
+<p>The process thereafter is exactly similar to that discussed for the analytical model. Empirical models are described <a class="reference internal" href="../toolbox/em_model/em_model.html"><span class="doc std std-doc">CAST Toolbox - Empirical Models</span></a></p>
+</div>
+<div class="section" id="using-numerical-model-in-cast">
+<h2>3.Using Numerical model in CAST<a class="headerlink" href="#using-numerical-model-in-cast" title="Permalink to this headline">¶</a></h2>
+<p>Numerical model in CAST is based of MODFLOW/MT3DMS. Complete detail of the model is provided <a class="reference internal" href="../toolbox/num_model.html"><span class="doc std std-doc">here</span></a></p>
+<p>For working with the numerical model, click on the <strong>Numerical Toolbox</strong> box in the homepage. Please click on option <strong>Numerical Model</strong>, located in the <em>top</em> bar, to open the dropdown menu as shown in the screenshot and click on the <strong><code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">computing</span> <span class="pre">simulation</span></code></strong> from there. Enter the required values in the fields and then please click on the <strong><code class="docutils literal notranslate"><span class="pre">Run</span></code></strong> option to get the <strong><code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">Plume</span> <span class="pre">Length</span></code></strong>. The screenshot below presents the steps. Pls note that simulation can take time depending on the input data.</p>
+<div class="figure align-center" id="quickeg3">
+<a class="reference internal image-reference" href="../../_images/on5.png"><img alt="../../_images/on5.png" src="../../_images/on5.png" style="width: 1260.5px; height: 2297.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">The quick way to use the <strong>Numerical computing interface</strong> in CAST</span><a class="headerlink" href="#quickeg3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -405,11 +486,9 @@
 
       </div>
     </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>
